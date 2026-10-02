@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy | List &amp; Host</title>
+<meta name="description" content="How List &amp; Host handles your information.">
+<link rel="canonical" href="https://listandhost.com/privacy/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy | List &amp; Host">
+<meta property="og:description" content="How List &amp; Host handles your information.">
+<meta property="og:url" content="https://listandhost.com/privacy/">
+<meta property="og:site_name" content="List &amp; Host">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "List & Host", "url": "https://listandhost.com", "email": "team@listandhost.com", "description": "Full service short term rental management: listing, pricing, guest messaging, cleaning and maintenance, handled A to Z.", "areaServed": [{"@type": "City", "name": "Fort Worth, TX"}, {"@type": "Place", "name": "Buffalo National River region, Arkansas"}], "priceRange": "15% of booking revenue"}]</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="/"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#16213A"/><path d="M16 6 L25 13.5 V25 H7 V13.5 Z" fill="none" stroke="#F6F3EC" stroke-width="2" stroke-linejoin="round"/><path d="M16 11.5 V21 M12.2 15 H19.8" stroke="#E9C27A" stroke-width="2.2" stroke-linecap="round"/></svg><span>List &amp; Host</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="/#services">Services</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="/fort-worth/">Fort Worth</a>
+    <a href="/buffalo-river/">Buffalo River</a>
+    <a href="/blog/">Owner guides</a>
+    <a href="/giving/">Our mission</a>
+    <a class="btn" href="/#estimate">Free estimate</a>
+  </nav>
+</div></header>
+<main>
+<article class="post"><div class="wrap narrow">
+<h1>Privacy</h1><p class="post-meta">Updated 2026-10-02</p>
+<p style="margin-top:24px">When you request an estimate or contact us, we collect the details you send: your name, email, phone and information about your property. We use them only to reply to you and to prepare your estimate or service agreement. We do not sell or share your information with anyone outside List &amp; Host except the service providers we need to run the business, such as our email and website hosts.</p>
+<p>To ask us to delete your information, email team@listandhost.com.</p></div></article></main>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="/"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#16213A"/><path d="M16 6 L25 13.5 V25 H7 V13.5 Z" fill="none" stroke="#F6F3EC" stroke-width="2" stroke-linejoin="round"/><path d="M16 11.5 V21 M12.2 15 H19.8" stroke="#E9C27A" stroke-width="2.2" stroke-linecap="round"/></svg><span>List &amp; Host</span></a>
+      <p style="margin-top:14px;max-width:38ch">Short term rental management, A to Z. We run your home like our own and give part of every month's profit to feed children facing starvation.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/giving/">Our mission</a></li>
+        <li><a href="/blog/">Owner guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:team@listandhost.com">team@listandhost.com</a></li>
+        <li><a href="mailto:help@listandhost.com">help@listandhost.com</a></li>
+        <li><a href="/#estimate">Get a free estimate</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="legal">&copy; 2026 List &amp; Host. Serving Fort Worth, Texas and the Buffalo River region of Arkansas. <a href="/privacy/">Privacy</a></p>
+</footer>
+<script>
+  const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
+  if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});}
+  const f=document.getElementById('estimate-form');
+  if(f){f.addEventListener('submit',e=>{
+    const mode=f.dataset.backend;
+    if(document.getElementById('hp').value){e.preventDefault();location.href='/thanks/';return;}
+    if(mode==='google'){
+      const done=()=>{location.href='/thanks/';};
+      document.querySelector('iframe[name=lead-sink]').addEventListener('load',done);
+      setTimeout(done,5000);
+    }
+    if(mode==='mailto'){
+      e.preventDefault();
+      const lines=[...f.querySelectorAll('[data-label]')].map(i=>i.dataset.label+': '+i.value);
+      location.href=f.getAttribute('action')+'?subject='+encodeURIComponent('Free estimate request')+'&body='+encodeURIComponent(lines.join('\n'));
+      document.getElementById('form-note').hidden=false;
+    }
+  });}
+</script>
+</body>
+</html>
