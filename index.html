@@ -171,21 +171,22 @@
         <li>What it takes to get your home guest ready</li>
       </ul>
     </div>
-    <form class="estimate" id="estimate-form" data-backend="mailto" method="POST" action="mailto:team@listandhost.com" enctype="text/plain">
+    <form class="estimate" id="estimate-form" data-backend="google" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSe1cO6cmNEYzSiI0JjCcDVR4_pbwM04Zo6WAxsceJ_hosNluw/formResponse" target="lead-sink">
       <p hidden><label>Leave empty <input id="hp" tabindex="-1" autocomplete="off"></label></p>
       <div class="fields">
-        <label>Your name<input name="name" data-label="Name" autocomplete="name" required></label>
-        <label>Email<input type="email" name="email" data-label="Email" autocomplete="email" required></label>
-        <label>Phone<input type="tel" name="phone" data-label="Phone" autocomplete="tel"></label>
-        <label>City of the property<input name="city" data-label="City of the property" required placeholder="Fort Worth, TX"></label>
-        <label>Bedrooms<select name="bedrooms" data-label="Bedrooms"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5+</option></select></label>
-        <label>Is it listed now?<select name="listed" data-label="Listed now"><option>Not yet</option><option>Yes, I host it myself</option><option>Yes, with another manager</option></select></label>
-        <label class="full">Anything we should know?<textarea name="notes" data-label="Notes" placeholder="Hot tub, pool, acreage, pets allowed, when you want to start"></textarea></label>
+        <label>Your name<input name="entry.1582974767" data-label="Name" autocomplete="name" required></label>
+        <label>Email<input type="email" name="entry.1516232760" data-label="Email" autocomplete="email" required></label>
+        <label>Phone<input type="tel" name="entry.743886440" data-label="Phone" autocomplete="tel"></label>
+        <label>City of the property<input name="entry.1466160160" data-label="City of the property" required placeholder="Fort Worth, TX"></label>
+        <label>Bedrooms<select name="entry.2128452931" data-label="Bedrooms"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5+</option></select></label>
+        <label>Is it listed now?<select name="entry.600668683" data-label="Listed now"><option>Not yet</option><option>Yes, I host it myself</option><option>Yes, with another manager</option></select></label>
+        <label class="full">Anything we should know?<textarea name="entry.1140404397" data-label="Notes" placeholder="Hot tub, pool, acreage, pets allowed, when you want to start"></textarea></label>
       </div>
       <button class="btn gold" type="submit">Get my free estimate</button>
       <p class="fine">We reply from team@listandhost.com. We never share your information.</p>
       <p class="fine" id="form-note" hidden>Your email app just opened with your answers filled in. Press send and we will reply within one business day. No email app on this device? Write to <a href="mailto:team@listandhost.com">team@listandhost.com</a>.</p>
     </form>
+    <iframe name="lead-sink" title="Form delivery" hidden></iframe>
   </div>
 </section>
 
