@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="og-title og-desc">
+  <title id="og-title">List &amp; Host</title>
+  <desc id="og-desc">Short term rental management. We list your home. We host your guests. You get paid. listandhost.com</desc>
+  <rect width="1200" height="630" fill="#16213A"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#B8862B"/>
+  <g transform="translate(760 70) scale(14)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 6 L25 13.5 V25 H7 V13.5 Z" stroke="#F6F3EC" stroke-opacity="0.12" stroke-width="0.6"/>
+    <path d="M16 11.5 V21 M12.2 15 H19.8" stroke="#E9C27A" stroke-opacity="0.45" stroke-width="0.7"/>
+  </g>
+  <g transform="translate(80 72)">
+    <rect width="64" height="64" rx="16" fill="#22304F" stroke="#F6F3EC" stroke-opacity="0.18" stroke-width="1.5"/>
+    <g transform="scale(2)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 6 L25 13.5 V25 H7 V13.5 Z" stroke="#F6F3EC" stroke-width="2"/>
+      <path d="M16 11.5 V21 M12.2 15 H19.8" stroke="#E9C27A" stroke-width="2.2"/>
+    </g>
+    <text x="84" y="44" font-family="Sora, Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#F6F3EC">List &amp; Host</text>
+  </g>
+  <text x="80" y="246" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#E9C27A">SHORT TERM RENTAL MANAGEMENT</text>
+  <g font-family="Sora, Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="60" font-weight="700">
+    <text x="80" y="330" fill="#F6F3EC">We list your home.</text>
+    <text x="80" y="404" fill="#F6F3EC">We host your guests.</text>
+    <text x="80" y="478" fill="#E9C27A">You get paid.</text>
+  </g>
+  <rect x="80" y="536" width="1040" height="1.5" fill="#F6F3EC" fill-opacity="0.16"/>
+  <text x="80" y="584" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#C9CFDB">listandhost.com</text>
+  <text x="1120" y="584" text-anchor="end" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#E9C27A">Free earnings estimate</text>
+</svg>
