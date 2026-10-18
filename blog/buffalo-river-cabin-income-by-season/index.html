@@ -148,6 +148,7 @@
       <button class="btn gold" type="submit">Get my checked estimate</button>
       <p class="fine">We reply by email. We never share your information. <a href="/privacy/">Privacy</a>.</p>
       <p class="fine" id="form-note" hidden>Your email app just opened with your answers filled in. Press send and we will reply within one business day. No email app on this device? Write to <a href="mailto:team@listandhost.com">team@listandhost.com</a>.</p>
+      <p class="fine form-error" id="form-fail" role="alert" hidden>Something stopped your answers from sending. Nothing was lost. Try again, or email them to <a href="mailto:team@listandhost.com">team@listandhost.com</a> and we take it from there.</p>
     </form>
     <iframe name="lead-sink" title="Form delivery" hidden></iframe>
   </div>
@@ -167,6 +168,7 @@
         <label for="notes-email">Your email</label>
         <div class="notes-row"><input type="email" id="notes-email" name="entry.1516232760" data-label="Email" autocomplete="email" required><button class="btn gold" type="submit" data-sticky-hide>Send me the notes</button></div>
         <p class="fine">Kept with our estimate requests and used only for the notes. <a href="/privacy/">Privacy</a>.</p>
+        <p class="fine form-error" id="notes-fail" role="alert" hidden>Something stopped your answers from sending. Nothing was lost. Try again, or email them to <a href="mailto:team@listandhost.com">team@listandhost.com</a> and we take it from there.</p>
       </form>
       <iframe name="notes-sink" title="Owner notes delivery" hidden></iframe>
     </div>
@@ -174,13 +176,24 @@
       <p class="foot-h">Company</p>
       <ul>
         <li><a href="/about/">About us</a></li>
-        <li><a href="/services/">Services</a></li>
         <li><a href="/how-it-works/">How it works</a></li>
         <li><a href="/results/">Results</a></li>
         <li><a href="/pricing/">Pricing</a></li>
         <li><a href="/owner-dashboard/">Owner dashboard example</a></li>
         <li><a href="/faq/">Owner questions</a></li>
+        <li><a href="/contact/">Contact</a></li>
         <li><a href="/giving/">Our mission</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot-h">Services</p>
+      <ul>
+        <li><a href="/services/">All four services</a></li>
+        <li><a href="/services/full-management/">Full service management</a></li>
+        <li><a href="/services/co-hosting/">Co hosting</a></li>
+        <li><a href="/services/setup-and-launch/">Setup and launch</a></li>
+        <li><a href="/services/remote-pricing/">Remote pricing</a></li>
+        <li><a href="/apply/">Apply for a checked estimate</a></li>
       </ul>
     </div>
     <div>
@@ -211,8 +224,22 @@
   <p class="legal">&copy; 2026 List &amp; Host. Full service in Fort Worth, DFW and the Buffalo River region. Co hosting or remote pricing anywhere else in the US. <a href="/privacy/">Privacy</a></p>
 </footer>
 <script>
+  try{var q=new URLSearchParams(location.search),s=q.get('src');
+  if(!sessionStorage.getItem('lh_entry'))sessionStorage.setItem('lh_entry',location.pathname);
+  if(s&&/^(letter|email|qr|agent|social|directory|ai|print)$/.test(s))sessionStorage.setItem('lh_src',s);
+  if(!sessionStorage.getItem('lh_ref')){var h='';try{h=new URL(document.referrer).hostname;}catch(e){}
+  sessionStorage.setItem('lh_ref',h?(/google\.|bing\.|duckduckgo|yahoo\.|ecosia|brave\.|perplexity|chatgpt|openai|copilot/.test(h)?'search':'link'):'direct');}}catch(e){}
   const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
   if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});}
+  function lhSend(form,sink,ok,failId){
+    var btn=form.querySelector('button[type=submit]'),txt=btn?btn.textContent:'',fail=document.getElementById(failId),done=false;
+    if(btn){btn.textContent='Sending your answers';btn.disabled=true;}
+    if(fail){fail.hidden=true;}
+    var fr=document.querySelector('iframe[name="'+sink+'"]');
+    if(fr){fr.addEventListener('load',function(){if(done){return;}done=true;ok();});}
+    setTimeout(function(){if(done){return;}done=true;if(btn){btn.textContent=txt;btn.disabled=false;}if(fail){fail.hidden=false;}},8000);
+  }
+  window.lhSend=lhSend;
   const f=document.getElementById('estimate-form');
   if(f){f.addEventListener('submit',e=>{
     const mode=f.dataset.backend;
@@ -223,9 +250,10 @@
       nt.value=ex.concat(nt.value?[nt.value]:[]).concat(['[Source: '+location.pathname+']']).join(' ');
     }
     if(mode==='google'){
-      const done=()=>{location.href='/thanks/';};
-      document.querySelector('iframe[name=lead-sink]').addEventListener('load',done);
-      setTimeout(done,5000);
+      if(f.dataset.sending){e.preventDefault();return;}
+      f.dataset.sending='1';
+      lhSend(f,'lead-sink',()=>{location.href='/thanks/';},'form-fail');
+      setTimeout(()=>{delete f.dataset.sending;},8000);
     }
     if(mode==='mailto'){
       e.preventDefault();
@@ -237,11 +265,12 @@
   const nf=document.getElementById('notes-form');
   if(nf){nf.addEventListener('submit',e=>{
     if(document.getElementById('nhp').value){e.preventDefault();location.href='/thanks/notes/';return;}
+    if(nf.dataset.sending){e.preventDefault();return;}
+    nf.dataset.sending='1';
     const n=nf.querySelector('input[data-label=Notes]');
     if(n&&n.value.indexOf('[Source:')<0){n.value=n.value+' [Source: '+location.pathname+']';}
-    const done=()=>{location.href='/thanks/notes/';};
-    document.querySelector('iframe[name=notes-sink]').addEventListener('load',done);
-    setTimeout(done,5000);
+    lhSend(nf,'notes-sink',()=>{location.href='/thanks/notes/';},'notes-fail');
+    setTimeout(()=>{delete nf.dataset.sending;},8000);
   });}
   (function(){
     var bar=document.getElementById('sticky-cta');

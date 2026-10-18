@@ -2,7 +2,7 @@
 
 > List & Host is a short term rental management company that lists homes on Airbnb, Vrbo and Booking.com, prices them every day, answers guests, schedules cleaning and sends a monthly statement.
 
-This file holds the text of every public page on listandhost.com, 65 pages, generated 2026-10-18. Each page starts with a heading, its canonical URL, the date it last changed and its one line summary. Cite the HTML page by its URL, not this file. The shorter index with one line per page is https://listandhost.com/llms.txt. Numbers are estimates or past results from homes our team runs, each with its period and basis; none is a promise of income.
+This file holds the text of every public page on listandhost.com, 71 pages, generated 2026-10-18. Each page starts with a heading, its canonical URL, the date it last changed and its one line summary. Cite the HTML page by its URL, not this file. The shorter index with one line per page is https://listandhost.com/llms.txt. Numbers are estimates or past results from homes our team runs, each with its period and basis; none is a promise of income.
 
 # List & Host
 
@@ -371,6 +371,8 @@ Summary: Full service management, co hosting, a launch package and remote pricin
 
 Full service if you want it all handled. Co hosting if you keep your listing and your own cleaner. A launch package to go live the right way. Remote pricing if you like hosting but want the money side run every day.
 
+Each offer has its own page: [full service management](https://listandhost.com/services/full-management/), [co hosting](https://listandhost.com/services/co-hosting/), the [setup and launch package](https://listandhost.com/services/setup-and-launch/) and [remote pricing](https://listandhost.com/services/remote-pricing/).
+
 ## What is included, and who it fits
 
 Each offer runs on the same pricing and messaging engine we use on the homes our team runs. Pick the level of help you want. Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States.
@@ -401,7 +403,9 @@ Guests pay the cleaning fee. Repairs and supplies are billed at cost with receip
 
 Full service is offered in [Fort Worth](https://listandhost.com/fort-worth/), [Dallas](https://listandhost.com/dallas/), [Arlington](https://listandhost.com/arlington/) and the [Buffalo River region](https://listandhost.com/buffalo-river/).
 
-Get my checked estimate [or request a 15 minute call](https://listandhost.com/book-a-call/)
+[Full service management in detail](https://listandhost.com/services/full-management/): who it fits, what is included, the fee and the questions owners ask.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=full) [or request a 15 minute call](https://listandhost.com/book-a-call/)
 
 ### Co hosting
 
@@ -423,7 +427,9 @@ Price quoted in writing after a free look
 
 You or your local person handle anything that needs hands at the home.
 
-[Start with a free listing audit](https://listandhost.com/free-listing-audit/) [or request a 15 minute call](https://listandhost.com/book-a-call/)
+[Co hosting in detail](https://listandhost.com/services/co-hosting/): what we do, what stays with you, how access works on each site.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=cohost) [or start with a free listing audit](https://listandhost.com/free-listing-audit/)
 
 ### Launch package
 
@@ -445,7 +451,9 @@ One time price, quoted in writing after a free look
 
 Photography, furniture and supplies are billed at cost if you need them.
 
-[Request a 15 minute call](https://listandhost.com/book-a-call/) or get a checked estimate
+[The setup and launch package in detail](https://listandhost.com/services/setup-and-launch/): the six pieces, how a new listing was launched in September 2026, and the 30 day review.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=launch) [or request a 15 minute call](https://listandhost.com/book-a-call/)
 
 ### Remote pricing and listing optimization
 
@@ -463,11 +471,13 @@ Monthly price per listing, quoted in writing after a free look
 
 - A short monthly report: nights sold, average rate and what changed
 
-You add us as a co host with pricing access. Terms quoted in writing after a free look.
+You add us as a co host with full access so the engine can write prices. Terms quoted in writing after a free look.
 
 Markets with their own remote pricing page: [Branson](https://listandhost.com/branson/), [Broken Bow](https://listandhost.com/broken-bow/), [Eureka Springs](https://listandhost.com/eureka-springs/), [Hot Springs](https://listandhost.com/hot-springs/), [Glen Rose and Granbury](https://listandhost.com/glen-rose-granbury/) and the [Texas Hill Country](https://listandhost.com/texas-hill-country/). How the pricing works: [dynamic pricing explained](https://listandhost.com/blog/dynamic-pricing-explained-for-owners/).
 
-[Get a free listing audit](https://listandhost.com/free-listing-audit/) [or request a 15 minute call](https://listandhost.com/book-a-call/)
+[Remote pricing in detail](https://listandhost.com/services/remote-pricing/): what the engine does every morning, its hard limits and the questions hosts ask.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=remote) [or get a free listing audit](https://listandhost.com/free-listing-audit/)
 
 **What is a free look?** A free look is the 15 minute call or the free listing audit, whichever you prefer. We look at your home or your listing and the homes it competes with, then send the price, the term and the notice to leave in writing. It costs nothing and you sign nothing. [Request a 15 minute call](https://listandhost.com/book-a-call/) or [get a free listing audit](https://listandhost.com/free-listing-audit/).
 
@@ -546,9 +556,753 @@ Listings go live on Airbnb, Vrbo and Booking.com on one calendar. The engine sta
 
 ## Not sure which one fits?
 
-Request a 15 minute call. We look at your home or your listing, tell you which option makes sense, and send a written estimate after. If none of them fit, we say so.
+Send the application and pick "Not sure, tell me what fits". We look at your home or your listing, tell you which option makes sense, and send a written estimate within one business day. If none of them fit, we say so.
 
-[Request a 15 minute call](https://listandhost.com/book-a-call/)
+[Start my checked estimate](https://listandhost.com/apply/?lean=unsure)
+
+Prefer to talk first? [Request a 15 minute call](https://listandhost.com/book-a-call/).
+
+
+# Full Service Airbnb and Vrbo Management
+
+Source: https://listandhost.com/services/full-management/
+Updated: 2026-10-18
+Summary: Full service short term rental management in Fort Worth, Arlington, Dallas and the Buffalo River region: listing, pricing, guests, cleaning and statements.
+
+Full service means every part of running the rental is ours: the listing, daily prices, every guest message, cleaners, repairs, reviews and a monthly statement. You approve the floor price, the repair limit and anything big. The booking sites pay you directly.
+
+The fee is 20% of booking revenue, with no setup fee. Full service in Fort Worth, DFW and the Buffalo River region. Co hosting or remote pricing anywhere else in the US.
+
+Three short steps, about two minutes, no phone number asked. A one page estimate for your home follows within one business day. An estimate with its basis, not a promise of income.
+
+## Owners who want the income without a second job
+
+Full service is built for a whole home in a market where our team runs the cleaning and the repairs itself. If that is not your home, one of the other three offers probably is, and we say so on the call.
+
+### Full service is usually right if
+
+- Your home is in Fort Worth, Arlington, Dallas or the Buffalo River region of Arkansas
+
+- You live far away, travel, or simply do not want guest messages on your phone
+
+- Nobody near the home can handle a lockout, a leak or a cleaner who cancels
+
+- You want Airbnb, Vrbo and Booking.com on one calendar, not one listing you watch yourself
+
+- You want one monthly statement with every booking and every cost
+
+### Look at another offer if
+
+- You already have a cleaner you trust and like handling the home yourself: see [co hosting](https://listandhost.com/services/co-hosting/)
+
+- Your home is outside our full service markets: see [remote pricing](https://listandhost.com/services/remote-pricing/) or co hosting
+
+- You want to host it yourself and only need help going live: see the [setup and launch package](https://listandhost.com/services/setup-and-launch/)
+
+- You rent a room inside the home you live in. We take on whole homes only
+
+## Everything it takes to run the rental
+
+One fee covers the daily work. Nothing below is an add on.
+
+### Listing and launch
+
+- Walkthrough by visit or video, and one setup list for your home
+
+- Title, description and photo order written for how guests search, with the photo shoot directed by us
+
+- Live on Airbnb, Vrbo and Booking.com on one calendar
+
+- House rules, guest guide, check in steps and a smart lock or lockbox plan
+
+### Pricing and guests
+
+- Prices set every morning by our engine, inside a floor you approve, with weekend and event prices and minimum stays
+
+- Every guest message, from the first question to checkout, every day of the week
+
+- Check in steps, checkout reminders and thank you notes sent by rule; a person answers the rest
+
+- Every review answered, and damage claims filed with the platform on time
+
+### The home and the money
+
+- Local cleaners scheduled around every stay, with a checklist and photos after each turn
+
+- Repairs by trusted local pros. Anything over your limit comes to you with a quote first
+
+- Supplies restocked at cost, with receipts
+
+- A monthly statement by the 10th and an owner dashboard for your home
+
+What the engine does each morning, and what a person still decides: [how it works](https://listandhost.com/how-it-works/). What you see each month: [an example owner dashboard](https://listandhost.com/owner-dashboard/).
+
+## One fee, and what it is charged on
+
+20% of booking revenue
+
+Booking revenue is the nightly rent plus any extra guest fees, after the platform's host fee. Taxes and cleaning fees are not part of it.
+
+- No setup fee. Launch is included
+
+- No fee on cleaning fees or taxes
+
+- No fee on nights you block for yourself
+
+- Repairs and supplies at cost, with receipts, never a markup
+
+- Payouts go straight to you from the platforms. Guest money never sits with us
+
+- If nothing books, we earn nothing
+
+### What is billed at cost
+
+Cleaning turns are paid by guests through the cleaning fee on every booking; it arrives in your payout and pays the cleaner at cost. Repairs, supplies and anything the home needs to be guest ready are billed to you at cost, with the receipt, and only after you approve the list. Your own costs, like utilities, insurance and your mortgage, stay yours, the same as with any manager.
+
+The term and the notice to leave are quoted in writing after a [free look](https://listandhost.com/services/#free-look), before you sign anything. Stays already booked after the end date are honored.
+
+[Every fee, line by line](https://listandhost.com/pricing/). How ours compares with published rates: [Airbnb management fees in 2026](https://listandhost.com/blog/airbnb-management-fees/).
+
+## The same system runs the homes our team runs
+
+We do not have client results to show yet, so here is the next best thing: the three homes our team runs every day on this engine, with dates and the basis for every number.
+
+### 3 bedroom home near Dickies Arena and TCU
+
+October 2026 booked payouts, after platform fees**$4,742**
+
+October nights booked**24 of 31**
+
+August nights booked, for comparison**12 of 31**
+
+Airbnb rating**4.86 from 14 reviews**
+
+[Read the Fort Worth results](https://listandhost.com/results/fort-worth-home/)
+
+### Glass house with a hot tub
+
+October 2026 booked payouts, after platform fees**$13,720**
+
+October nights booked**27 of 31**
+
+Of those, booked before our pricing engine took over on September 21**15 of 27**
+
+Airbnb rating**4.91, Guest Favorite**
+
+[Read the glass house results](https://listandhost.com/results/buffalo-river-glass-house/)
+
+### Cabin loft, live since late September
+
+October 2026 booked payouts, after platform fees**$1,709**
+
+October nights booked**16 of 31**
+
+Nights booked in a row, Oct 14 to the Oct 27 checkout**13**
+
+[Read the cabin launch results](https://listandhost.com/results/ozark-cabin-loft/)
+
+Figures from the booking records of the homes our team runs, as of October 16, 2026. October is not over, so its figures are booked, not earned: they count stays on the books through October 31. Payouts include the guest cleaning fee and come before cleaning and other costs. Our 20% fee is never charged on the cleaning fee. Our pricing engine took over the glass house's prices on September 21, 2026, so 15 of its 27 October nights were booked before it ran there and are not its work. Past results are not a promise of what your home will earn. [How we count every number](https://listandhost.com/results/).
+
+## From signed to live in about 14 days
+
+This is the plan for a furnished home. A home that still needs furniture or repairs takes longer, and we tell you how much longer on day one.
+
+### Apply and get your estimate
+
+Three short steps on the application. Within one business day you get a one page estimate with the basis for every number, and you can book a 15 minute call.
+
+### Walkthrough and setup list
+
+We visit or video tour the home and send one list: linens, supplies, safety items and the lock. You approve it before anything is bought.
+
+### Pricing, rules and listing
+
+Your floor, weekend and event prices, minimum stays and house rules, set with you. Then the listing copy and the photo shoot.
+
+### Cleaner and access
+
+A local cleaner set up with our checklist. Smart lock or lockbox, guest guide and check in steps ready.
+
+### Live on three sites
+
+Airbnb, Vrbo and Booking.com on one calendar. The engine starts pricing the next morning.
+
+### Every month after
+
+A statement by the 10th, one invoice for our fee and any costs, and a dashboard for your home. Anything that needs your yes comes to you by email.
+
+What we ask of you: a furnished home or a plan to furnish it, insurance that allows short term rental, a repair limit so small fixes never wait, and two weeks notice when you block dates for yourself. More in [the guest ready checklist](https://listandhost.com/blog/getting-a-home-guest-ready-checklist/).
+
+## Full service markets
+
+Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States. Each market page has the seasons, the event dates and what homes there are listed at.
+
+### Fort Worth
+
+Stock Show, Dickies Arena and TCU weekends, plus weekday work travel.
+
+### Arlington
+
+Stadium and event weekends between Dallas and Fort Worth.
+
+### Dallas
+
+The largest owner market in DFW, with conventions and trade shows on weekdays.
+
+### Buffalo River region
+
+Cabins and retreats sold on the deck, the hot tub, the trails and the stars.
+
+## Questions owners ask about full service
+
+**What does the fee cover, and what does it not?**
+
+It covers everything it takes to run the rental: the listing and photo direction, daily pricing, every guest message, cleaning scheduling and checks, repair calls, reviews, claims and the monthly statement. It does not cover your own costs, like utilities, insurance and supplies, which are billed at cost with receipts. Guests pay the cleaning fee. Booking revenue is the nightly rent plus any extra guest fees, after the platform's host fee. Taxes and cleaning fees are not part of it.
+
+**Is there a setup fee or a launch fee?**
+
+No. Launch is included in full service: the walkthrough, the listing, photo direction, pricing setup and your cleaner. Items the home needs to be guest ready are billed at cost after you approve the list.
+
+**Do I keep control of my home?**
+
+Yes. You block your own dates on the shared calendar any time, with two weeks notice so we can plan cleaning. You set a repair limit when we start, and anything over it comes to you with a quote first. A true emergency that puts the home or a guest at risk is handled right away, and you hear about it the same day.
+
+**How and when do I get paid?**
+
+The platforms pay you directly on their own schedules, so guest money never sits with us. By the 10th of each month we send your statement and one invoice for our fee and any costs paid for your home, with the receipts attached.
+
+**My home is already on Airbnb. Can you take it over?**
+
+Yes, and your reviews stay with the listing. Your listing stays in your own account and we join it as your host team. We usually improve pricing, photos and the description in the first weeks. If you would rather keep hosting yourself, [co hosting](https://listandhost.com/services/co-hosting/) may fit better.
+
+**How much will my home earn?**
+
+We never promise a number. The [instant estimator](https://listandhost.com/estimate/) shows a low to high range for homes like yours in your market, with its basis. The checked estimate from the application looks at your street, your listing if you have one, and the homes it competes with, and labels every figure as an estimate.
+
+**How long is the agreement, and how do I leave?**
+
+The term and the notice to leave are quoted in writing after a free look, before you sign anything. Stays already booked after the end date are honored.
+
+**Do you manage homes outside Fort Worth, Dallas, Arlington and the Buffalo River region?**
+
+Not full service. Full service needs our own cleaners and people on the ground. Elsewhere in the United States we offer [co hosting](https://listandhost.com/services/co-hosting/) and [remote pricing](https://listandhost.com/services/remote-pricing/), where you keep your local cleaner and we run the daily work from a distance.
+
+## See what your home could earn
+
+Three short steps, about two minutes. A one page checked estimate within one business day, then a 15 minute call if you want one. No phone number asked, and you sign nothing.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=full)
+
+Not ready to apply? [Try the instant estimator](https://listandhost.com/estimate/) or [compare full service with managing it yourself](https://listandhost.com/compare/self-managing/).
+
+
+# Airbnb and Vrbo Co Host Services
+
+Source: https://listandhost.com/services/co-hosting/
+Updated: 2026-10-18
+Summary: Co hosting for short term rentals anywhere in the US. Keep your listing, cleaner and payouts; we run daily pricing, guest messages and cleaning schedules.
+
+Co hosting means the owner keeps the listing, the reviews and the payouts, and keeps a local cleaner, while we run pricing, guest messages and the cleaning schedule as co host. You add us to your listing with the access you choose. Nothing moves out of your account.
+
+The price is quoted in writing after a [free look](https://listandhost.com/services/#free-look): we read your listing and the homes it competes with first, then put the price, the term and the notice to leave in writing. You sign nothing to get it.
+
+Three short steps, about two minutes, no phone number asked. Already listed? Paste your listing link in step 3 and the estimate is built on your own record, not the market average.
+
+## Hosts who have the home covered and want the phone to stop
+
+A co host cannot drive to your home. So co hosting works when someone local already can, and what you want off your plate is the pricing, the messages and the scheduling.
+
+### Co hosting is usually right if
+
+- You already list on Airbnb or Vrbo and have a cleaner you trust
+
+- You, a neighbor or a handy person can get to the home for a lockout, a leak or a missing key
+
+- Your prices are flat, or set once in a tool you stopped watching
+
+- Guest messages wake you up, follow you on vacation, or wait hours for an answer
+
+- Your home is anywhere in the United States, including outside our full service markets
+
+### Look at another offer if
+
+- Nobody near the home can handle hands on problems. In Fort Worth, Arlington, Dallas and the Buffalo River region, that is [full service](https://listandhost.com/services/full-management/)
+
+- Your messages are fine and only the prices are the problem: [remote pricing](https://listandhost.com/services/remote-pricing/) is the lighter option
+
+- The home is not listed yet and you plan to host it yourself: start with the [setup and launch package](https://listandhost.com/services/setup-and-launch/)
+
+- You rent a room inside the home you live in. We take on whole homes only
+
+## What we do, and what stays with you
+
+The split is simple: everything that happens on a screen is ours, everything that needs hands at the home is yours or your local person's.
+
+### Ours as your co host
+
+- Daily pricing by our engine, inside a floor you approve, with weekend and event prices, minimum stays and a fill plan for quiet weeks
+
+- Every guest message, from the first question to checkout, every day of the week. Check in steps and reminders go by rule; a person answers the rest
+
+- Your cleaner scheduled around every booking, with a checklist and a request for photos after each turn
+
+- Calendars kept in sync on every channel you use, so a night sold on one closes on the others
+
+- Every review answered, and a listing rewrite in the first month: title, first lines and photo order
+
+- A monthly statement: nights, average rate, payouts by channel and every price change, with the reason
+
+### Yours, or your local person's
+
+- The listing, the reviews and the payouts stay in your account. The booking sites pay you as they do today
+
+- Your cleaner and your cleaning fee. We never add a markup to anything at the home
+
+- Repairs, supplies and anything that needs hands at the home. We tell you the moment a guest reports one
+
+- Insurance that allows short term rental, and the home kept guest ready
+
+- Blocking your own dates on the shared calendar, any time
+
+How the pricing works, with floors, event weeks and gap nights: [dynamic pricing explained for owners](https://listandhost.com/blog/dynamic-pricing-explained-for-owners/). What a co host covers against a full manager, line by line: [solo co host vs full service](https://listandhost.com/compare/solo-co-host/).
+
+## Access, payouts and what each site allows
+
+### Airbnb
+
+You add a co host from your listing and pick the access level: full access, calendar and messaging, or calendar only. We ask for full access so the engine can write prices and we can answer guests. Only the listing owner can set up or change a co host's payout share, so your money stays under your control.
+
+### Vrbo and Booking.com
+
+Co host access on Airbnb gives no access to the other sites. For Vrbo and Booking.com you add us as a user on each account, or we connect your listings to one calendar so every channel moves together. We tell you which fits your setup on the call.
+
+### Your statement
+
+By the 10th of each month: nights sold, average night, payouts by channel, every price change we made and why, and one invoice for our fee. The booking sites keep paying you directly. Guest money never sits with us.
+
+## The engine that would price your home runs three homes today
+
+We have no client results to show yet. What we can show is the engine's own record on the homes our team runs, dated, with the basis for every number.
+
+### What the engine did
+
+Half hourly checks of bookings, messages and prices**590 plus**
+
+Price changes written and read back**133**
+
+Minimum stay changes written and read back**52**
+
+[How it works, step by step](https://listandhost.com/how-it-works/)
+
+### 3 bedroom home near Dickies Arena
+
+October 2026 nights booked**24 of 31**
+
+August 2026 nights booked, for comparison**12 of 31**
+
+Airbnb rating**4.86 from 14 reviews**
+
+[Read the Fort Worth results](https://listandhost.com/results/fort-worth-home/)
+
+### Cabin loft, live since September 24, 2026
+
+Days from going live to the first booking**3**
+
+Nights booked in a row, Oct 14 to the Oct 27 checkout**13**
+
+Airbnb response rate**100%**
+
+[Read the cabin launch results](https://listandhost.com/results/ozark-cabin-loft/)
+
+Engine counts come from our own change log, September 21 to October 16, 2026. Booking figures come from the booking records of the homes our team runs, as of October 16, 2026; October is not over, so its figures are booked, not earned. Ratings and response rate were read from the public Airbnb listings on October 16, 2026. Past results are not a promise of what your home will earn. [How we count every number](https://listandhost.com/results/).
+
+## Anywhere in the United States
+
+Co hosting runs from a distance, so it works wherever your cleaner does. These markets have their own page with seasons and typical rates: [Branson](https://listandhost.com/branson/), [Broken Bow](https://listandhost.com/broken-bow/), [Eureka Springs](https://listandhost.com/eureka-springs/), [Hot Springs](https://listandhost.com/hot-springs/), [Glen Rose and Granbury](https://listandhost.com/glen-rose-granbury/) and the [Texas Hill Country](https://listandhost.com/texas-hill-country/). In [Fort Worth](https://listandhost.com/fort-worth/), [Arlington](https://listandhost.com/arlington/), [Dallas](https://listandhost.com/dallas/) and the [Buffalo River region](https://listandhost.com/buffalo-river/) you can choose co hosting or full service.
+
+## Questions hosts ask about co hosting
+
+**What does an Airbnb co host do?**
+
+A co host is someone the listing owner adds to help run the listing. Depending on the access the owner grants, a co host can set prices, update the calendar, edit the listing and message guests. With us, that means daily pricing by our engine, every guest message, the cleaning schedule and your reviews. The owner keeps the listing, the reviews and the payouts.
+
+**How much does co hosting cost?**
+
+Our price is quoted in writing after a free look: we read your listing and the homes it competes with, then send the price, the term and the notice to leave in writing. For context, one industry glossary puts typical co host pay at 10% to 30% of booking revenue, higher when the co host also handles cleaning and maintenance (Hostaway, 2026). Our full service fee, for comparison, is 20% of booking revenue.
+
+**How does a co host get paid on Airbnb?**
+
+Airbnb lets the listing owner share part of each payout with a co host, and only the listing owner can set up or change that share. Many owners prefer to keep the full payout and pay a monthly invoice instead. We send a statement by the 10th and one invoice; you choose which way it works for you.
+
+**Do I lose my reviews or my Superhost status?**
+
+No. Your listing stays in your account, so the reviews, the booking history and any status tied to the listing stay yours. We join as your host team.
+
+**Does co hosting work on Vrbo?**
+
+Yes, with a different mechanism. Vrbo has no co host button like Airbnb's, so you add us as a user on your account, or we connect your Vrbo and Airbnb listings to one calendar so every channel moves together. We tell you which fits your setup on the call.
+
+**Who handles a problem at the home?**
+
+You or your local person. A co host cannot drive to the home, so cleaning, repairs and lockouts stay with you. We tell you the moment a guest reports one, and we handle the guest side: the message, the apology, any refund you approve. If nobody near the home can do that, [full service](https://listandhost.com/services/full-management/) in our markets is the right offer.
+
+**Can I start with only pricing?**
+
+Yes. [Remote pricing](https://listandhost.com/services/remote-pricing/) is the lighter option: our engine prices your home every day and you keep every message. Hosts move from one to the other when they like.
+
+**How do I find out if my listing would do better?**
+
+Start with the [free 12 point listing audit](https://listandhost.com/free-listing-audit/): paste your listing link and within two business days you get a written review of your pricing, listing and setup, with the fixes ranked by what they are worth. No call needed.
+
+## Get the daily work off your phone
+
+Three short steps, about two minutes. Paste your listing link and the estimate is built on your own record. A written quote follows the free look. No phone number asked, and you sign nothing to get it.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=cohost)
+
+Prefer to look first? Read [Airbnb co host vs property manager](https://listandhost.com/blog/airbnb-co-host-vs-property-manager/) or [how co host and manager fees compare](https://listandhost.com/blog/airbnb-management-fees/).
+
+
+# Airbnb Listing Setup and Launch Package
+
+Source: https://listandhost.com/services/setup-and-launch/
+Updated: 2026-10-18
+Summary: A one time setup for a home not yet listed: listing copy, photo order, pricing plan, three sites on one calendar, rules and messages. Then you host it.
+
+The setup and launch package is a one time job: we get your home from furnished to live on Airbnb, Vrbo and Booking.com with the listing, the prices, the rules and the guest messages set up the way we set up the homes our team runs. Then it is yours to host. If you would rather we keep running it, the launch is included free in full service.
+
+The price is a one time figure, quoted in writing after a [free look](https://listandhost.com/services/#free-look). We look at your home by visit or video first, then put the price and exactly what it covers in writing.
+
+Three short steps, about two minutes, no phone number asked. The estimate shows a low to high range for a home like yours, with its basis. An estimate, not a promise of income.
+
+## New hosts who want to start right, not start over
+
+Most first listings lose their first months to the same mistakes: a flat price, a title nobody searches for, a cover photo of the wrong room, and no plan for the first reviews. This package is the plan.
+
+### The launch package is usually right if
+
+- Your home is furnished, or nearly, and not listed yet
+
+- You plan to host it yourself and want the setup done by people who do it every week
+
+- You are turning a home you own into a short term rental for the first time
+
+- You live anywhere in the United States, including outside our full service markets
+
+- You want the prices, rules and messages set once, properly, with the reasons written down
+
+### Look at another offer if
+
+- You want someone else to run it after launch. In Fort Worth, Arlington, Dallas and the Buffalo River region, [full service](https://listandhost.com/services/full-management/) includes the launch at no charge
+
+- You are already listed and want help with the daily work: [co hosting](https://listandhost.com/services/co-hosting/) or [remote pricing](https://listandhost.com/services/remote-pricing/)
+
+- The home still needs furniture or repairs. We can still start, and the free look tells you what the home needs first
+
+- You rent a room inside the home you live in. We take on whole homes only
+
+## Everything between furnished and your first guest
+
+Six pieces, each one the same step we take on a home our team runs.
+
+### 1. Walkthrough and setup list
+
+By visit or video. One list for your home: linens and towels for everyone it sleeps, kitchen basics, WiFi, a smart lock or lockbox, smoke and carbon monoxide alarms, a fire extinguisher, and the small things guests write reviews about.
+
+### 2. Listing copy and photo order
+
+A title and first lines written for what guests type into the search box, a description that answers their questions before they ask, and a photo shot list with the cover photo and the order chosen for how guests scroll.
+
+### 3. Pricing set up with a plan
+
+A floor price, weekend and event prices, minimum stays, and a launch plan for a listing with no reviews yet. Every number written down with its reason, so you can change it later and know what you changed.
+
+### 4. Three sites, one calendar
+
+Listings built on Airbnb, Vrbo and Booking.com, connected to one calendar so a night sold on one closes on the others. Instant book, advance notice and trip length set to what the first months need.
+
+### 5. Rules, guide and messages
+
+House rules and quiet hours, a guest guide for the home, check in steps with photos, and the message templates for every stay: before arrival, at check in, the night before checkout, and the review request.
+
+### 6. Help finding a cleaner
+
+A cleaning checklist for your cleaner, a turnover plan around check in and checkout times, and help finding one if you do not have one yet. The cleaner and the cleaning fee are yours.
+
+Photography, furniture and supplies are billed at cost with receipts if you need them, and only after you approve the list. The full checklist of what a home needs before the first guest: [getting a home guest ready](https://listandhost.com/blog/getting-a-home-guest-ready-checklist/).
+
+## We launched a brand new listing in September. Here is what it did.
+
+A one bedroom cabin loft in the Buffalo River region of Arkansas went live on September 24, 2026 with no reviews. The same launch steps are in this package. Every number below is dated and says how it was counted.
+
+### Cabin loft launch, as of October 16, 2026
+
+Went live**September 24, 2026**
+
+Days from going live to the first booking**3**
+
+Stays booked in the first 3 weeks**6**
+
+Nights booked in a row, Oct 14 to the Oct 27 checkout**13**
+
+October 2026 nights booked**16 of 31**
+
+October 2026 booked payouts, after platform fees**$1,709**
+
+First review**5 stars**
+
+[Read the cabin launch case study](https://listandhost.com/results/ozark-cabin-loft/)
+
+### The four launch moves it used
+
+- **Price for the first reviews.** $89 weeknights and $149 weekends until the cabin has three reviews, with the platform's new listing discount on top.
+
+- **Make it easy to book.** Instant book on Airbnb and Vrbo, and same day bookings until 6 PM.
+
+- **Lead with the best photo.** The loft as the cover, then the porch swing and the wooded view.
+
+- **Cut what does not sell.** After the first booking, $169 weekends had no takers. Two October weekend nights were cut to $149 on October 7 and booked within a week.
+
+Figures from the booking records of the home our team runs, as of October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include the guest cleaning fee and come before cleaning and other costs. One home, one launch: past results are not a promise of what your home will earn.
+
+## About 14 days for a furnished home
+
+A home that still needs furniture or repairs takes longer, and the free look tells you how much longer before you pay anything.
+
+### Apply and get your estimate
+
+Three short steps on the application. Within one business day you get a one page estimate for your home and the launch quote in writing, and you can book a 15 minute call.
+
+### Walkthrough
+
+Visit or video tour, then the setup list. You buy what is on it, or we do at cost with receipts.
+
+### Photos and listing
+
+Photo shoot directed from the shot list. Title, description and photo order written and loaded on all three sites.
+
+### Prices, rules and messages
+
+Floor, weekend and event prices, minimum stays, house rules, guest guide and every message template, each with its reason written down.
+
+### Live
+
+Listings live on one calendar. We check the first bookings land correctly and the messages fire.
+
+### 30 day launch review
+
+One written review after your first month: what booked, what did not, and the price steps to take as reviews come in.
+
+## Questions new hosts ask about the launch package
+
+**How much does the setup and launch package cost?**
+
+It is a one time price, quoted in writing after a free look. We look at the home by visit or video first, because a furnished three bedroom and an empty cabin are different jobs. Then you get the price and exactly what it covers in writing. If you later move to [full service](https://listandhost.com/services/full-management/) in one of our markets, the launch is included there at no charge.
+
+**Do I need to be in Fort Worth, Dallas or Arkansas?**
+
+No. The package runs anywhere in the United States. The walkthrough is by video where we cannot visit, and the photo shoot is directed from a shot list with a local photographer billed at cost if you want one.
+
+**Who hosts the home after launch?**
+
+You do. Every message template, price and rule is written down with its reason, so you can run it with confidence. If you decide you would rather not, [co hosting](https://listandhost.com/services/co-hosting/) and [remote pricing](https://listandhost.com/services/remote-pricing/) pick up where the launch left off.
+
+**What does my home need before the first guest?**
+
+Furniture and linens for everyone it sleeps, WiFi, a smart lock or lockbox, smoke and carbon monoxide alarms, a fire extinguisher, and insurance that allows short term rental. The setup list after the walkthrough names everything for your home. The general version is in [the guest ready checklist](https://listandhost.com/blog/getting-a-home-guest-ready-checklist/).
+
+**How do you price a listing with no reviews?**
+
+Lower than the market for the first few stays, with instant book on and short minimum stays, so the first reviews come fast. Then the price steps up as reviews land. On the cabin loft our team launched in September 2026, that plan took three days to the first booking. Every home and market is different, so the plan for yours is written for yours.
+
+**Do you take photos?**
+
+We write the shot list and direct the shoot. The photographer is billed at cost, or you take the photos yourself from the list. Many hosts do.
+
+**How much will my home earn?**
+
+We never promise a number. The [instant estimator](https://listandhost.com/estimate/) shows a low to high range for homes like yours in your market, with its basis. The checked estimate from the application looks at your street and the homes it competes with, and labels every figure as an estimate.
+
+## Start the way the homes our team runs started
+
+Three short steps, about two minutes. A one page checked estimate and the launch quote in writing within one business day, then a 15 minute call if you want one. No phone number asked.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=launch)
+
+Not ready to apply? [Try the instant estimator](https://listandhost.com/estimate/) or read [Airbnb vs Vrbo vs Booking.com for owners](https://listandhost.com/blog/airbnb-vs-vrbo-vs-booking-com-for-owners/).
+
+
+# Airbnb Pricing Management, Run Remotely
+
+Source: https://listandhost.com/services/remote-pricing/
+Updated: 2026-10-18
+Summary: Remote pricing for short term rentals anywhere in the US: our engine sets nightly rates and minimum stays every day inside your floor. You keep hosting.
+
+Remote pricing means our engine sets the nightly rates and minimum stays for a home in any US market while the owner keeps local cleaning and upkeep. You keep the listing, the guests and the payouts. Every morning the engine reviews your next 12 months inside a floor you approve, and every change is logged with its reason.
+
+The price is a monthly figure per listing, quoted in writing after a [free look](https://listandhost.com/services/#free-look). The term is quoted in writing after a free look as well. We read your listing and your market first, then put both in writing.
+
+Three short steps, about two minutes, no phone number asked. Paste your listing link in step 3 and the estimate is built on your own record. An estimate with its basis, not a promise of income.
+
+## Hosts who like hosting and run flat prices
+
+Most self managed listings run one price all year, or a pricing tool set once and forgotten. The nights that cost the most are the ones nobody looked at: the event weekend sold at a weekday rate, the single night nobody could book, the quiet week that never got a fill price.
+
+### Remote pricing is usually right if
+
+- You already list on Airbnb, Vrbo or Booking.com and enjoy the guest side
+
+- Your price is the same most nights, or your tool's settings have not changed in months
+
+- You are not sure what nearby homes charge on your dates, or how your weekends compare
+
+- Event weekends, holidays and gap nights slip past you
+
+- Your home is anywhere in the United States, including outside our full service markets
+
+### Look at another offer if
+
+- Guest messages are the problem, not the prices: [co hosting](https://listandhost.com/services/co-hosting/) adds every message and the cleaning schedule
+
+- Nobody near the home can handle hands on problems. In Fort Worth, Arlington, Dallas and the Buffalo River region, that is [full service](https://listandhost.com/services/full-management/)
+
+- The home is not listed yet: start with the [setup and launch package](https://listandhost.com/services/setup-and-launch/)
+
+- You rent a room inside the home you live in. We take on whole homes only
+
+## The same rules we run on the homes our team runs
+
+You add us as a co host with full access so the engine can write prices. From then on, the engine and a person on our team do this.
+
+### Every morning
+
+- Every night for the next 12 months reviewed against your floor, your weekend and event prices and your minimum stays
+
+- A fill plan for quiet weeks that steps prices down inside limits you approve, and never below your floor
+
+- Gap nights opened or priced so a single night between two stays can sell
+
+- Event nights and holidays locked at event prices, so no automatic cut can reach them
+
+### Every week
+
+- Your open nights checked against nearby homes on the same dates
+
+- Underpriced stays raised and overpriced weekends adjusted, with the big moves approved by a person first
+
+- Your discounts reviewed: last minute, weekly, monthly and early bird, and how they stack
+
+- Every price change logged with its reason, so you can see what moved and why
+
+### Every month, and once at the start
+
+- A listing rewrite in the first month: title, first lines and photo order, written for how guests search
+
+- A short monthly report: nights sold, average night, payouts by channel and what changed
+
+- Your minimum stays, instant book, advance notice and trip length settings reviewed for the season ahead
+
+- One invoice. The booking sites keep paying you directly
+
+The method in full, with floors, event weeks and gap nights: [dynamic pricing explained for owners](https://listandhost.com/blog/dynamic-pricing-explained-for-owners/). How we price Fort Worth weekends and events: [pricing strategy for DFW weekends and events](https://listandhost.com/blog/airbnb-pricing-strategy-dfw-weekends-and-events/).
+
+## What the engine will never do to your listing
+
+### Never below your floor
+
+You set the floor price when we start. No rule, no fill plan and no person on our team can write a price under it.
+
+### Never a booked night
+
+The engine prices open nights only. A night a guest has booked is never touched.
+
+### Never an unlogged change
+
+Each change is logged before it is written and read back after. If the read back does not match, our team gets an alert.
+
+### Never a cut on event nights
+
+Event nights and holidays you approve are locked. The only way they move is up, with a person's yes.
+
+## What the engine did on the homes our team runs
+
+We have no client results to show yet. This is the engine's own record, from our change log and booking records, with dates and the basis for every number.
+
+### The engine's log
+
+Half hourly checks of bookings, messages and prices**590 plus**
+
+Price changes written and read back**133**
+
+Minimum stay changes written and read back**52**
+
+Months of nights reviewed every morning**12**
+
+[How it works, step by step](https://listandhost.com/how-it-works/)
+
+### One week of pricing calls
+
+- **Event week.** The audit found the automatic fill rule set to cut the first week of a November event to $161 and $149 a night. Those nights now carry event prices and are locked, so no automatic cut can reach them.
+
+- **Oct 13.** A check of nearby homes found three open stays cheaper than most of the market. They went up to near the median, and 23 winter and spring weekend nights, Dec 11 to Apr 10, moved to $299 or $319.
+
+- **Result.** 24 of 31 October nights booked, up from 12 of 31 in August, as of October 16, 2026.
+
+[See the full sample audit](https://listandhost.com/free-listing-audit/#sample)
+
+### Gap nights filled
+
+- **Oct 4.** A two night gap sat between two bookings on a new cabin listing. One night stays were allowed on both nights.
+
+- **Oct 12.** A Vrbo guest booked both nights. The cabin then ran 13 nights in a row with no gaps, October 14 to the October 27 checkout.
+
+- **Oct 7.** Two weekend nights that had no takers at $169 were cut on October 7 and booked within a week.
+
+[Read the cabin launch results](https://listandhost.com/results/ozark-cabin-loft/)
+
+Engine counts come from our own change log, September 21 to October 16, 2026. Booking figures come from the booking records of the homes our team runs, as of October 16, 2026; October is not over, so its figures are booked, not earned. Past results are not a promise of what your home will earn. [How we count every number](https://listandhost.com/results/).
+
+## Anywhere in the United States
+
+Remote pricing works wherever your listing is. These markets have their own page with seasons, event dates and what homes there are listed at: [Branson](https://listandhost.com/branson/), [Broken Bow](https://listandhost.com/broken-bow/), [Eureka Springs](https://listandhost.com/eureka-springs/), [Hot Springs](https://listandhost.com/hot-springs/), [Glen Rose and Granbury](https://listandhost.com/glen-rose-granbury/) and the [Texas Hill Country](https://listandhost.com/texas-hill-country/). In [Fort Worth](https://listandhost.com/fort-worth/), [Arlington](https://listandhost.com/arlington/), [Dallas](https://listandhost.com/dallas/) and the [Buffalo River region](https://listandhost.com/buffalo-river/) you can choose remote pricing, co hosting or full service.
+
+## Questions hosts ask about remote pricing
+
+**How much does remote pricing cost?**
+
+It is a monthly price per listing, quoted in writing after a free look. We read your listing and your market first, then send the price and the term in writing. You sign nothing to get the quote.
+
+**How is this different from a pricing tool I can buy?**
+
+A tool sets prices from its own model and leaves the settings to you. Here the same engine that prices the homes our team runs prices yours, inside a floor you approve, and a person checks nearby homes on your dates, approves the big moves and rewrites your listing in the first month. Every change is logged with its reason. If you already have a tool you trust and you check it weekly, keep it.
+
+**Will you cut my price just to fill nights?**
+
+Only inside limits you approve. The engine never sets a price below your floor, never touches a booked night, and locks event nights so no automatic cut can reach them. The fill plan for quiet weeks steps down by a set amount a week and stops at your floor.
+
+**What access do you need?**
+
+On Airbnb, you add us as a co host with full access so the engine can write prices and minimum stays. On Vrbo and Booking.com you add us as a user, or we connect your listings to one calendar. We never need your login. You keep the listing, the guests and the payouts.
+
+**Do you answer my guests too?**
+
+Not in remote pricing. You keep every message. If you want the messages and the cleaning schedule handled as well, that is [co hosting](https://listandhost.com/services/co-hosting/), and hosts move between the two when they like.
+
+**Does it work for one listing?**
+
+Yes. Most hosts who ask have one home. The price is per listing.
+
+**How do I know if my prices are the problem?**
+
+Start with the [free 12 point listing audit](https://listandhost.com/free-listing-audit/): paste your listing link and within two business days you get a written review of your pricing, listing and setup, with the fixes ranked by what they are worth. Five of the twelve points are about price.
+
+## Put the engine on your listing
+
+Three short steps, about two minutes. Paste your listing link and the estimate is built on your own record. A written quote follows the free look. No phone number asked, and you sign nothing to get it.
+
+[Start my checked estimate](https://listandhost.com/apply/?lean=remote)
+
+Prefer to look first? Read [dynamic pricing explained for owners](https://listandhost.com/blog/dynamic-pricing-explained-for-owners/) or [compare running it yourself with hiring help](https://listandhost.com/compare/self-managing/).
 
 
 # Airbnb Management Pricing, Fees and Payouts
@@ -789,7 +1543,7 @@ An audit found the automatic fill rule was set to cut the first week of the NCHA
 
 ### Underpriced stays raised
 
-A check of nearby homes found three open stays cheaper than most of the market. With the owner's yes they went up to near the median, and 23 winter weekend nights moved up to $299 or $319.
+A check of nearby homes found three open stays cheaper than most of the market. With the owner's yes they went up to near the median, and 23 winter and spring weekend nights, Dec 11 to Apr 10, moved up to $299 or $319.
 
 ### A new cabin filled
 
@@ -1034,7 +1788,9 @@ Our fee, 20 percent**−$6,293**
 
 Left for you, before your own costs**$25,170**
 
-Get a checked estimate for my address
+[Get a checked estimate](https://listandhost.com/apply/?m=fort-worth&b=3&ba=2&s=8&ht=0&p=31100/38700/50400)
+
+Three short steps, about two minutes, with these answers carried along. A one page estimate for your exact home within one business day. Prefer the short form? It is at the bottom of this page.
 
 Guests also pay a cleaning fee, about $170 a stay here. It pays the cleaner and is not counted above.
 
@@ -1185,6 +1941,27 @@ Sleeps 8, 2 baths, no hot tub, open all year. Same math as the tool. Every figur
 Source: AirROI public market data, Aug 2025 to Jul 2026, read October 16, 2026, adjusted for size as described above. Dallas, Fort Worth and Arlington exclude the World Cup months.
 
 Market detail: [Fort Worth Airbnb income](https://listandhost.com/blog/how-much-can-an-airbnb-make-in-fort-worth/) and [Buffalo River cabin income by season](https://listandhost.com/blog/buffalo-river-cabin-income-by-season/).
+
+
+# Apply for Your Checked Estimate
+
+Source: https://listandhost.com/apply/
+Updated: 2026-10-18
+Summary: Three short steps, about two minutes. Tell us about your home and where things stand, and a one page checked estimate arrives within one business day.
+
+Tell us about your home and where things stand. A person on our team checks your market, your listing if you have one, and the homes it competes with, then emails a one page estimate with the basis for every number. About two minutes. No phone number asked, and you sign nothing.
+
+### What happens next
+
+Within one business day, a one page estimate by email from team@listandhost.com, with the basis for every number. Then a 15 minute call, only if you want one. You decide later, on your own time.
+
+### What we are not for
+
+Rooms or suites inside a home the owner lives in, and homes outside the United States. Full service runs in Fort Worth, Arlington, Dallas and the Buffalo River region. Elsewhere in the US the options are co hosting and remote pricing.
+
+### Want to look first?
+
+The [instant estimator](https://listandhost.com/estimate/) shows a low to high range for your market in seconds. [Pricing](https://listandhost.com/pricing/) has every fee. [Results](https://listandhost.com/results/) has the numbers from the homes our team runs. A question before you apply? [Contact us](https://listandhost.com/contact/).
 
 
 # Results: Real Numbers From Homes Our Team Runs
@@ -1407,7 +2184,7 @@ If you already host: your last 12 months of nights booked, average nightly rate 
 
 ### What it costs
 
-Nothing. No sales script and no pressure. Prefer email? Write to team@listandhost.com.
+Nothing. No sales script and no pressure. Prefer email? Write to team@listandhost.com or use the [contact page](https://listandhost.com/contact/). Want the estimate first? [Apply in three short steps](https://listandhost.com/apply/).
 
 ## Quick answers
 
@@ -1426,6 +2203,51 @@ Everything is on our [services page](https://listandhost.com/services/), and the
 ## Fifteen minutes. A clear plan.
 
 Request my call
+
+
+# Contact List & Host
+
+Source: https://listandhost.com/contact/
+Updated: 2026-10-18
+Summary: Email team@listandhost.com or use the form. We reply by email within one business day. Owners, hosts, agents with a referral, press and data requests.
+
+Write to team@listandhost.com, or use the form and tell us what it is about. We reply by email within one business day. No phone line yet; if you want a call, say so and we will set a time by email.
+
+## Faster ways in
+
+- Want numbers for a home? [Start with a checked estimate](https://listandhost.com/apply/): three short steps, about two minutes.
+
+- Already listed? [Get the free 12 point audit](https://listandhost.com/free-listing-audit/).
+
+- Want to talk? [Request a 15 minute call](https://listandhost.com/book-a-call/).
+
+- An agent with an owner in mind? [Refer an owner](https://listandhost.com/refer/).
+
+### Where we work
+
+Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States. Each market has its own page: [Fort Worth](https://listandhost.com/fort-worth/), [Dallas](https://listandhost.com/dallas/), [Arlington](https://listandhost.com/arlington/) and the [Buffalo River region](https://listandhost.com/buffalo-river/).
+
+### Two addresses
+
+team@listandhost.com for anything. help@listandhost.com for a home we already run. Both reach the same small team, and a person reads every message.
+
+### Press and data requests
+
+Our market figures carry their source and the date they were read. Ask for the basis of any number on the site, or for the latest [results from the homes our team runs](https://listandhost.com/results/), and we send it with the method we used to count.
+
+## Quick answers
+
+**How fast do you reply?**
+
+By email within one business day. If you want a call, say so in the message and the reply offers two times that fit.
+
+**Can I call you?**
+
+Not yet. There is no phone line, and our forms never ask for your number. [Request a 15 minute video call](https://listandhost.com/book-a-call/) and the invite carries a dial in number if you prefer the phone.
+
+**Where are your prices?**
+
+Every fee, what is billed at cost and how payouts reach you are on the [pricing page](https://listandhost.com/pricing/). The four services and who each one fits are on the [services page](https://listandhost.com/services/).
 
 
 # Airbnb Management FAQ: 20 Owner Questions
@@ -1536,7 +2358,7 @@ Ask it on a 15 minute call. We answer straight, and we tell you if we are not th
 # Agent Referrals: $500 per Signed Home
 
 Source: https://listandhost.com/refer/
-Updated: 2026-10-17
+Updated: 2026-10-18
 Summary: Agents: refer an owner to List & Host and your brokerage earns $500 (as of October 2026) when they sign, paid at the first payout. Ask the owner first.
 
 For real estate agents. Introduce us to an owner whose home could rent short term, like a seller whose home is slow to sell. If they sign with List & Host, we pay $500 to your brokerage at the owner's first payout. It costs the owner nothing.
@@ -4826,7 +5648,7 @@ No. The base matters as much as the rate. On our Fort Worth example, 15% of rent
 
 **Start with your own number.** [Get a free earnings estimate](https://listandhost.com/estimate/) for your home, with the basis for every figure. Then run each quote’s rate on its own base, the way the table above does. It is an estimate, not a promise of income.
 
-**Sources:** [Vacasa: SEC filing on the completed merger, dated May 1, 2025](https://www.sec.gov/Archives/edgar/data/1874944/000114036125016775/ef20048254_8k.htm) · [Short Term Rentalz: Casago completes Vacasa acquisition, May 2, 2025](https://shorttermrentalz.com/uncategorised/casago-completes-vacasa-aquisition/) · [VRMA Arrival: Casago on finalizing Vacasa, May 5, 2025](https://arrival.vrma.org/Blog/casagos-steve-schwab-on-finalizing-vacasa-and-what-lies-ahead) · [Casago: merger questions for Vacasa owners, read October 18, 2026](https://casago.com/vacasa/) · [Short Term Rentalz: Casago completes sales of former Vacasa markets, August 21, 2026](https://shorttermrentalz.com/news/casago-completes-sales-of-former-vacasa-markets/) · [Vacasa: vacation rental management fees, read October 18, 2026](https://www.vacasa.com/homeowner-guides/vacation-rental-management-fees) · [Vacasa: property management FAQ, read October 18, 2026](https://vacasa.com/property-management/faq) · [Vacasa: transferring a Vrbo or Airbnb listing to a new owner, read October 18, 2026](https://vacasa.com/homeowner-guides/transfer-vrbo-airbnb-to-new-owner) · [Evolve: vacation rental management plans, read October 18, 2026](https://evolve.com/owner/vacation-rental-management) · [Evolve: owner FAQ, read October 18, 2026](https://evolve.com/support-faq) · [Evolve Help Center: taking down former listings before launch, read October 18, 2026](https://help.evolve.com/s/article/How-Do-I-Remove-my-Existing-Listings) · [Evolve: Risk Free Guarantee terms, read October 18, 2026](https://evolve.com/risk-free-owner-guarantee-terms) · [Awning: Fort Worth management page, read October 18, 2026](https://awning.com/airbnb-management/fort-worth-texas) · [Awning: Dallas management page, read October 18, 2026](https://awning.com/airbnb-management/dallas-texas) · [Awning: Airbnb management fees, updated October 1, 2026](https://awning.com/post/airbnb-management-fees) · [Airbnb Help: merging accounts or transferring ownership](https://www.airbnb.com/help/article/1431) · [Airbnb Help: service fees](https://www.airbnb.com/help/article/1857) · [AirROI: Fort Worth, Aug 2025 to Jul 2026](https://www.airroi.com/report/world/united-states/texas/fort-worth) · [NCHA Futurity 2026](https://nchacutting.com/shows/futurity) · [Fort Worth Stock Show and Rodeo: visitor questions](https://www.fwssr.com/p/plan-a-visit/frequently-asked-questions)
+**Sources:** [Vacasa: SEC filing on the completed merger, dated May 1, 2025](https://www.sec.gov/Archives/edgar/data/1874944/000114036125016775/ef20048254_8k.htm) · [Short Term Rentalz: Casago completes Vacasa acquisition, May 2, 2025](https://shorttermrentalz.com/uncategorised/casago-completes-vacasa-aquisition/) · [VRMA Arrival: Casago on finalizing Vacasa, May 5, 2025](https://arrival.vrma.org/Blog/casagos-steve-schwab-on-finalizing-vacasa-and-what-lies-ahead) · [Casago: merger questions for Vacasa owners, read October 18, 2026](https://casago.com/vacasa/) · [Short Term Rentalz: Casago completes sales of former Vacasa markets, August 21, 2026](https://shorttermrentalz.com/news/casago-completes-sales-of-former-vacasa-markets/) · [Vacasa: vacation rental management fees, read October 18, 2026](https://www.vacasa.com/homeowner-guides/vacation-rental-management-fees) · [Vacasa: property management FAQ, read October 18, 2026](https://vacasa.com/property-management/faq) · [Vacasa: transferring a Vrbo or Airbnb listing to a new owner, read October 18, 2026](https://vacasa.com/homeowner-guides/transfer-vrbo-airbnb-to-new-owner) · [Evolve: vacation rental management plans, read October 18, 2026](https://evolve.com/owner/vacation-rental-management) · [Evolve: owner FAQ, read October 18, 2026](https://evolve.com/support-faq) · [Evolve Help Center: taking down former listings before launch, read October 18, 2026](https://help.evolve.com/s/article/How-Do-I-Remove-my-Existing-Listings) · [Evolve: owner guarantee terms, read October 18, 2026](https://evolve.com/risk-free-owner-guarantee-terms) · [Awning: Fort Worth management page, read October 18, 2026](https://awning.com/airbnb-management/fort-worth-texas) · [Awning: Dallas management page, read October 18, 2026](https://awning.com/airbnb-management/dallas-texas) · [Awning: Airbnb management fees, updated October 1, 2026](https://awning.com/post/airbnb-management-fees) · [Airbnb Help: merging accounts or transferring ownership](https://www.airbnb.com/help/article/1431) · [Airbnb Help: service fees](https://www.airbnb.com/help/article/1857) · [AirROI: Fort Worth, Aug 2025 to Jul 2026](https://www.airroi.com/report/world/united-states/texas/fort-worth) · [NCHA Futurity 2026](https://nchacutting.com/shows/futurity) · [Fort Worth Stock Show and Rodeo: visitor questions](https://www.fwssr.com/p/plan-a-visit/frequently-asked-questions)
 
 
 # Short Term Rental Management in Dallas and Arlington, 2026
@@ -9243,7 +10065,11 @@ Summary: How List & Host collects, uses and protects the information owners send
 
 Updated October 18, 2026
 
-When you request an estimate, an audit or a call, or contact us, we collect the details you send: your name, email, your listing link and information about your property. Our forms do not ask for a phone number. We use them only to reply to you and to prepare your estimate, audit or service agreement. We do not sell your information. We share it with no one outside List & Host except the service providers we need to run the business.
+## What we collect
+
+When you request an estimate, an audit or a call, send the application, or contact us, we collect the details you send: your name, email, your listing link or address if you give one, and information about your property. Our forms do not ask for a phone number. We use them only to reply to you and to prepare your estimate, audit or service agreement. We do not sell your information. We share it with no one outside List & Host except the providers named below.
+
+When you use the estimator or the application, the page remembers your answers and the page you arrived on in your own browser only, so you can come back and finish. Nothing is sent until you press the last button, and the saved answers are cleared when it is sent.
 
 ## Referrals
 
@@ -9251,18 +10077,40 @@ When you [refer an owner](https://listandhost.com/refer/), we also collect the d
 
 ## If we wrote to you about your home
 
-If we wrote to you about your home, we used public property records and a data company for your mailing address and email. Email stop to team@listandhost.com and we will never contact you again. The code printed on our letter is a reference number for that letter: it holds only a market and a bedroom count. If you type it into the [estimator](https://listandhost.com/estimate/) or open the page from the letter, it is sent with your estimate request so we can match your request to the estimate we mailed you.
+If we wrote to you about your home, we used public property records and a data company for your mailing address and email. Email stop to team@listandhost.com and we will never contact you again. The code printed on our letter is a reference number for that letter: it holds only a market and a bedroom count. If you type it into the [estimator](https://listandhost.com/estimate/) or open the page from the letter, it is sent with your estimate request or application so we can match it to the estimate we mailed you.
 
 ## Owner notes
 
 If you sign up for Owner notes, we keep your email with our estimate requests and use it only to send the notes, about one email a month. Every email has a way to stop, and you can also email team@listandhost.com to be taken off the list.
 
-## Service providers
+## Who else handles it
 
-- **Google.** Our forms send your answers to Google Forms, and they are stored in our Google account. Email sent to our addresses arrives in our Google Workspace mailbox. See [Google's privacy policy](https://policies.google.com/privacy). Fonts are served from our own site, so your browser does not ask Google for them.
+- **Google Forms.** Every form on this site sends your answers to Google Forms, and they are stored in our Google account. See [Google’s privacy policy](https://policies.google.com/privacy).
 
-- **GitHub.** Our website is hosted on GitHub Pages, which keeps standard server logs such as IP addresses.
+- **Google Workspace.** Email to our addresses arrives in, and our replies are sent from, our Google Workspace mailbox.
 
-The site sets no advertising or tracking cookies of its own. When a form says we never share your information, it means we never share it beyond the providers named here.
+- **GitHub Pages.** Our website is served by GitHub Pages, which keeps standard server logs such as IP addresses. We never receive them.
 
-To ask us to delete your information, email team@listandhost.com.
+- **Fonts.** Served from our own site, so no font request leaves it.
+
+- **Google Search Console and Bing Webmaster Tools.** We use them to see how our pages appear in Google and Bing results. They show us search terms as totals and never who searched. Nothing on this site sends them anything about your visit.
+
+- **A data company and public property records,** only for owners we wrote to, as the section above says.
+
+## Cookies and counting
+
+This site sets no cookies of its own and runs no advertising, analytics or tracking scripts. We do not count visits today. When a form says we never share your information, it means we never share it beyond the providers named here.
+
+## How long we keep it
+
+| What | How long |
+| - | - |
+| Estimate, audit, call, application and contact answers | 24 months after our last contact with you, or sooner on request |
+| Referral details | Until the referred owner answers, then 12 months |
+| Email | As long as Google Workspace keeps it under our settings; we delete threads on request |
+| Server logs at GitHub | GitHub’s own retention; we never receive them |
+| Owner notes signup | Until you stop the emails or ask us to delete it |
+
+## Your choices
+
+To ask us to delete your information, or to see what we hold about you, email team@listandhost.com or use the [contact form](https://listandhost.com/contact/). We answer within one business day and finish a deletion within 30 days. If we wrote to you about your home, the word stop in a reply ends it.

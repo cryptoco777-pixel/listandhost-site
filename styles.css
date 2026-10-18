@@ -42,6 +42,14 @@ p{margin:0}
 .fit{display:grid;gap:8px;max-width:62ch}
 .fit-row{display:flex;gap:10px;flex-wrap:wrap}
 .fit-row select{flex:1;min-width:220px}
+/* the fit strip under the home page tagline: market and bedrooms, then one click into the estimator */
+.hero-fit{margin-top:28px;gap:12px}
+.hero-fit .fit-row label{flex:1 1 220px}
+.hero-fit .fit-row label.hf-beds{flex:0 1 140px}
+.hero-fit .fit-row select{min-width:0}
+.hero-fit .cta{margin-top:4px}
+/* a form's fail line: shown only when nothing came back from the form service */
+.form-error{color:#9A3412;font-size:14px;font-weight:600}
 
 /* header */
 .top{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
@@ -164,7 +172,7 @@ th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute
 
 /* footer */
 footer{background:#0F1729;color:#C9CFDB;padding-block:48px 36px;font-size:15px}
-footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px}
 footer a{color:#E6E9F0;text-decoration:none}
 footer a:hover{text-decoration:underline}
 footer .logo{color:#F6F3EC}
@@ -225,6 +233,7 @@ article.post .read-next h3{margin:0}
   .hero .wrap,.price,.mission .wrap,.form-wrap{grid-template-columns:minmax(0,1fr)}
   .g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
   footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  footer .wrap>div:first-child{grid-column:1/-1}
 }
 @media (max-width:640px){
   body{font-size:16px}

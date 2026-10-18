@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://listandhost.com/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/about/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://listandhost.com/apply/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/arlington/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/blog/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/blog/airbnb-co-host-vs-property-manager/</loc><lastmod>2026-10-18</lastmod></url>
@@ -45,6 +46,7 @@
   <url><loc>https://listandhost.com/compare/national-managers/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://listandhost.com/compare/self-managing/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://listandhost.com/compare/solo-co-host/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://listandhost.com/contact/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/dallas/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/estimate/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/eureka-springs/</loc><lastmod>2026-10-18</lastmod></url>
@@ -58,11 +60,15 @@
   <url><loc>https://listandhost.com/owner-dashboard/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://listandhost.com/pricing/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://listandhost.com/privacy/</loc><lastmod>2026-10-18</lastmod></url>
-  <url><loc>https://listandhost.com/refer/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://listandhost.com/refer/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/results/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/results/buffalo-river-glass-house/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/results/fort-worth-home/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/results/ozark-cabin-loft/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/services/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://listandhost.com/services/co-hosting/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://listandhost.com/services/full-management/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://listandhost.com/services/remote-pricing/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://listandhost.com/services/setup-and-launch/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://listandhost.com/texas-hill-country/</loc><lastmod>2026-10-18</lastmod></url>
 </urlset>
