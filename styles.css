@@ -44,8 +44,10 @@ p{margin:0}
 
 /* hero */
 .hero{padding-block:72px 64px}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
 .hero h1 em{font-style:normal;color:var(--accent-ink)}
+/* an eyebrow inside a hub page H1 keeps the look of a plain eyebrow: body font and line height, not the heading's */
+.hero h1 .eyebrow{font-family:var(--body);line-height:1.6}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 .hero .lead{margin-top:18px}
 .proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
@@ -66,9 +68,10 @@ section{padding-block:72px}
 .section-head{display:grid;gap:12px;margin-bottom:36px;max-width:760px}
 .alt{background:var(--soft)}
 .grid{display:grid;gap:18px}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g2{grid-template-columns:repeat(2,1fr)}
-.g4{grid-template-columns:repeat(4,1fr)}
+/* minmax(0,1fr) lets a track shrink below its content's width, so one long value can never widen a phone page */
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:10px;align-content:start}
 .box p{color:var(--ink2);font-size:16px}
 .icon{width:40px;height:40px;border-radius:10px;background:var(--soft);display:grid;place-items:center;color:var(--accent-ink)}
@@ -81,14 +84,14 @@ section{padding-block:72px}
 .checks li::before{content:"";position:absolute;left:0;top:.35em;width:18px;height:18px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
 
 /* pricing */
-.price{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.price{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:center}
 .price-card{background:var(--panel);border:2px solid var(--ink);border-radius:20px;padding:32px;display:grid;gap:16px}
 .price-card .big{font-family:var(--display);font-size:64px;font-weight:700;line-height:1}
 .price-card .big small{font-size:18px;font-weight:400;color:var(--muted)}
 
 /* mission */
 .mission{background:var(--deep);color:var(--on-deep)}
-.mission .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.mission .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;align-items:center}
 .mission h2{color:var(--on-deep)}
 .mission p{color:#D7DCE6}
 .mission .eyebrow{color:#E9C27A}
@@ -106,9 +109,9 @@ details[open] summary::after{content:"−"}
 details p{margin-top:10px;color:var(--ink2)}
 
 /* form */
-.form-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.form-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:start}
 form.estimate{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;gap:14px}
-.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--ink2)}
 input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #CDD3DE;border-radius:10px;background:#fff;color:var(--ink);width:100%}
 textarea{min-height:96px;resize:vertical}
@@ -161,10 +164,23 @@ footer .foot-h{font-weight:700;font-family:var(--display);font-size:14px;letter-
 .box .statement .total{border-top-color:var(--line)}
 .src-band{padding-block:8px 32px}
 .src-band .sources{margin-top:0}
+.related{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:18px 22px;margin-top:36px}
+article.post .related h2{font-size:20px;margin:0 0 10px}
+article.post .related li{font-size:16px;line-height:1.6}
+
+/* comparison pages (/compare/) */
+.compare{min-width:640px}
+.compare td{vertical-align:top}
+.compare td:first-child{font-weight:600;color:#16213A;width:22%}
+.compare th:nth-child(3),.compare td:nth-child(3){background:#FBF6EC}
+.compare tr.group td{background:#F1ECE1;color:#16213A;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.skip ul{margin:0;padding-left:20px;display:grid;gap:8px}
+.skip{border-left:4px solid #B8862B}
+.cmp-cta{text-align:center;display:grid;gap:18px;justify-items:center}
 .read-next{margin-top:40px}
 .read-next .grid{margin-top:14px}
 article.post .read-next h3{margin:0}
-.short-form .fields{grid-template-columns:1fr 1fr}
+.short-form .fields{grid-template-columns:repeat(2,minmax(0,1fr))}
 .next-steps{margin:16px 0 0;padding-left:22px;display:grid;gap:8px;color:var(--ink2);font-size:18px}
 .post-card h3{font-size:19px}
 
@@ -180,21 +196,22 @@ article.post .read-next h3{margin:0}
 .sticky-cta{display:none}
 
 @media (max-width:900px){
-  .hero .wrap,.price,.mission .wrap,.form-wrap{grid-template-columns:1fr}
-  .g3,.g4{grid-template-columns:1fr 1fr}
-  footer .wrap{grid-template-columns:1fr 1fr}
+  .hero .wrap,.price,.mission .wrap,.form-wrap{grid-template-columns:minmax(0,1fr)}
+  .g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:640px){
   body{font-size:16px}
   .nav{display:none}
   .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--ground);padding:16px 20px 20px;border-bottom:1px solid var(--line)}
   .menu-toggle{display:inline-flex;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;font-weight:600;color:var(--ink)}
-  .g2,.g3,.g4,.fields{grid-template-columns:1fr}
+  .g2,.g3,.g4,.fields{grid-template-columns:minmax(0,1fr)}
+  .statement .row b{white-space:normal;text-align:right;overflow-wrap:anywhere}
   section{padding-block:52px}
   .hero{padding-block:44px}
-  footer .wrap{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:minmax(0,1fr)}
   .price-card .big{font-size:52px}
-  .short-form .fields{grid-template-columns:1fr}
+  .short-form .fields{grid-template-columns:minmax(0,1fr)}
   .sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,247,.96);border-top:1px solid #E2E6EE;backdrop-filter:blur(8px);transition:transform .2s ease}
   .sticky-cta .btn{flex:1;min-height:48px}
   .sticky-cta.is-hidden{transform:translateY(120%)}
