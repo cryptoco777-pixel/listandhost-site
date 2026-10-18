@@ -1,4 +1,61 @@
+# listandhost.com. Every page is public, static HTML. Search engines and AI answer engines are welcome to crawl it.
+# Each named group below stands on its own: a crawler that matches a named group reads only that group, so every
+# group repeats the Allow line. Sitemap lines apply to every crawler.
+
 User-agent: *
+Allow: /
+
+# Web search indexes. Crawl everything except the two AI text files, which repeat page text and should never
+# compete with the pages in web results. Google says it does not use llms.txt.
+User-agent: Googlebot
+Allow: /
+Disallow: /llms.txt
+Disallow: /llms-full.txt
+
+User-agent: Bingbot
+Allow: /
+Disallow: /llms.txt
+Disallow: /llms-full.txt
+
+# AI search crawlers that build an index and cite pages. Allowing them is what puts a page in those answers.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: meta-webindexer
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Training crawlers (default allow)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://listandhost.com/sitemap.xml

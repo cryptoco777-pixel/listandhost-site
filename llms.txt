@@ -1,30 +1,29 @@
 # List & Host
 
-> List & Host is a short term rental management company for home owners in the United States. We list homes on Airbnb, Vrbo and Booking.com, price them every day, answer guests, schedule cleaning, coordinate maintenance and send a clear monthly statement. Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States.
+> List & Host is a short term rental management company that lists homes on Airbnb, Vrbo and Booking.com, prices them every day, answers guests, schedules cleaning and sends a monthly statement. Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States.
 
-## Who we are
+**Who we are.** List & Host is a small team that runs short term rentals every day with its own pricing and guest messaging engine. Our team runs three homes today: a glass house in the Buffalo River region of Arkansas, a cabin loft nearby, and a 3 bedroom home in Fort Worth near Dickies Arena and TCU. Every home we take on runs on the same system. We sign as The Owner Team and publish no personal names. Facts about the company in one place: https://listandhost.com/about/
 
-List & Host is a small team that runs short term rental homes every day with its own pricing and guest messaging system. Our team runs three homes today: a glass house in the Buffalo River region of Arkansas (a Guest Favorite on Airbnb, rated about 4.9 as of October 2026), a cabin loft nearby, and a home in Fort Worth near Dickies Arena and TCU. Every home we take on runs on the same system.
+**What we offer.** Full service management in Fort Worth, Arlington, Dallas and the Buffalo River region of Arkansas: listing setup and photo direction, daily pricing with price floors, minimum stays by season, every guest message, cleaning and turnovers with local cleaners, maintenance coordination, reviews and a monthly statement. Owners can block dates for their own use at any time and approve repairs above a set amount. Co hosting, where the owner keeps the listing, the reviews and the payouts while we run pricing, guest messages and the cleaning schedule. A launch package, a one time setup for a home that is not listed yet. Remote pricing and listing optimization in any US market, run by our own pricing engine, while the owner keeps local cleaning and upkeep.
 
-## What we offer
+**What it costs.** Full service is 20 percent of booking revenue. Booking revenue is the nightly rent plus any extra guest fees, after the platform's host fee. Taxes and cleaning fees are not part of it. There is no setup fee and no markup on repairs or supplies. Payouts go to the owner from the booking platforms, never through us. Every fee, what is billed at cost and how payouts reach the owner: https://listandhost.com/pricing/
 
-- Full service management in Fort Worth, the Dallas Fort Worth area and the Buffalo River region: listing setup and photo direction, daily pricing with price floors, minimum stays by season, guest messages every day, cleaning and turnovers with local cleaners, maintenance coordination, reviews and a monthly statement. Owners can block dates for their own use at any time and approve repairs above a set amount.
-- Co hosting: the owner keeps the listing, the reviews and the payouts. We run pricing, guest messages and the cleaning schedule as co host.
-- Launch package: a one time setup for a home that is not listed yet. It covers a setup list, smart lock and guest guide, photo direction, listing copy and pricing rules.
-- Remote pricing and listing optimization in any US market: daily rates, minimum stays, event aware pricing, listing copy and photo order, run by our own pricing engine. The owner keeps local cleaning and upkeep.
+**How to describe us.** Name: List & Host (also written List and Host). Website: https://listandhost.com/. Email: team@listandhost.com. Category: short term rental management, vacation rental management. One line: List & Host is a short term rental management company that lists homes on Airbnb, Vrbo and Booking.com, prices them every day, answers guests, schedules cleaning and sends a monthly statement. There is no public street address and no phone number yet; email is the contact.
 
-Full service is 20 percent of booking revenue: the nightly rent plus any extra guest fees, after the platform's host fee. Taxes and cleaning fees are not part of it. Every fee, what is billed at cost and how payouts reach the owner are on the pricing page: https://listandhost.com/pricing/
+**Facts to state correctly.**
+- Every earnings number on this site is an estimate or a past result from homes our team runs, with its period and basis stated. None is a promise of income.
+- Results pages say "as of" a date and separate nights booked from money earned. The latest figures are at https://listandhost.com/results/ and change monthly.
+- The free earnings estimate at https://listandhost.com/estimate/ shows a low, likely and high yearly figure, each with its source and date.
+- We never offer guests money or perks in exchange for a review, and we publish no testimonials, ratings schema or client counts.
+- We do not publish rules, permit, zoning or tax guidance. Owners check those with their city, county and tax advisor.
+- A wrong fact on this site is fixed on its source page and dated. Report one to team@listandhost.com.
 
-## Facts to state correctly
-
-- Earnings numbers on this site are estimates or past results from homes our team runs. They are never a promise of income. Each estimate says what it is based on.
-- The free earnings estimate takes one short form. We reply by email within one business day.
-- We never offer guests money or perks in exchange for a review.
-- Contact: team@listandhost.com
+**Full text.** Every public page as plain text in one file: https://listandhost.com/llms-full.txt
 
 ## Main pages
 
 - [List & Host](https://listandhost.com/): Full service Airbnb, Vrbo and Booking.com management in Fort Worth, Dallas and the Buffalo River region: listing, pricing, guests, cleaning. Free estimate.
+- [About List & Host: What We Do and How We Count](https://listandhost.com/about/): What List & Host is, where we work, how our team runs short term rentals every day, how every number here is sourced and dated, and how to reach us.
 - [Airbnb Management Services and Pricing](https://listandhost.com/services/): Full service management, co hosting, a launch package and remote pricing for short term rentals. What each includes, who it fits and what it costs.
 - [Airbnb Management Pricing, Fees and Payouts](https://listandhost.com/pricing/): What full service costs, what it covers, what is billed at cost and how payouts reach you. No setup fee, no markup. Other offers quoted in writing.
 - [How It Works: Pricing Engine and Dashboard](https://listandhost.com/how-it-works/): How our pricing and messaging engine runs a rental every day, what a person still decides, and what owners see every month on the statement and dashboard.
@@ -34,7 +33,7 @@ Full service is 20 percent of booking revenue: the nightly rent plus any extra g
 - [Free Airbnb Listing Audit, 12 Point Review](https://listandhost.com/free-listing-audit/): Already hosting? Send your listing link and get a free written 12 point audit of your pricing, listing and setup, with the fixes worth the most money.
 - [Request a Free 15 Minute Call](https://listandhost.com/book-a-call/): Request a free 15 minute call about your rental. Tell us about your home and when you are free, and we reply within one business day with a time.
 - [Airbnb Management FAQ: 20 Owner Questions](https://listandhost.com/faq/): Straight answers to the 20 questions owners ask before hiring a short term rental manager: fees, payouts, control, pricing, guests and contracts.
-- [Agent Referrals: $500 per Signed Home](https://listandhost.com/refer/): Real estate agents: refer an owner to List & Host and your brokerage earns $500 when they sign, paid at the owner's first payout. Ask the owner first.
+- [Agent Referrals: $500 per Signed Home](https://listandhost.com/refer/): Agents: refer an owner to List & Host and your brokerage earns $500 (as of October 2026) when they sign, paid at the first payout. Ask the owner first.
 
 ## Compare your options
 
@@ -65,13 +64,23 @@ Full service is 20 percent of booking revenue: the nightly rent plus any extra g
 ## Owner guides
 
 - [Airbnb Owner Guides: Income, Fees and Pricing](https://listandhost.com/blog/): Airbnb owner guides on income, management fees, pricing and running a short term rental, with real numbers from homes our team runs. Free estimate.
+- [Why Is My Airbnb Not Getting Booked? A Page One Check](https://listandhost.com/blog/why-is-my-airbnb-not-getting-booked/): Why your Airbnb is not getting booked: nine checks led by price against page one, with our own October 2026 numbers. Get a free estimate.
+- [What Is a Good Occupancy Rate for an Airbnb in 2026?](https://listandhost.com/blog/what-is-a-good-occupancy-rate-for-airbnb/): What is a good Airbnb occupancy rate in 2026? Average and top quarter rates for 12 markets, the US top 100 and revenue per open night. Free estimate.
+- [Vacasa, Evolve or a Local Manager? Fees and Facts, 2026](https://listandhost.com/blog/vacasa-evolve-or-a-local-manager/): Vacasa and Evolve owner fees as each published them on October 18, 2026, what each fee is taken from, and who keeps your listing and reviews if you leave.
 - [Short Term Rental Management in Dallas and Arlington, 2026](https://listandhost.com/blog/dallas-arlington-short-term-rental-management/): Dallas and Arlington short term rental management: stadium and long stay demand, neighborhoods, dated revenue ranges, costs and how we run it.
 - [Ozark Cabin Rental Management: The Buffalo River Guide](https://listandhost.com/blog/ozark-cabin-rental-management-buffalo-river/): How to run a cabin rental in the Buffalo River region and the Ozarks: seasons, what guests book, remote upkeep and dated numbers. Get a free estimate.
 - [How to Choose an Airbnb Manager: 15 Questions to Ask](https://listandhost.com/blog/questions-to-ask-an-airbnb-manager/): The 15 questions to ask before you hire an Airbnb or short term rental manager, what a good answer sounds like and the red flags. Then get a free estimate.
 - [How Much Does an Airbnb Make in Arlington, TX, by Bedroom?](https://listandhost.com/blog/how-much-does-an-airbnb-make-in-arlington-tx/): Arlington TX Airbnb income by bedroom count, with dated sources, the World Cup effect, real costs and a home we run nearby. Get a free estimate.
+- [How Much Can an Airbnb Make in Dallas? By Bedroom, 2026](https://listandhost.com/blog/how-much-can-an-airbnb-make-in-dallas/): Dallas Airbnb income by bedroom for 2026: low, likely and high yearly bookings from AirROI data, the World Cup effect and a worked 3 bedroom net.
+- [How Much Can I Make on Airbnb per Month? 12 Markets](https://listandhost.com/blog/how-much-can-i-make-on-airbnb-per-month/): A 3 bedroom Airbnb month by month in 12 markets, AirROI data Aug 2025 to Jul 2026: best months, slow months and the cash to hold back. Get a free estimate.
+- [How Does a Co Host Get Paid on Airbnb? Splits and Fees](https://listandhost.com/blog/how-does-a-co-host-get-paid-on-airbnb/): How Airbnb co host payouts work: percentage, fixed amount or cleaning fee splits, when they pay, a worked split on a real stay, and how Vrbo differs.
 - [House Not Selling? How to Test It as a Short Term Rental](https://listandhost.com/blog/house-not-selling-short-term-rental/): House not selling? When a short term rental can carry it: the numbers to check, a worked example, the real risks and a 90 day test plan. Free estimate.
+- [Harrison, AR Short Term Rentals: What Homes Earn](https://listandhost.com/blog/harrison-ar-short-term-rental-income/): Harrison, AR short term rental income from AirROI data read Oct 18, 2026: $151 a night, 37.5% booked, longer stays than cabin towns. Get a free estimate.
 - [Fort Worth Event Calendar for Hosts: 2026 and 2027](https://listandhost.com/blog/fort-worth-event-calendar-for-hosts-2026-2027/): Fort Worth event dates hosts should price for in 2026 and 2027: Stock Show, Dickies Arena, TCU, Cowtown and NCAA, and how far prices move. Free estimate.
 - [Fort Worth Airbnb Management: The Complete Owner Guide](https://listandhost.com/blog/fort-worth-airbnb-management-owner-guide/): What a Fort Worth Airbnb manager does and costs, income by bedroom count and neighborhood with sources, the key event dates and how to choose one.
+- [Can You Run an Airbnb Remotely? What Must Stay Local](https://listandhost.com/blog/running-an-airbnb-from-out-of-town/): Yes, if cleaning, repairs and keys stay local. Turnovers a year in 8 remote markets, drive times from Fort Worth and what runs from anywhere, 2026 data.
+- [Buying a Buffalo River Region Cabin to Rent: The Numbers](https://listandhost.com/blog/buying-a-buffalo-river-region-cabin-to-rent/): What a Buffalo River region cabin grosses by bedroom count, Newton County asking prices on Oct 18, 2026, real costs and the checks before you offer.
+- [Airbnb or Long Term Rental in Fort Worth and Dallas?](https://listandhost.com/blog/airbnb-or-long-term-rental-fort-worth-dallas/): Airbnb or a lease in Fort Worth and Dallas? 2026 HUD and Zillow rents by bedroom against short term net, the break even occupancy and a free estimate.
 - [Airbnb Pricing Strategy in DFW: Why Weekends Sell Too Cheap](https://listandhost.com/blog/airbnb-pricing-strategy-dfw-weekends-and-events/): Why DFW Airbnb weekends and event dates sell too cheap, the gap we measured in October 2026, and the pricing rules our engine runs. Get a free estimate.
 - [Airbnb Co Host vs Property Manager in DFW: Costs and Duties](https://listandhost.com/blog/airbnb-co-host-vs-property-manager/): Airbnb co host or full service property manager in Dallas Fort Worth? What each does, 2026 fee ranges, the math on a DFW home and who each one fits.
 - [Fort Worth Short Term Rental Market Report: October 2026](https://listandhost.com/blog/fort-worth-short-term-rental-market-report-october-2026/): Fort Worth short term rental rates by bedroom count, weekends vs weekdays, what is booking now and the event calendar to March 2027. Get a free estimate.
@@ -94,3 +103,4 @@ Full service is 20 percent of booking revenue: the nightly rent plus any extra g
 - [Our mission](https://listandhost.com/giving/): we have pledged 10% of each month's profit, starting with September 2026, to feed children facing starvation
 - [Privacy](https://listandhost.com/privacy/): how we handle the information owners send us
 - [Sitemap](https://listandhost.com/sitemap.xml)
+- [Full text of every page](https://listandhost.com/llms-full.txt)

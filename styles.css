@@ -1,11 +1,20 @@
 /* List and Host site styles */
+/* Fonts are served from /fonts/ (two variable Latin woff2 files, SIL Open Font License). The two Fallback faces are
+   Arial resized to each font's metrics, so text set in them takes the same space before the real file arrives and
+   the page does not reflow on swap. Values computed from the font files on 2026-10-18 (see share_images.py for the
+   source files): size-adjust from the width of a sample sentence against Arial, ascent and descent from each font's
+   hhea table divided by its units per em and by size-adjust. */
+@font-face{font-family:"Sora";font-style:normal;font-weight:100 800;font-display:swap;src:url("/fonts/sora-var.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url("/fonts/inter-var.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:113.57%;ascent-override:85.41%;descent-override:25.53%;line-gap-override:0%}
+@font-face{font-family:"Inter Fallback";src:local("Arial");size-adjust:106.02%;ascent-override:91.38%;descent-override:22.75%;line-gap-override:0%}
 :root{
   --ink:#16213A; --ink2:#3E4A63; --muted:#6B7488; --line:#E2E6EE;
   --ground:#FBFAF7; --panel:#FFFFFF; --soft:#F1F4F9;
   --accent:#B8862B; --accent-ink:#8A6112; --deep:#16213A; --on-deep:#F6F3EC;
   --radius:14px;
-  --display:"Sora", "Segoe UI", system-ui, sans-serif;
-  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display:"Sora", "Sora Fallback", "Segoe UI", system-ui, sans-serif;
+  --body:"Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -24,6 +33,15 @@ p{margin:0}
 .lead{font-size:clamp(18px,2vw,21px);color:var(--ink2);max-width:62ch}
 .muted{color:var(--muted)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;background:var(--deep);color:var(--on-deep);padding:8px 12px;border-radius:6px;z-index:50}
+.skip-link:focus{left:8px}
+/* the short answer box under a market page H1, and the fit check answers on the home page */
+.short-answer{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin-top:18px;max-width:62ch}
+.short-answer .eyebrow{display:block;margin-bottom:6px}
+.short-answer p{color:var(--ink2);font-size:16px;line-height:1.6}
+.fit{display:grid;gap:8px;max-width:62ch}
+.fit-row{display:flex;gap:10px;flex-wrap:wrap}
+.fit-row select{flex:1;min-width:220px}
 
 /* header */
 .top{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
@@ -152,6 +170,14 @@ footer a:hover{text-decoration:underline}
 footer .logo{color:#F6F3EC}
 footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 footer .foot-h{font-weight:700;font-family:var(--display);font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E9C27A;margin:0 0 12px}
+/* Owner notes signup in the footer */
+.notes-form{display:grid;gap:8px;max-width:38ch}
+.notes-form label{color:#C9CFDB}
+.notes-row{display:flex;gap:8px;flex-wrap:wrap}
+.notes-row input{flex:1;min-width:180px;border-color:#2C3650}
+.notes-row .btn{padding:11px 18px;font-size:15px}
+.notes-form .fine{color:#8F98AB}
+.notes-form .fine a{color:#C9CFDB;text-decoration:underline}
 .legal{max-width:1120px;margin:32px auto 0;padding-inline:20px;font-size:13px;color:#8F98AB}
 
 /* breadcrumbs, sources, read next, statements on light boxes */
