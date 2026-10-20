@@ -2,7 +2,7 @@
 
 > List & Host is a short term rental management company that lists homes on Airbnb, Vrbo and Booking.com, prices them every day, answers guests, schedules cleaning and sends a monthly statement.
 
-This file holds the text of every public page on listandhost.com, 71 pages, generated 2026-10-18. Each page starts with a heading, its canonical URL, the date it last changed and its one line summary. Cite the HTML page by its URL, not this file. The shorter index with one line per page is https://listandhost.com/llms.txt. Numbers are estimates or past results from homes our team runs, each with its period and basis; none is a promise of income.
+This file holds the text of every public page on listandhost.com, 71 pages, generated 2026-10-20. Each page starts with a heading, its canonical URL, the date it last changed and its one line summary. Cite the HTML page by its URL, not this file. The shorter index with one line per page is https://listandhost.com/llms.txt. Numbers are estimates or past results from homes our team runs, each with its period and basis; none is a promise of income.
 
 # List & Host
 
@@ -14,7 +14,7 @@ List & Host handles everything for Airbnb, Vrbo and Booking.com: listing, pricin
 
 **$48,598** payouts after platform fees on the three homes our team runs, July to October 2026, October as booked
 
-**4.91** Airbnb rating on the glass house our team runs, a Guest Favorite
+**4.9** Airbnb rating on the glass house our team runs, a Guest Favorite
 
 **27 of 31** October 2026 nights booked at the glass house
 
@@ -40,7 +40,7 @@ Basis: the likely case in our instant estimator for a 3 bedroom Fort Worth home 
 
 ## What the homes our team runs are booking
 
-Daily pricing software, guest messaging where routine notes go out by rule and a person answers every question, cleaner scheduling and an [owner dashboard](https://listandhost.com/owner-dashboard/). Here is what the homes our team runs have booked this fall.
+Daily pricing software, guest messaging where routine notes go out by rule and a person answers every question, cleaner scheduling and a [monthly statement](https://listandhost.com/owner-dashboard/). Here is what the homes our team runs have booked this fall.
 
 ### Glass house with a hot tub
 
@@ -50,7 +50,7 @@ October nights booked**27 of 31**
 
 Of those, booked before our pricing engine took over on September 21**15 of 27**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 [Read the glass house results](https://listandhost.com/results/buffalo-river-glass-house/)
 
@@ -62,7 +62,7 @@ October nights booked**24 of 31**
 
 August nights booked, for comparison**12 of 31**
 
-Airbnb rating**4.86 from 14 reviews**
+Airbnb rating**4.9 from 14 reviews**
 
 [Read the Fort Worth results](https://listandhost.com/results/fort-worth-home/)
 
@@ -148,7 +148,7 @@ Our engine prices your nights every day, inside a floor you set.
 
 ## Live in as little as two weeks
 
-Software does the daily work and people make the calls. [See how our pricing engine and owner dashboard work](https://listandhost.com/how-it-works/).
+Software does the daily work and people make the calls. [See how our pricing engine works and what owners see each month](https://listandhost.com/how-it-works/).
 
 ### Checked estimate
 
@@ -282,7 +282,7 @@ Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River 
 # About List & Host: What We Do and How We Count
 
 Source: https://listandhost.com/about/
-Updated: 2026-10-18
+Updated: 2026-10-19
 Summary: What List & Host is, where we work, how our team runs short term rentals every day, how every number here is sourced and dated, and how to reach us.
 
 List & Host is a short term rental management company that lists homes on Airbnb, Vrbo and Booking.com, prices them every day, answers guests, schedules cleaning and sends a monthly statement. Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States.
@@ -301,7 +301,7 @@ Full service, with local cleaners and repair people we schedule, runs in [Fort W
 
 ## How our team runs a home every day
 
-Every home we run sits on one system that our team built and uses on its own homes first. Each morning it reads the calendar, the bookings and the market, then sets the night prices inside a floor the owner approved, with higher prices for weekends and event dates and a fill plan for quiet weeks. Every price it writes is read back to confirm it landed. Routine guest notes go out by rule at the right hour; a person answers every real question. Cleaners get the schedule as bookings change. Owners get a statement by the 10th of each month and a dashboard for their home. The full walk through is on [how it works](https://listandhost.com/how-it-works/), and an example of what owners see is on the [owner dashboard page](https://listandhost.com/owner-dashboard/).
+Every home we run sits on one system that our team built and uses on its own homes first. Each morning it reads the calendar, the bookings and the market, then sets the night prices inside a floor the owner approved, with higher prices for weekends and event dates and a fill plan for quiet weeks. Every price it writes is read back to confirm it landed. Routine guest notes go out by rule at the right hour; a person answers every real question. Cleaners get the schedule as bookings change. Owners get a statement for their home by the 10th of each month. An online view of the same numbers is being built. The full walk through is on [how it works](https://listandhost.com/how-it-works/), and an example of the statement and that view is on the [owner dashboard page](https://listandhost.com/owner-dashboard/).
 
 ## Where our numbers come from
 
@@ -366,7 +366,7 @@ They are either past results from the three homes our team runs, read from their
 # Airbnb Management Services and Pricing
 
 Source: https://listandhost.com/services/
-Updated: 2026-10-18
+Updated: 2026-10-19
 Summary: Full service management, co hosting, a launch package and remote pricing for short term rentals. What each includes, who it fits and what it costs.
 
 Full service if you want it all handled. Co hosting if you keep your listing and your own cleaner. A launch package to go live the right way. Remote pricing if you like hosting but want the money side run every day.
@@ -542,7 +542,7 @@ Listings go live on Airbnb, Vrbo and Booking.com on one calendar. The engine sta
 
 - Repair calls and owner approvals
 
-- Monthly statement and dashboard
+- Monthly statement by the 10th
 
 ### What we ask of you
 
@@ -566,7 +566,7 @@ Prefer to talk first? [Request a 15 minute call](https://listandhost.com/book-a-
 # Full Service Airbnb and Vrbo Management
 
 Source: https://listandhost.com/services/full-management/
-Updated: 2026-10-18
+Updated: 2026-10-19
 Summary: Full service short term rental management in Fort Worth, Arlington, Dallas and the Buffalo River region: listing, pricing, guests, cleaning and statements.
 
 Full service means every part of running the rental is ours: the listing, daily prices, every guest message, cleaners, repairs, reviews and a monthly statement. You approve the floor price, the repair limit and anything big. The booking sites pay you directly.
@@ -633,9 +633,9 @@ One fee covers the daily work. Nothing below is an add on.
 
 - Supplies restocked at cost, with receipts
 
-- A monthly statement by the 10th and an owner dashboard for your home
+- A monthly statement by the 10th. An online view of your home's numbers is being built
 
-What the engine does each morning, and what a person still decides: [how it works](https://listandhost.com/how-it-works/). What you see each month: [an example owner dashboard](https://listandhost.com/owner-dashboard/).
+What the engine does each morning, and what a person still decides: [how it works](https://listandhost.com/how-it-works/). What you see each month, and the view we are building: [an example](https://listandhost.com/owner-dashboard/).
 
 ## One fee, and what it is charged on
 
@@ -675,7 +675,7 @@ October nights booked**24 of 31**
 
 August nights booked, for comparison**12 of 31**
 
-Airbnb rating**4.86 from 14 reviews**
+Airbnb rating**4.9 from 14 reviews**
 
 [Read the Fort Worth results](https://listandhost.com/results/fort-worth-home/)
 
@@ -687,7 +687,7 @@ October nights booked**27 of 31**
 
 Of those, booked before our pricing engine took over on September 21**15 of 27**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 [Read the glass house results](https://listandhost.com/results/buffalo-river-glass-house/)
 
@@ -729,7 +729,7 @@ Airbnb, Vrbo and Booking.com on one calendar. The engine starts pricing the next
 
 ### Every month after
 
-A statement by the 10th, one invoice for our fee and any costs, and a dashboard for your home. Anything that needs your yes comes to you by email.
+A statement by the 10th and one invoice for our fee and any costs. An online view of your home's numbers is being built. Anything that needs your yes comes to you by email.
 
 What we ask of you: a furnished home or a plan to furnish it, insurance that allows short term rental, a repair limit so small fixes never wait, and two weeks notice when you block dates for yourself. More in [the guest ready checklist](https://listandhost.com/blog/getting-a-home-guest-ready-checklist/).
 
@@ -900,7 +900,7 @@ October 2026 nights booked**24 of 31**
 
 August 2026 nights booked, for comparison**12 of 31**
 
-Airbnb rating**4.86 from 14 reviews**
+Airbnb rating**4.9 from 14 reviews**
 
 [Read the Fort Worth results](https://listandhost.com/results/fort-worth-home/)
 
@@ -1308,7 +1308,7 @@ Prefer to look first? Read [dynamic pricing explained for owners](https://listan
 # Airbnb Management Pricing, Fees and Payouts
 
 Source: https://listandhost.com/pricing/
-Updated: 2026-10-17
+Updated: 2026-10-19
 Summary: What full service costs, what it covers, what is billed at cost and how payouts reach you. No setup fee, no markup. Other offers quoted in writing.
 
 Full service is 20% of booking revenue. No setup fee, no markup on repairs or supplies, and the platforms pay guest money straight to you, never to us.
@@ -1361,7 +1361,7 @@ One fee covers the daily work. You approve your floor price, your repair limit a
 
 - A monthly statement by the 10th
 
-- An owner dashboard for your home with each statement. [See an example](https://listandhost.com/owner-dashboard/)
+- An online view with nights booked ahead, upcoming stays and open nights is being built. [See an example](https://listandhost.com/owner-dashboard/)
 
 - Launch included: walkthrough, listing, pricing setup and cleaner
 
@@ -1464,7 +1464,7 @@ The platforms pay you directly, on their own schedules, so guest money never sit
 
 **What will I see each month?**
 
-By the 10th, a statement and an owner dashboard for your home, with nights booked ahead, upcoming stays, open nights, payouts and costs. Anything that needs your yes comes to you by email when it comes up. [See an example dashboard](https://listandhost.com/owner-dashboard/) built from the homes our team runs.
+By the 10th, a statement for your home with payouts, costs and every stay by check in date. An online view with nights booked ahead, upcoming stays and open nights is being built. Anything that needs your yes comes to you by email when it comes up. [See an example of that view](https://listandhost.com/owner-dashboard/), built from the homes our team runs.
 
 **How long is the agreement?**
 
@@ -1492,8 +1492,8 @@ Pick your market and bedrooms and see a low to high range in seconds. It is an e
 # How It Works: Pricing Engine and Dashboard
 
 Source: https://listandhost.com/how-it-works/
-Updated: 2026-10-18
-Summary: How our pricing and messaging engine runs a rental every day, what a person still decides, and what owners see every month on the statement and dashboard.
+Updated: 2026-10-19
+Summary: How our pricing and messaging engine runs a rental every day, what a person still decides, what owners see on the statement, and the view we are building.
 
 Every home our team runs is on our own pricing and messaging engine. It checks bookings, messages and prices all day, writes every change through one channel manager and reads it back. A person decides anything that needs judgment. You see all of it.
 
@@ -1578,7 +1578,7 @@ No guessing what happened in your home. Two things arrive by the 10th of every m
 
 - Every reservation by check in date, with nights, channel and payout
 
-### Your dashboard, with each statement
+### The online view we are building
 
 - Nights booked for the next 14, 30, 60 and 90 days
 
@@ -1614,11 +1614,11 @@ Illustration only, not a forecast. Guests paid $700 in cleaning fees, which cove
 
 ### Glass house with a hot tub
 
-Guest Favorite, rated 4.91 from 11 reviews. Thanksgiving, Christmas and New Year were all booked by mid October. Thanksgiving was booked in August, before our engine took over its prices on September 21.
+Guest Favorite, rated 4.9 from 11 reviews. Thanksgiving, Christmas and New Year were all booked by mid October. Thanksgiving was booked in August, before our engine took over its prices on September 21.
 
 ### 3 bedroom home near Dickies Arena
 
-Rated 4.86 from 14 reviews. Event nights for the Futurity, concerts and games carry their own prices and are locked against automatic cuts.
+Rated 4.9 from 14 reviews. Event nights for the Futurity, concerts and games carry their own prices and are locked against automatic cuts.
 
 ### Cabin loft
 
@@ -1636,10 +1636,10 @@ Get a checked estimate
 # Owner Dashboard Example
 
 Source: https://listandhost.com/owner-dashboard/
-Updated: 2026-10-17
-Summary: See the dashboard and statement an owner gets each month, shown with real combined numbers from the homes our team runs. No guest names or addresses.
+Updated: 2026-10-19
+Summary: The monthly statement an owner gets and the online view we are building, with combined numbers from the homes our team runs. No guest names or addresses.
 
-This example is built from the records of the homes our team runs, 3 homes combined, as of October 17, 2026. Your own dashboard shows your home only and comes with your statement each month. Guest names, addresses and home names are left out here.
+This example is built from the records of the homes our team runs, 3 homes combined, as of October 17, 2026. Your own statement arrives by the 10th each month and covers your home only. The view on this page is the online dashboard we are building. Guest names, addresses and home names are left out here.
 
 **32 of 42** nights booked in the next 14 days, 3 homes combined
 
@@ -1676,7 +1676,7 @@ Next 60 nights: Airbnb 44, Vrbo 9, Booking.com 2. One calendar, so a night sold 
 
 ## Upcoming stays
 
-17 stays and 46 nights in house now or arriving in the next 30 days. Your dashboard lists every stay by check in date with its nights, channel and payout. Here they are grouped by week, because 3 homes are combined.
+17 stays and 46 nights in house now or arriving in the next 30 days. Your statement lists every stay by check in date with its nights, channel and payout. Here they are grouped by week, because 3 homes are combined.
 
 | Arriving | Stays | Nights | Channel |
 | - | - | - | - |
@@ -1689,19 +1689,19 @@ Next 60 nights: Airbnb 44, Vrbo 9, Booking.com 2. One calendar, so a night sold 
 
 ### Open nights
 
-42 open nights in the next 30 days across the 3 homes, 10 of them in the next 14. On your dashboard each open night shows the price it is listed at, and the engine never prices one below your floor.
+42 open nights in the next 30 days across the 3 homes, 10 of them in the next 14. In the view we are building, each open night shows the price it is listed at. The engine never prices one below your floor.
 
 ### Waiting on a yes
 
-In this snapshot: 6 proposed price raises on June and July 2027 nights, each with its reason, for example: that week is already 57% booked. Anything that needs you, like a repair over your limit, a change to your floor or anything unusual with a guest, comes to you by email when it comes up, and your dashboard lists what is still open.
+In this snapshot: 6 proposed price raises on June and July 2027 nights, each with its reason, for example: that week is already 57% booked. Anything that needs you, like a repair over your limit, a change to your floor or anything unusual with a guest, comes to you by email when it comes up.
 
 ### Costs
 
-Repairs and upkeep paid in October 2026 through the 17th, 3 homes combined: 3 items, $1,222. Your dashboard lists every cost by month with what it was for.
+Repairs and upkeep paid in October 2026 through the 17th, 3 homes combined: 3 items, $1,222. Your statement lists every cost with what it was for.
 
 ## Payouts by month
 
-The same figures as our [results pages](https://listandhost.com/results/), added together. Your dashboard shows your own home's months.
+The same figures as our [results pages](https://listandhost.com/results/), added together. Your statement shows your own home, one month at a time.
 
 ********
 
@@ -1719,7 +1719,7 @@ Payouts are what the platforms pay after their own fees, with taxes a platform p
 
 ## Your monthly statement
 
-The dashboard looks ahead. The statement closes the month, line by line. Both arrive by the 10th.
+The statement closes the month, line by line, by the 10th. The dashboard that looks ahead is being built.
 
 ### On every statement
 
@@ -1751,7 +1751,7 @@ Left for you, before your own costs**$3,920**
 
 Illustration only, not a forecast. Guests paid $700 in cleaning fees, which covered the 7 turns. Our fee is taken from nightly revenue, never from cleaning fees or taxes. Your own costs, like utilities, insurance, repairs and supplies, are not shown.
 
-## Want this view for your home?
+## Want this kind of reporting for your home?
 
 Start with a low to high range for your home in seconds. It is an estimate with its basis, not a promise.
 
@@ -1946,7 +1946,7 @@ Market detail: [Fort Worth Airbnb income](https://listandhost.com/blog/how-much-
 # Apply for Your Checked Estimate
 
 Source: https://listandhost.com/apply/
-Updated: 2026-10-18
+Updated: 2026-10-19
 Summary: Three short steps, about two minutes. Tell us about your home and where things stand, and a one page checked estimate arrives within one business day.
 
 Tell us about your home and where things stand. A person on our team checks your market, your listing if you have one, and the homes it competes with, then emails a one page estimate with the basis for every number. About two minutes. No phone number asked, and you sign nothing.
@@ -1976,7 +1976,7 @@ Our team runs three short term rentals every day with our own pricing and messag
 
 **164** nights booked across the three homes, July to October
 
-**4.91** Airbnb rating on the glass house, a Guest Favorite
+**4.9** Airbnb rating on the glass house, a Guest Favorite
 
 **100%** response rate on every Airbnb listing
 
@@ -1988,7 +1988,7 @@ A high end retreat, a brand new listing with no reviews, and a city home that li
 
 ### Glass house with a hot tub
 
-27 of 31 October nights booked, $502 average night, 4.91 on Airbnb as a Guest Favorite.
+27 of 31 October nights booked, $502 average night, 4.9 on Airbnb as a Guest Favorite.
 
 ### Cabin loft launch
 
@@ -2002,8 +2002,8 @@ October 77% booked, up from 39% in August. Payouts up 52% over the same months.
 
 | Home | First stay | Nights booked | Payouts | Airbnb rating |
 | - | - | - | - | - |
-| Glass house, Buffalo River region | July 15, 2026 | 77 | $32,143 | 4.91 from 11 reviews, Guest Favorite |
-| 3 bedroom home, Fort Worth | July 2, 2026 | 71 | $14,746 | 4.86 from 14 reviews |
+| Glass house, Buffalo River region | July 15, 2026 | 77 | $32,143 | 4.9 from 11 reviews, Guest Favorite |
+| 3 bedroom home, Fort Worth | July 2, 2026 | 71 | $14,746 | 4.9 from 14 reviews |
 | Cabin loft, Buffalo River region | October 8, 2026 | 16 | $1,709 | New, 1 review, five stars |
 | All three homes |  | 164 | $48,598 |  |
 
@@ -2126,7 +2126,7 @@ A 3 bedroom home near Dickies Arena and the Stockyards in Fort Worth that sleeps
 | 6 | Fees and the total guests see | The cleaning fee is $110 for a home that sleeps 8, and it is part of the stay total guests compare in search. | No change. | Pass |
 | 7 | Title and first lines | The title leads with Dickies, TCU and the Stockyards. Guests also name the Convention Center in reviews, and the title does not. | Test the Convention Center in the title or the first line. | Fix |
 | 8 | Photos and accuracy | Two four star reviews mention parking. The garage is tight for two cars and the driveway fits one. | Say exactly how many cars fit, in the listing and in the check in message. | Fix |
-| 9 | Reviews | 4.86 stars from 14 reviews. Guests repeat the same things: clean, close to everything, quick answers, great beds. One wrote: “Great spot and great location!” (Guest, Oct 2026) | Every guest gets a review and a thank you note. Five star reviews get a public reply. | Pass |
+| 9 | Reviews | 4.9 stars from 14 reviews. Guests repeat the same things: clean, close to everything, quick answers, great beds. One wrote: “Great spot and great location!” (Guest, Oct 2026) | Every guest gets a review and a thank you note. Five star reviews get a public reply. | Pass |
 | 10 | Channels and calendar | Live on Airbnb, Vrbo, Booking.com and a direct booking site, all on one calendar. A night sold on one closes on the others. | No change. | Pass |
 | 11 | Booking settings | Instant book is on for all three platforms. Cancellation on Airbnb is Firm. | No change. | Pass |
 | 12 | Guest messages | Check in steps, checkout reminders and review notes go out by rule. Questions the templates do not cover go to a person. | No change. | Pass |
@@ -2607,7 +2607,7 @@ Checked October 17, 2026. We are a management company, so we have a stake in you
 
 A co host is someone you add to your listing to help run it. On Airbnb, the owner picks the access level: full access (calendar, pricing, listing details and reservations), calendar and messaging, or calendar only. Only the listing owner can set up or change a co host's payout. You keep the listing, the reviews and the payouts (Airbnb Help Center).
 
-Airbnb launched its Co-Host Network in October 2024 to help owners find local co hosts, and said those co hosts averaged 4.86 stars (Airbnb Newsroom). Fees are agreed between owner and co host. A solo co host can be excellent. The question is what one person can cover.
+Airbnb launched its Co-Host Network in October 2024 to help owners find local co hosts, and said those co hosts averaged 4.9 stars (Airbnb Newsroom). Fees are agreed between owner and co host. A solo co host can be excellent. The question is what one person can cover.
 
 The full explainer, with duties and costs side by side: [Airbnb co host vs property manager](https://listandhost.com/blog/airbnb-co-host-vs-property-manager/).
 
@@ -2754,7 +2754,7 @@ The middle column describes the market, not any one company. Companies differ a 
 | Repairs and supplies | Vendor cost, sometimes plus a coordination markup that varies by company (Awning, 2026). | At cost, with receipts. |
 | Agreement | Across the market, terms range from no long term contract to 1 to 3 years, with 90 days notice to cancel at one large company (Awning, 2026). | Term and notice quoted in writing after a free look, before you sign anything. |
 | History and size | Often years of history, many homes and a large support staff. | A small team with a short record: the homes our team runs, every number explained on our results page. |
-| Guest ratings | Airbnb reported in October 2024 that large managers, those with more than 30 active listings, averaged 4.62 stars, against 4.86 for co hosts in its Co-Host Network. That is a group average, not a score for any one company. | A Guest Favorite rated 4.9 among the homes our team runs. See our results page. |
+| Guest ratings | Airbnb reported in October 2024 that large managers, those with more than 30 active listings, averaged 4.62 stars, against 4.9 for co hosts in its Co-Host Network. That is a group average, not a score for any one company. | A Guest Favorite rated 4.9 among the homes our team runs. See our results page. |
 
 Market figures come from a 2026 fee guide and an Airbnb announcement, listed at the bottom of the page. The 4.9 rating was read from the public Airbnb listing on October 16, 2026.
 
@@ -2827,11 +2827,11 @@ Whoever you hire, know what your home could book first. The instant estimator sh
 
 Source: https://listandhost.com/results/buffalo-river-glass-house/
 Updated: 2026-10-18
-Summary: Real numbers from a glass house in the Buffalo River region: 27 of 31 October 2026 nights booked as of Oct 16, a 4.91 rating, and the moves behind it.
+Summary: Real numbers from a glass house in the Buffalo River region: 27 of 31 October 2026 nights booked as of Oct 16, a 4.9 rating, and the moves behind it.
 
 A glass house with a hot tub, listed on Airbnb, Vrbo, Booking.com and a direct booking site, and run every day with our own pricing and messaging engine, which took over its prices on September 21, 2026. Here is what it booked, what it paid out, and the moves behind each number, with the nights booked before that date kept apart.
 
-**4.91** Airbnb rating from 11 reviews, Guest Favorite
+**4.9** Airbnb rating from 11 reviews, Guest Favorite
 
 **27 of 31** October nights booked
 
@@ -2917,7 +2917,7 @@ That is what the public Airbnb listing shows. Check in details go out on their o
 
 That count covers Airbnb, Vrbo and Booking.com. On Airbnb and Vrbo we review each guest the day they leave, then send a thank you note. Five star reviews get a short public reply. Anything less gets a careful reply, approved by a person and written for the next guest. We never offer anything in exchange for a review.
 
-## 4.91 on Airbnb, a Guest Favorite
+## 4.9 on Airbnb, a Guest Favorite
 
 Cleanliness 5.0. Accuracy, check in and communication 4.9. Location and value 4.7. From 11 reviews, read on the public listing on October 16, 2026.
 
@@ -2958,7 +2958,7 @@ Ratings, review counts, Guest Favorite status and response rate were read from t
 
 Source: https://listandhost.com/results/fort-worth-home/
 Updated: 2026-10-18
-Summary: Real numbers from a 3 bedroom Fort Worth home near Dickies Arena: 24 of 31 October 2026 nights booked as of Oct 16, a 4.86 rating, and how it is priced.
+Summary: Real numbers from a 3 bedroom Fort Worth home near Dickies Arena: 24 of 31 October 2026 nights booked as of Oct 16, a 4.9 rating, and how it is priced.
 
 A 3 bedroom home with a garage near Dickies Arena, TCU and the Stockyards, launched on Airbnb in July 2026, now also on Vrbo, Booking.com and a direct booking site. Here is how bookings and payouts grew, and the pricing moves behind them.
 
@@ -2968,7 +2968,7 @@ A 3 bedroom home with a garage near Dickies Arena, TCU and the Stockyards, launc
 
 **23** nights in a row booked, October 2 to 25
 
-**4.86** Airbnb rating from 14 reviews
+**4.9** Airbnb rating from 14 reviews
 
 As of October 16, 2026. October is not over, so its figures are booked, not earned. How we counted is at the bottom of this page.
 
@@ -3050,7 +3050,7 @@ Floors and minimum stays are already in place for the 2027 Fort Worth Stock Show
 
 On Airbnb, cleanliness, check in and communication all rate 5.0, and 12 of 14 reviews are five stars. Check in details go out on their own before arrival. Early check in and late checkout requests get an answer drafted from who arrives and leaves that day, approved by a person. We never offer anything in exchange for a review.
 
-## 4.86 on Airbnb from 14 reviews
+## 4.9 on Airbnb from 14 reviews
 
 Cleanliness, check in and communication 5.0. Accuracy 4.9. Value 4.8. Location 4.3. Read on the public listing on October 16, 2026.
 
@@ -3070,7 +3070,7 @@ An estimate is not a promise of income. Every home and market is different.
 
 ### Glass house with a hot tub
 
-27 of 31 October nights booked, $502 average night, 4.91 on Airbnb as a Guest Favorite.
+27 of 31 October nights booked, $502 average night, 4.9 on Airbnb as a Guest Favorite.
 
 ### Cabin loft launch
 
@@ -3201,7 +3201,7 @@ An estimate is not a promise of income. Every home and market is different.
 
 ### Glass house with a hot tub
 
-27 of 31 October nights booked, $502 average night, 4.91 on Airbnb as a Guest Favorite.
+27 of 31 October nights booked, $502 average night, 4.9 on Airbnb as a Guest Favorite.
 
 ### 3 bedroom home near Dickies Arena
 
@@ -3316,7 +3316,7 @@ October nights booked**24 of 31**
 
 August nights booked, for comparison**12 of 31**
 
-Airbnb rating**4.86 from 14 reviews**
+Airbnb rating**4.9 from 14 reviews**
 
 [Read the Fort Worth results](https://listandhost.com/results/fort-worth-home/)
 
@@ -3328,7 +3328,7 @@ October nights booked**27 of 31**
 
 Of those, booked before our pricing engine took over on September 21**15 of 27**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 [Read the glass house results](https://listandhost.com/results/buffalo-river-glass-house/)
 
@@ -3350,7 +3350,7 @@ The Stock Show and Rodeo from mid January to early February, big Dickies Arena s
 
 **What has the Fort Worth home your team runs done?**
 
-October 2026 has 24 of 31 nights booked, up from 12 of 31 in August, with $4,742 in October payouts booked after platform fees, as of October 16, 2026. October is not over, so those are bookings, not earnings. It is rated 4.86 on Airbnb from 14 reviews. Past results are not a promise of what your home will earn.
+October 2026 has 24 of 31 nights booked, up from 12 of 31 in August, with $4,742 in October payouts booked after platform fees, as of October 16, 2026. October is not over, so those are bookings, not earnings. It is rated 4.9 on Airbnb from 14 reviews. Past results are not a promise of what your home will earn.
 
 ## Guides for Fort Worth owners
 
@@ -3487,7 +3487,7 @@ October nights booked**27 of 31**
 
 Of those, booked before our pricing engine took over on September 21**15 of 27**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 [Read the glass house results](https://listandhost.com/results/buffalo-river-glass-house/)
 
@@ -3523,7 +3523,7 @@ Not always. The upper river often runs too low to float in summer and fall, so w
 
 **What has the glass house your team runs done?**
 
-October 2026 has 27 of 31 nights booked at an average of $502 a night, with $13,720 in October payouts booked after platform fees, as of October 16, 2026. October is not over, so those are bookings, not earnings. Our pricing engine took over the glass house's prices on September 21, 2026, so 15 of its 27 October nights were booked before it ran there and are not its work. It is rated 4.91 on Airbnb and is a Guest Favorite. Past results are not a promise of what your home will earn.
+October 2026 has 27 of 31 nights booked at an average of $502 a night, with $13,720 in October payouts booked after platform fees, as of October 16, 2026. October is not over, so those are bookings, not earnings. Our pricing engine took over the glass house's prices on September 21, 2026, so 15 of its 27 October nights were booked before it ran there and are not its work. It is rated 4.9 on Airbnb and is a Guest Favorite. Past results are not a promise of what your home will earn.
 
 ## Guides for Buffalo River region owners
 
@@ -3725,7 +3725,7 @@ October payouts booked, after platform fees**$4,742**
 
 Weekends through October 25**all sold**
 
-Airbnb rating**4.86 from 14 reviews**
+Airbnb rating**4.9 from 14 reviews**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -3915,7 +3915,7 @@ Booked before our pricing engine took over, Sep 21**15 of 27 nights**
 
 Thanksgiving, Christmas, New Year’s Eve**booked**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating from 11 reviews, read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -4100,7 +4100,7 @@ Booked before our pricing engine took over, Sep 21**15 of 27 nights**
 
 Thanksgiving, Christmas, New Year’s Eve**booked**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating from 11 reviews, read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -4283,7 +4283,7 @@ October payouts booked, after platform fees**$4,742**
 
 Weekends through October 25**all sold**
 
-Airbnb rating**4.86 from 14 reviews**
+Airbnb rating**4.9 from 14 reviews**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -4486,7 +4486,7 @@ Booked before our pricing engine took over, Sep 21**15 of 27 nights**
 
 Thanksgiving, Christmas, New Year’s Eve**booked**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating from 11 reviews, read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -4672,7 +4672,7 @@ October payouts booked, after platform fees**$4,742**
 
 Weekends through October 25**all sold**
 
-Airbnb rating**4.86 from 14 reviews**
+Airbnb rating**4.9 from 14 reviews**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -4858,7 +4858,7 @@ Booked before our pricing engine took over, Sep 21**15 of 27 nights**
 
 Thanksgiving, Christmas, New Year’s Eve**booked**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating from 11 reviews, read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -5046,7 +5046,7 @@ Booked before our pricing engine took over, Sep 21**15 of 27 nights**
 
 Thanksgiving, Christmas, New Year’s Eve**booked**
 
-Airbnb rating**4.91, Guest Favorite**
+Airbnb rating**4.9, Guest Favorite**
 
 From the booking records of the homes our team runs, October 16, 2026. October is not over, so its figures are booked, not earned. Payouts include guest cleaning fees. Stays are counted by arrival date. Payouts are counted in the month each payout is due, the same way as on our results pages. Rating from 11 reviews, read from the public Airbnb listing on October 16. Past results are not a promise of what your home will earn.
 
@@ -5064,7 +5064,7 @@ Our scan reads the first three pages of Zillow results for each town and keeps h
 # Airbnb Owner Guides: Income, Fees and Pricing
 
 Source: https://listandhost.com/blog/
-Updated: 2026-10-18
+Updated: 2026-10-19
 Summary: Airbnb owner guides on income, management fees, pricing and running a short term rental, with real numbers from homes our team runs. Free estimate.
 
 Fees, pricing, ranking and what a home can earn, with real numbers from the homes our team runs.
@@ -5291,7 +5291,7 @@ Name the main feature, the setting and who the home suits, not a pile of keyword
 
 ### Check 6: reviews
 
-A home with few reviews has to win on price until it earns them. Guest Favorite needs at least 5 reviews in the past 4 years, 1 of them in the past 2 years, plus strong ratings and reliability. Fix what guests repeat and never offer anything for a review, which Airbnb's policy forbids. Our glass house had a 4.91 rating from 11 reviews on October 16, 2026. More in our [ranking and Guest Favorite guide](https://listandhost.com/blog/airbnb-ranking-and-guest-favorite/).
+A home with few reviews has to win on price until it earns them. Guest Favorite needs at least 5 reviews in the past 4 years, 1 of them in the past 2 years, plus strong ratings and reliability. Fix what guests repeat and never offer anything for a review, which Airbnb's policy forbids. Our glass house had a 4.9 rating from 11 reviews on October 16, 2026. More in our [ranking and Guest Favorite guide](https://listandhost.com/blog/airbnb-ranking-and-guest-favorite/).
 
 ### Check 7: response time
 
@@ -5654,10 +5654,10 @@ No. The base matters as much as the rate. On our Fort Worth example, 15% of rent
 # Short Term Rental Management in Dallas and Arlington, 2026
 
 Source: https://listandhost.com/blog/dallas-arlington-short-term-rental-management/
-Updated: 2026-10-18
+Updated: 2026-10-19
 Summary: Dallas and Arlington short term rental management: stadium and long stay demand, neighborhoods, dated revenue ranges, costs and how we run it.
 
-List & Host team · October 18, 2026
+List & Host team · October 18, 2026 · Updated October 19, 2026
 
 Short term rental management in Dallas and Arlington means a local team runs the pricing, guest messages, cleaning and repairs for your home in exchange for a share of booking revenue; our full service fee is 20%, with no setup fee. Three data services put the average or median listing in the two cities at about $24,000 to $41,000 a year in booking revenue, for periods between August 2025 and September 2026, with Arlington's best nights tied to AT&T Stadium and Globe Life Field and Dallas filled by longer work, medical and family stays.
 
@@ -5756,7 +5756,7 @@ To be plain: our team does not run a home in Dallas or Arlington yet. The neares
 
 - **Steady months build.** It booked 12 of 31 nights in August, 20 of 30 in September and 24 of 31 in October, with payouts of $3,124, $3,840 and $4,742 after platform fees, cleaning fee included. October is booked, not earned, as of October 16, 2026.
 
-It is rated 4.86 on Airbnb from 14 reviews, and another home our team runs, a glass house in the Buffalo River region, is a Guest Favorite rated 4.91, both read October 16, 2026. See the [Fort Worth home results](https://listandhost.com/results/fort-worth-home/) and all [results from homes our team runs](https://listandhost.com/results/). Past results are not a promise of what your home will earn.
+It is rated 4.9 on Airbnb from 14 reviews, and another home our team runs, a glass house in the Buffalo River region, is a Guest Favorite rated 4.9, both read October 16, 2026. See the [Fort Worth home results](https://listandhost.com/results/fort-worth-home/) and all [results from homes our team runs](https://listandhost.com/results/). Past results are not a promise of what your home will earn.
 
 ## The costs that come out first
 
@@ -5796,7 +5796,7 @@ Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River 
 
 5. **Cleaning and repairs.** Local cleaners with a checklist and photos. Repairs over your limit come to you with a quote first.
 
-6. **Reporting.** A monthly statement and an [owner dashboard](https://listandhost.com/owner-dashboard/) for your home, both by the 10th of each month. Block dates for yourself at any time.
+6. **Reporting.** A monthly statement for your home by the 10th, with payouts, costs and every stay by check in date. An [online view](https://listandhost.com/owner-dashboard/) with nights booked ahead, upcoming stays and open nights is being built. Block dates for yourself at any time.
 
 Keeping your listing and cleaner? See co hosting on our [services page](https://listandhost.com/services/), and how our engine sets a price in the [dynamic pricing guide](https://listandhost.com/blog/dynamic-pricing-explained-for-owners/).
 
@@ -5871,7 +5871,7 @@ Three more figures from AirROI's Jasper area data, same period:
 
 - **The spread is wide.** The top quarter of listings earned $3,767 a month and the top tenth at least $5,916, against $2,153 for the middle listing.
 
-- **Great reviews are the norm.** The average rating is 4.92, and 77.2% of listings carry Airbnb's Guest Favorite badge. The glass house our team runs is rated 4.91 from 11 reviews and is a Guest Favorite, read October 16, 2026. Here that is the market average, not a standout. Our [Guest Favorite guide](https://listandhost.com/blog/airbnb-ranking-and-guest-favorite/) covers what drives it.
+- **Great reviews are the norm.** The average rating is 4.92, and 77.2% of listings carry Airbnb's Guest Favorite badge. The glass house our team runs is rated 4.9 from 11 reviews and is a Guest Favorite, read October 16, 2026. Here that is the market average, not a standout. Our [Guest Favorite guide](https://listandhost.com/blog/airbnb-ranking-and-guest-favorite/) covers what drives it.
 
 - **Revenue was soft.** Average revenue fell 3.7% from the year before.
 
@@ -6060,7 +6060,7 @@ Airbnb counts response rate as the share of new inquiries and booking requests a
 
 ### 8. Can I see three listings you run right now?
 
-Testimonials on a manager’s own site are easy to write. Live listings are not. In October 2024 Airbnb reported that co hosts in its Co-Host Network averaged 4.86 stars, against 4.62 for large managers with more than 30 active listings, both as of September 30, 2024. Those are group averages, so judge the listings in front of you. Our guide to [Airbnb ranking and Guest Favorite](https://listandhost.com/blog/airbnb-ranking-and-guest-favorite/) explains the badges.
+Testimonials on a manager’s own site are easy to write. Live listings are not. In October 2024 Airbnb reported that co hosts in its Co-Host Network averaged 4.9 stars, against 4.62 for large managers with more than 30 active listings, both as of September 30, 2024. Those are group averages, so judge the listings in front of you. Our guide to [Airbnb ranking and Guest Favorite](https://listandhost.com/blog/airbnb-ranking-and-guest-favorite/) explains the badges.
 
 **Good answer:** links you can open today. **Red flag:** screenshots only, or “our owners prefer privacy” for every home.
 
@@ -6817,7 +6817,7 @@ A co host rated below 4.7 may be hidden from the network's search, and below 4.5
 
 ## You keep the listing, reviews and payouts
 
-A co host joins your listing; they do not take it. The listing, its reviews and its payout account stay in your name, and removing a co host stops their payouts. Ask anyone you hire whether your home stays on your account. The glass house above is an Airbnb Guest Favorite rated 4.91 from 11 reviews (October 16, 2026), and that rating belongs to the listing, not to whoever runs it. With our co hosting you keep your listing, reviews, cleaner and payouts, and with full service the platforms pay you, never us. See our [services](https://listandhost.com/services/) and the records behind our numbers on our [results page](https://listandhost.com/results/).
+A co host joins your listing; they do not take it. The listing, its reviews and its payout account stay in your name, and removing a co host stops their payouts. Ask anyone you hire whether your home stays on your account. The glass house above is an Airbnb Guest Favorite rated 4.9 from 11 reviews (October 16, 2026), and that rating belongs to the listing, not to whoever runs it. With our co hosting you keep your listing, reviews, cleaner and payouts, and with full service the platforms pay you, never us. See our [services](https://listandhost.com/services/) and the records behind our numbers on our [results page](https://listandhost.com/results/).
 
 ## Questions owners ask
 
@@ -6979,7 +6979,7 @@ If you sell later, the test is not wasted. Payout reports and reviews give a buy
 
 ## Where List & Host fits
 
-We run short term rentals. We do not sell homes or set sale prices. Full service covers Fort Worth, [Arlington](https://listandhost.com/arlington/), [Dallas](https://listandhost.com/dallas/) and the Buffalo River region of Arkansas for 20% of booking revenue, with the launch included and no setup fee. Elsewhere in the United States we offer co hosting, a launch package or remote pricing, each quoted in writing and explained on our [services page](https://listandhost.com/services/). Our proof is the homes our team runs, one of them a Guest Favorite rated 4.91 on Airbnb as of October 16, 2026, and every figure with how we counted it is on our [results page](https://listandhost.com/results/).
+We run short term rentals. We do not sell homes or set sale prices. Full service covers Fort Worth, [Arlington](https://listandhost.com/arlington/), [Dallas](https://listandhost.com/dallas/) and the Buffalo River region of Arkansas for 20% of booking revenue, with the launch included and no setup fee. Elsewhere in the United States we offer co hosting, a launch package or remote pricing, each quoted in writing and explained on our [services page](https://listandhost.com/services/). Our proof is the homes our team runs, one of them a Guest Favorite rated 4.9 on Airbnb as of October 16, 2026, and every figure with how we counted it is on our [results page](https://listandhost.com/results/).
 
 **Before you buy a single bed,** [get a free earnings estimate](https://listandhost.com/estimate/) for your house: a low, likely and high range with the basis for every number, to hold up against your holding cost and other offers. An estimate is not a promise of income.
 
@@ -7413,7 +7413,7 @@ Red flags: a promised income figure, results you cannot trace to a real home, pr
 
 ## How List & Host runs Fort Worth homes
 
-Full service is 20% of booking revenue, with no setup fee. Guests pay the cleaning fee, repairs and supplies are billed at cost with receipts, and payouts go from the platforms straight to you. Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States. [Arlington](https://listandhost.com/arlington/) and [Dallas](https://listandhost.com/dallas/) are served from our Fort Worth base. From September 21 to October 16, 2026, our engine logged 133 nightly price changes and 52 minimum stay changes across the homes our team runs, each checked against a floor and read back. One of those homes is an Airbnb Guest Favorite rated 4.91 (read October 16, 2026). See our [services](https://listandhost.com/services/) and [results](https://listandhost.com/results/).
+Full service is 20% of booking revenue, with no setup fee. Guests pay the cleaning fee, repairs and supplies are billed at cost with receipts, and payouts go from the platforms straight to you. Full service in Fort Worth, the rest of Dallas Fort Worth and the Buffalo River region of Arkansas. Co hosting or remote pricing anywhere else in the United States. [Arlington](https://listandhost.com/arlington/) and [Dallas](https://listandhost.com/dallas/) are served from our Fort Worth base. From September 21 to October 16, 2026, our engine logged 133 nightly price changes and 52 minimum stay changes across the homes our team runs, each checked against a floor and read back. One of those homes is an Airbnb Guest Favorite rated 4.9 (read October 16, 2026). See our [services](https://listandhost.com/services/) and [results](https://listandhost.com/results/).
 
 ## Questions owners ask
 
@@ -7511,7 +7511,7 @@ Basis: how the work splits at the three homes our team runs, where people who li
 
 - **Calendars.** Airbnb, Vrbo, Booking.com and a direct site on one calendar, so a night sold on one closes on the others. Of the 35 stays booked at the glass house our team runs as of October 16, 2026, 7 came from Vrbo, Booking.com or our direct site. See our [booking site comparison](https://listandhost.com/blog/airbnb-vs-vrbo-vs-booking-com-for-owners/).
 
-- **Reviews.** Guests are reviewed the day they leave, and every review gets a reply. The glass house is rated 4.91 on Airbnb from 11 reviews, a Guest Favorite, as of October 16, 2026.
+- **Reviews.** Guests are reviewed the day they leave, and every review gets a reply. The glass house is rated 4.9 on Airbnb from 11 reviews, a Guest Favorite, as of October 16, 2026.
 
 Airbnb lets an owner add a co host at one of three access levels, up to full access with pricing and messages, so remote help works inside your listing. Our [co host vs property manager guide](https://listandhost.com/blog/airbnb-co-host-vs-property-manager/) compares the models and fees.
 
@@ -7684,7 +7684,7 @@ Here is the likely 3 bedroom, as an illustration, not a forecast.
 
 Our team runs two homes here, priced every morning by our own engine, with a local cleaner and a backup.
 
-- **A glass house** with 3 bedrooms plus a loft, a hot tub and room for 10: 68 of 92 nights booked from August 1 to October 31, 2026, at an average of $419 a night after discounts and before cleaning fees, October as booked on October 16. Rated 4.91 on Airbnb from 11 reviews and a Guest Favorite, read October 16, 2026. Our pricing engine took over its prices on September 21, 2026; 53 of those 68 nights were booked before then. See the [glass house results](https://listandhost.com/results/buffalo-river-glass-house/).
+- **A glass house** with 3 bedrooms plus a loft, a hot tub and room for 10: 68 of 92 nights booked from August 1 to October 31, 2026, at an average of $419 a night after discounts and before cleaning fees, October as booked on October 16. Rated 4.9 on Airbnb from 11 reviews and a Guest Favorite, read October 16, 2026. Our pricing engine took over its prices on September 21, 2026; 53 of those 68 nights were booked before then. See the [glass house results](https://listandhost.com/results/buffalo-river-glass-house/).
 
 - **A one bedroom cabin loft** that sleeps 4: live since September 24, 2026, priced at $89 on weeknights and $149 on weekends until its first three reviews, with 16 of 31 October nights booked at an average of $97 as of October 16. A bought cabin starts the same way, as a new listing. See the [cabin loft launch](https://listandhost.com/results/ozark-cabin-loft/).
 
@@ -8025,7 +8025,7 @@ A co host is a person or a company you add to your Airbnb listing, at one of thr
 
 Airbnb can split each payout for you: the cleaning fee, the cleaning fee plus a percentage, a percentage of each booking, or a fixed amount per booking. The split is worked out from the host's earnings after Airbnb's host fee and covers Airbnb stays only. Vrbo has no co host role and no payout split, so a Vrbo helper gets manager access to your account and you pay them yourself (Hostfully, May 2026).
 
-Airbnb launched its Co-Host Network in October 2024 with more than 10,000 co hosts in 10 countries, including the United States. Airbnb said they averaged 4.86 stars, against 4.62 for property managers with more than 30 active listings, as of September 30, 2024, and footnoted that the rating reflects guest reviews of the listings, not the co host's own work. We are a small team, not one of those large managers, but the lesson holds: size does not earn reviews. Attention does.
+Airbnb launched its Co-Host Network in October 2024 with more than 10,000 co hosts in 10 countries, including the United States. Airbnb said they averaged 4.9 stars, against 4.62 for property managers with more than 30 active listings, as of September 30, 2024, and footnoted that the rating reflects guest reviews of the listings, not the co host's own work. We are a small team, not one of those large managers, but the lesson holds: size does not earn reviews. Attention does.
 
 Co hosts come in three shapes: **a local host** who co hosts on the side and often answers fast (ask who covers when they travel), **a co hosting company** that runs messages, pricing and the cleaning schedule, and **a remote co host** who runs messages and pricing from anywhere while everything at the door stays with your own people.
 
@@ -8117,7 +8117,7 @@ We offer both in DFW. Here is what each looks like with us.
 
 - **Co hosting.** You keep your listing, reviews, cleaner and payouts. We run pricing, guest messages, the cleaning schedule and reviews, at a price quoted in writing after a [free look](https://listandhost.com/services/#free-look).
 
-Both are on our [services page](https://listandhost.com/services/), with local detail for [Fort Worth](https://listandhost.com/fort-worth/), [Arlington](https://listandhost.com/arlington/) and [Dallas](https://listandhost.com/dallas/), and our [Fort Worth Airbnb management guide](https://listandhost.com/blog/fort-worth-airbnb-management-owner-guide/) and [Arlington income by bedroom](https://listandhost.com/blog/how-much-does-an-airbnb-make-in-arlington-tx/) go deeper on two of those markets. Both run on the same engine as the three homes our team runs, one of them a Guest Favorite rated 4.91 on Airbnb as of October 16, 2026. The numbers and how we count them are on our [results page](https://listandhost.com/results/).
+Both are on our [services page](https://listandhost.com/services/), with local detail for [Fort Worth](https://listandhost.com/fort-worth/), [Arlington](https://listandhost.com/arlington/) and [Dallas](https://listandhost.com/dallas/), and our [Fort Worth Airbnb management guide](https://listandhost.com/blog/fort-worth-airbnb-management-owner-guide/) and [Arlington income by bedroom](https://listandhost.com/blog/how-much-does-an-airbnb-make-in-arlington-tx/) go deeper on two of those markets. Both run on the same engine as the three homes our team runs, one of them a Guest Favorite rated 4.9 on Airbnb as of October 16, 2026. The numbers and how we count them are on our [results page](https://listandhost.com/results/).
 
 ## Questions owners ask
 
@@ -8736,7 +8736,7 @@ That gap is not all the tub. Homes with tubs are often bigger and better equippe
 
 ## Our own experience
 
-The glass house our team runs in the Buffalo River region has a hot tub. It is rated 4.91 on Airbnb and is a Guest Favorite. For October 2026 it has 27 of 31 nights booked as of October 16, at an average of $502 a night. The tub is one reason among many, along with the views, the space and the design, so we do not credit it with a share of that number. See the [glass house results page](https://listandhost.com/results/buffalo-river-glass-house/) for the full picture.
+The glass house our team runs in the Buffalo River region has a hot tub. It is rated 4.9 on Airbnb and is a Guest Favorite. For October 2026 it has 27 of 31 nights booked as of October 16, at an average of $502 a night. The tub is one reason among many, along with the views, the space and the design, so we do not credit it with a share of that number. See the [glass house results page](https://listandhost.com/results/buffalo-river-glass-house/) for the full picture.
 
 At our Fort Worth home we ordered an entry level 6 to 7 person spa for $3,599.99 before tax, and budgeted about $5,000 all in with wiring and placement. We will add its results to this guide once it has a season of bookings.
 
@@ -9398,7 +9398,7 @@ Demand for the area keeps growing. The Buffalo National River logged 1,686,348 v
 | September 2026 | 25 of 30 | 83% | $306 | $7,419 |
 | October 2026, booked to date | 27 of 31 | 87% | $502 | $13,720 |
 
-As of October 16, 2026. Average night is what guests paid after discounts, before cleaning fees, taxes and platform fees. Payouts are after platform fees and before cleaning and other costs. October is not over, so its figures are booked, not earned. The home is rated 4.91 on Airbnb and is a Guest Favorite. Full details and our counting method are on the [glass house results page](https://listandhost.com/results/buffalo-river-glass-house/).
+As of October 16, 2026. Average night is what guests paid after discounts, before cleaning fees, taxes and platform fees. Payouts are after platform fees and before cleaning and other costs. October is not over, so its figures are booked, not earned. The home is rated 4.9 on Airbnb and is a Guest Favorite. Full details and our counting method are on the [glass house results page](https://listandhost.com/results/buffalo-river-glass-house/).
 
 ## Spring: March to May
 
@@ -9871,7 +9871,7 @@ Things break in homes that host hundreds of guests a year. Your manager should h
 
 ## 7. Money and reporting
 
-You should get a monthly statement showing every booking, the platform fees, cleaning, repairs and exactly what was paid to you. If a manager cannot show you that clearly, keep looking. Here is [an example of the dashboard and statement an owner gets](https://listandhost.com/owner-dashboard/), with combined numbers from the homes our team runs.
+You should get a monthly statement showing every booking, the platform fees, cleaning, repairs and exactly what was paid to you. If a manager cannot show you that clearly, keep looking. Here is [an example of the statement an owner gets and the online view we are building](https://listandhost.com/owner-dashboard/), with combined numbers from the homes our team runs.
 
 ## Questions to ask any manager before you sign
 

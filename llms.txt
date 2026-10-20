@@ -30,8 +30,8 @@
 - [Airbnb Listing Setup and Launch Package](https://listandhost.com/services/setup-and-launch/): A one time setup for a home not yet listed: listing copy, photo order, pricing plan, three sites on one calendar, rules and messages. Then you host it.
 - [Airbnb Pricing Management, Run Remotely](https://listandhost.com/services/remote-pricing/): Remote pricing for short term rentals anywhere in the US: our engine sets nightly rates and minimum stays every day inside your floor. You keep hosting.
 - [Airbnb Management Pricing, Fees and Payouts](https://listandhost.com/pricing/): What full service costs, what it covers, what is billed at cost and how payouts reach you. No setup fee, no markup. Other offers quoted in writing.
-- [How It Works: Pricing Engine and Dashboard](https://listandhost.com/how-it-works/): How our pricing and messaging engine runs a rental every day, what a person still decides, and what owners see every month on the statement and dashboard.
-- [Owner Dashboard Example](https://listandhost.com/owner-dashboard/): See the dashboard and statement an owner gets each month, shown with real combined numbers from the homes our team runs. No guest names or addresses.
+- [How It Works: Pricing Engine and Dashboard](https://listandhost.com/how-it-works/): How our pricing and messaging engine runs a rental every day, what a person still decides, what owners see on the statement, and the view we are building.
+- [Owner Dashboard Example](https://listandhost.com/owner-dashboard/): The monthly statement an owner gets and the online view we are building, with combined numbers from the homes our team runs. No guest names or addresses.
 - [Free Airbnb Income Calculator: Gross and What You Keep](https://listandhost.com/estimate/): Free Airbnb income calculator for Fort Worth, Dallas, the Ozarks and the Texas Hill Country. Low, likely and high yearly estimates, each with its sources.
 - [Apply for Your Checked Estimate](https://listandhost.com/apply/): Three short steps, about two minutes. Tell us about your home and where things stand, and a one page checked estimate arrives within one business day.
 - [Results: Real Numbers From Homes Our Team Runs](https://listandhost.com/results/): Real booking numbers from the three homes our team runs in the Buffalo River region and Fort Worth, with the period and basis for every figure.
@@ -50,8 +50,8 @@
 
 ## Results from homes our team runs
 
-- [Glass House Case Study: Buffalo River Region Results](https://listandhost.com/results/buffalo-river-glass-house/): Real numbers from a glass house in the Buffalo River region: 27 of 31 October 2026 nights booked as of Oct 16, a 4.91 rating, and the moves behind it.
-- [Fort Worth Home Case Study: Event Pricing and Fill](https://listandhost.com/results/fort-worth-home/): Real numbers from a 3 bedroom Fort Worth home near Dickies Arena: 24 of 31 October 2026 nights booked as of Oct 16, a 4.86 rating, and how it is priced.
+- [Glass House Case Study: Buffalo River Region Results](https://listandhost.com/results/buffalo-river-glass-house/): Real numbers from a glass house in the Buffalo River region: 27 of 31 October 2026 nights booked as of Oct 16, a 4.9 rating, and the moves behind it.
+- [Fort Worth Home Case Study: Event Pricing and Fill](https://listandhost.com/results/fort-worth-home/): Real numbers from a 3 bedroom Fort Worth home near Dickies Arena: 24 of 31 October 2026 nights booked as of Oct 16, a 4.9 rating, and how it is priced.
 - [Cabin Loft Case Study: Launching a New Listing](https://listandhost.com/results/ozark-cabin-loft/): How a new cabin loft listing, live since Sep 24, 2026, booked 6 stays in its first 3 weeks, with the launch pricing and gap fills behind it.
 
 ## Markets
