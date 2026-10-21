@@ -25,9 +25,239 @@
 <link rel="apple-touch-icon" href="/logo-512.png">
 <link rel="alternate" type="application/rss+xml" title="List &amp; Host owner guides" href="/feed.xml">
 <link rel="preload" href="/fonts/sora-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css">
-<style>.box .statement{background:#F1F4F9;border-color:#E2E6EE;color:#16213A}
-.box .statement .total{border-top-color:#E2E6EE}</style>
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Sora";font-style:normal;font-weight:100 800;font-display:swap;src:url("/fonts/sora-var.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url("/fonts/inter-var.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:113.57%;ascent-override:85.41%;descent-override:25.53%;line-gap-override:0%}
+@font-face{font-family:"Inter Fallback";src:local("Arial");size-adjust:106.02%;ascent-override:91.38%;descent-override:22.75%;line-gap-override:0%}
+:root{
+--ink:#16213A;--ink2:#3E4A63;--muted:#6B7488;--line:#E2E6EE;
+--ground:#FBFAF7;--panel:#FFFFFF;--soft:#F1F4F9;
+--accent:#B8862B;--accent-ink:#8A6112;--deep:#16213A;--on-deep:#F6F3EC;
+--radius:14px;
+--head:72px;
+--crumb:42px;
+--display:"Sora","Sora Fallback","Segoe UI",system-ui,sans-serif;
+--body:"Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:84px}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--ink)}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(34px,5.5vw,58px);font-weight:700}
+h2{font-size:clamp(26px,3.6vw,38px);font-weight:700}
+h3{font-size:20px;font-weight:600}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+.narrow{max-width:760px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.lead{font-size:clamp(18px,2vw,21px);color:var(--ink2);max-width:62ch}
+.muted{color:var(--muted)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;background:var(--deep);color:var(--on-deep);padding:8px 12px;border-radius:6px;z-index:50}
+.skip-link:focus{left:8px}
+.short-answer{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin-top:18px;max-width:62ch}
+.short-answer .eyebrow{display:block;margin-bottom:6px}
+.short-answer p{color:var(--ink2);font-size:16px;line-height:1.6}
+.fit{display:grid;gap:8px;max-width:62ch}
+.fit-row{display:flex;gap:10px;flex-wrap:wrap}
+.fit-row select{flex:1;min-width:220px}
+.hero-fit{margin-top:28px;gap:12px}
+.hero-fit .fit-row label{flex:1 1 220px}
+.hero-fit .fit-row label.hf-beds{flex:0 1 140px}
+.hero-fit .fit-row select{min-width:0}
+.hero-fit .cta{margin-top:4px}
+.form-error{color:#9A3412;font-size:14px;font-weight:600}
+.top{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink)}
+.logo svg{flex:none}
+.nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav a{text-decoration:none;font-size:15px;font-weight:600;color:var(--ink2)}
+.nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;padding:13px 22px;border-radius:999px;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:var(--on-deep);cursor:pointer;font-family:var(--body)}
+.btn:hover{background:#0E1628}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--soft)}
+.btn.gold{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.gold:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nav .btn{padding:9px 16px;font-size:14px;color:var(--on-deep)}
+.menu-toggle{display:none}
+.hero{padding-block:72px 64px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--accent-ink)}
+.hero h1 .eyebrow{font-family:var(--body);line-height:1.6}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero .lead{margin-top:18px}
+.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.proof div{display:grid;gap:2px}
+.proof b{font-family:var(--display);font-size:24px}
+.proof span{font-size:14px;color:var(--muted)}
+.card-stack{background:var(--deep);color:var(--on-deep);border-radius:22px;padding:28px;display:grid;gap:16px;box-shadow:0 30px 60px -30px rgba(22,33,58,.45)}
+.card-stack h3,.card-stack h2{color:var(--on-deep)}
+h2.h3{font-size:20px;font-weight:600}
+.statement{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;display:grid;gap:8px;font-size:15px}
+.statement .row{display:flex;justify-content:space-between;gap:12px}
+.statement .row b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.statement .total{border-top:1px solid rgba(255,255,255,.18);padding-top:8px;font-weight:700}
+.pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(184,134,43,.2);color:#F3D59B;width:max-content}
+section{padding-block:72px}
+.section-head{display:grid;gap:12px;margin-bottom:36px;max-width:760px}
+.alt{background:var(--soft)}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:10px;align-content:start}
+.box p{color:var(--ink2);font-size:16px}
+.icon{width:40px;height:40px;border-radius:10px;background:var(--soft);display:grid;place-items:center;color:var(--accent-ink)}
+.alt .icon{background:var(--ground)}
+.steps{counter-reset:s}
+.steps .box{position:relative;padding-top:56px}
+.steps .box::before{counter-increment:s;content:counter(s);position:absolute;top:20px;left:24px;font-family:var(--display);font-weight:700;font-size:15px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--on-deep);display:grid;place-items:center}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.checks li{padding-left:30px;position:relative;color:var(--ink2)}
+.checks li::before{content:"";position:absolute;left:0;top:.35em;width:18px;height:18px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.price{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:center}
+.price-card{background:var(--panel);border:2px solid var(--ink);border-radius:20px;padding:32px;display:grid;gap:16px}
+.price-card .big{font-family:var(--display);font-size:64px;font-weight:700;line-height:1}
+.price-card .big small{font-size:18px;font-weight:400;color:var(--muted)}
+.mission{background:var(--deep);color:var(--on-deep)}
+.mission .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;align-items:center}
+.mission h2{color:var(--on-deep)}
+.mission p{color:#D7DCE6}
+.mission .eyebrow{color:#E9C27A}
+.mission .btn.ghost{border-color:#E9C27A;color:#F6F3EC}
+.mission .btn.ghost:hover{background:rgba(255,255,255,.06)}
+.quote{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);line-height:1.35;font-weight:600;color:#F6F3EC}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+details+details{margin-top:10px}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--accent-ink)}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--ink2)}
+.form-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:start}
+form.estimate{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;gap:14px}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--ink2)}
+input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #CDD3DE;border-radius:10px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:96px;resize:vertical}
+.full{grid-column:1/-1}
+.fine{font-size:13px;color:var(--muted)}
+.post-list{display:grid;gap:16px}
+.post-card{display:grid;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-decoration:none}
+.post-card:hover{border-color:var(--ink2)}
+.post-card p{color:var(--ink2)}
+article.post{padding-block:56px}
+article.post h1{font-size:clamp(30px,4.4vw,46px)}
+article.post h2{font-size:26px;margin-top:40px;margin-bottom:10px}
+article.post h3{margin-top:26px;margin-bottom:6px}
+article.post p,article.post li{color:#2B3549;font-size:18px;line-height:1.7}
+article.post p+p{margin-top:16px}
+article.post ul,article.post ol{padding-left:22px;display:grid;gap:8px}
+.market-detail h2{font-size:26px;margin:40px 0 10px}
+.market-detail h2:first-child{margin-top:0}
+.market-detail p,.market-detail li{color:#2B3549;font-size:18px;line-height:1.7}
+.market-detail p+p,.market-detail ul+p{margin-top:16px}
+.market-detail ul{padding-left:22px;display:grid;gap:8px;margin-top:12px}
+.post-meta{color:var(--muted);font-size:15px;margin-top:12px}
+.callout{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px;margin-top:28px}
+.table-wrap{overflow-x:auto;margin-top:18px}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sources{font-size:14px;color:var(--muted);margin-top:36px}
+.sources a{color:var(--muted)}
+footer{background:#0F1729;color:#C9CFDB;padding-block:48px 36px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px}
+footer a{color:#E6E9F0;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .logo{color:#F6F3EC}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer .foot-h{font-weight:700;font-family:var(--display);font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E9C27A;margin:0 0 12px}
+.notes-form{display:grid;gap:8px;max-width:38ch}
+.notes-form label{color:#C9CFDB}
+.notes-row{display:flex;gap:8px;flex-wrap:wrap}
+.notes-row input{flex:1;min-width:180px;border-color:#2C3650}
+.notes-row .btn{padding:11px 18px;font-size:15px}
+.notes-form .fine{color:#8F98AB}
+.notes-form .fine a{color:#C9CFDB;text-decoration:underline}
+.legal{max-width:1120px;margin:32px auto 0;padding-inline:20px;font-size:13px;color:#8F98AB}
+.post-crumbs{font-size:14px;color:var(--muted);margin-bottom:14px}
+.post-crumbs a{color:var(--muted)}
+.crumb-bar{padding-top:20px}
+.crumb-bar .post-crumbs{margin:0}
+.crumb-bar+section.hero,.crumb-bar+.cs-page>section.hero:first-child{padding-top:36px}
+.box .statement{background:var(--soft);border-color:var(--line)}
+.box .statement .total{border-top-color:var(--line)}
+.src-band{padding-block:8px 32px}
+.src-band .sources{margin-top:0}
+.related{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:18px 22px;margin-top:36px}
+article.post .related h2{font-size:20px;margin:0 0 10px}
+article.post .related li{font-size:16px;line-height:1.6}
+.compare{min-width:640px}
+.compare td{vertical-align:top}
+.compare td:first-child{font-weight:600;color:#16213A;width:22%}
+.compare th:nth-child(3),.compare td:nth-child(3){background:#FBF6EC}
+.compare tr.group td{background:#F1ECE1;color:#16213A;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.skip ul{margin:0;padding-left:20px;display:grid;gap:8px}
+.skip{border-left:4px solid #B8862B}
+.cmp-cta{text-align:center;display:grid;gap:18px;justify-items:center}
+.read-next{margin-top:40px}
+.read-next .grid{margin-top:14px}
+article.post .read-next h3{margin:0}
+.short-form .fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+.next-steps{margin:16px 0 0;padding-left:22px;display:grid;gap:8px;color:var(--ink2);font-size:18px}
+.post-card h3{font-size:19px}
+.gq{margin:0}
+.gq blockquote{margin:0;font-family:var(--display);font-size:18px;line-height:1.45;font-weight:600;color:var(--ink)}
+.gq figcaption{font-size:14px;color:var(--muted)}
+.gq-strip{margin-top:14px}
+.home-audit{margin-top:22px}
+.price-card .btn.ghost{justify-self:stretch}
+.sticky-cta{display:none}
+@media (min-width:900px){
+main.panels>section,main.panels>.cs-page>section{min-height:calc(100vh - var(--head));min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;scroll-margin-top:0;padding-block:48px}
+main.panels>section>.wrap,main.panels>.cs-page>section>.wrap{width:100%}
+main.panels .section-head{margin-bottom:28px}
+main.panels>.crumb-bar{scroll-snap-align:start}
+main.panels>.crumb-bar+section,main.panels>.crumb-bar+.cs-page>section:first-child{min-height:calc(100vh - var(--head) - var(--crumb));min-height:calc(100svh - var(--head) - var(--crumb));scroll-snap-align:none}
+main.panels section.src-band{min-height:0;scroll-snap-align:none;display:block;padding-block:8px 32px}
+main.panels .proof>div{flex:1 1 0;min-width:0}
+}
+@media (max-width:900px){
+.hero .wrap,.price,.mission .wrap,.form-wrap{grid-template-columns:minmax(0,1fr)}
+.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+footer .wrap>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+body{font-size:16px}
+.nav{display:none}
+.nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--ground);padding:16px 20px 20px;border-bottom:1px solid var(--line)}
+.menu-toggle{display:inline-flex;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;font-weight:600;color:var(--ink)}
+.g2,.g3,.g4,.fields{grid-template-columns:minmax(0,1fr)}
+.statement .row b{white-space:normal;text-align:right;overflow-wrap:anywhere}
+section{padding-block:52px}
+.hero{padding-block:44px}
+footer .wrap{grid-template-columns:minmax(0,1fr)}
+.price-card .big{font-size:52px}
+.short-form .fields{grid-template-columns:minmax(0,1fr)}
+.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,247,.96);border-top:1px solid #E2E6EE;backdrop-filter:blur(8px);transition:transform .2s ease}
+.sticky-cta .btn{flex:1;min-height:48px}
+.sticky-cta.is-hidden{transform:translateY(120%)}
+body.has-sticky-cta{padding-bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){.sticky-cta{transition:none}}
+@media (min-width:900px){html{scroll-snap-type:y proximity;scroll-padding-top:var(--head)}}
+.box .statement{background:#F1F4F9;border-color:#E2E6EE;color:#16213A}
+.box .statement .total{border-top-color:#E2E6EE}
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://listandhost.com/#org", "name": "List & Host", "alternateName": ["List and Host"], "url": "https://listandhost.com/", "email": "team@listandhost.com", "logo": {"@type": "ImageObject", "url": "https://listandhost.com/logo-512.png", "width": 512, "height": 512}, "image": "https://listandhost.com/og-default.png", "slogan": "We list your home. We host your guests. You get paid.", "description": "List & Host is a short term rental management company that lists homes on Airbnb, Vrbo and Booking.com, prices them every day, answers guests, schedules cleaning and sends a monthly statement.", "foundingDate": "2026", "mainEntityOfPage": {"@id": "https://listandhost.com/about/#webpage"}, "areaServed": [{"@type": "City", "name": "Fort Worth", "containedInPlace": {"@type": "State", "name": "Texas"}}, {"@type": "Place", "name": "Dallas Fort Worth area, Texas"}, {"@type": "Place", "name": "Buffalo National River region, Arkansas"}, {"@type": "Country", "name": "United States"}], "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "email": "team@listandhost.com", "availableLanguage": "en"}, "knowsAbout": ["short term rental management", "vacation rental pricing", "co hosting", "Airbnb", "Vrbo", "Booking.com"]}, {"@type": "Service", "@id": "https://listandhost.com/services/co-hosting/#service", "name": "Co hosting", "serviceType": "Short term rental co hosting", "provider": {"@id": "https://listandhost.com/#org"}, "areaServed": {"@type": "Country", "name": "United States"}, "description": "The owner keeps the listing, the reviews, the payouts and a local cleaner. We run daily pricing, every guest message, the cleaning schedule, calendars and reviews as co host. Price quoted in writing after a free look."}, {"@type": "FAQPage", "@id": "https://listandhost.com/services/co-hosting/#faq", "mainEntity": [{"@type": "Question", "name": "What does an Airbnb co host do?", "acceptedAnswer": {"@type": "Answer", "text": "A co host is someone the listing owner adds to help run the listing. Depending on the access the owner grants, a co host can set prices, update the calendar, edit the listing and message guests. With us, that means daily pricing by our engine, every guest message, the cleaning schedule and your reviews. The owner keeps the listing, the reviews and the payouts."}}, {"@type": "Question", "name": "How much does co hosting cost?", "acceptedAnswer": {"@type": "Answer", "text": "Our price is quoted in writing after a free look: we read your listing and the homes it competes with, then send the price, the term and the notice to leave in writing. For context, one industry glossary puts typical co host pay at 10% to 30% of booking revenue, higher when the co host also handles cleaning and maintenance (Hostaway, 2026). Our full service fee, for comparison, is 20% of booking revenue."}}, {"@type": "Question", "name": "How does a co host get paid on Airbnb?", "acceptedAnswer": {"@type": "Answer", "text": "Airbnb lets the listing owner share part of each payout with a co host, and only the listing owner can set up or change that share. Many owners prefer to keep the full payout and pay a monthly invoice instead. We send a statement by the 10th and one invoice; you choose which way it works for you."}}, {"@type": "Question", "name": "Do I lose my reviews or my Superhost status?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your listing stays in your account, so the reviews, the booking history and any status tied to the listing stay yours. We join as your host team."}}, {"@type": "Question", "name": "Does co hosting work on Vrbo?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with a different mechanism. Vrbo has no co host button like Airbnb's, so you add us as a user on your account, or we connect your Vrbo and Airbnb listings to one calendar so every channel moves together. We tell you which fits your setup on the call."}}, {"@type": "Question", "name": "Who handles a problem at the home?", "acceptedAnswer": {"@type": "Answer", "text": "You or your local person. A co host cannot drive to the home, so cleaning, repairs and lockouts stay with you. We tell you the moment a guest reports one, and we handle the guest side: the message, the apology, any refund you approve. If nobody near the home can do that, full service in our markets is the right offer."}}, {"@type": "Question", "name": "Can I start with only pricing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Remote pricing is the lighter option: our engine prices your home every day and you keep every message. Hosts move from one to the other when they like."}}, {"@type": "Question", "name": "How do I find out if my listing would do better?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the free 12 point listing audit: paste your listing link and within two business days you get a written review of your pricing, listing and setup, with the fixes ranked by what they are worth. No call needed."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://listandhost.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://listandhost.com/services/"}, {"@type": "ListItem", "position": 3, "name": "Co hosting", "item": "https://listandhost.com/services/co-hosting/"}], "@id": "https://listandhost.com/services/co-hosting/#breadcrumb"}, {"@type": "WebPage", "@id": "https://listandhost.com/services/co-hosting/#webpage", "url": "https://listandhost.com/services/co-hosting/", "name": "Airbnb and Vrbo Co Host Services | List & Host", "inLanguage": "en-US", "isPartOf": {"@id": "https://listandhost.com/#website"}, "about": {"@id": "https://listandhost.com/#org"}, "breadcrumb": {"@id": "https://listandhost.com/services/co-hosting/#breadcrumb"}}]}</script>
 </head>
 <body>
@@ -44,7 +274,7 @@
     <a class="btn" href="/estimate/">Instant estimator</a>
   </nav>
 </div></header>
-<main id="main">
+<main id="main" class="panels">
 <div class="wrap crumb-bar"><nav class="post-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/services/">Services</a> &rsaquo; <span aria-current="page">Co hosting</span></nav></div>
 <section class="hero"><div class="wrap" style="grid-template-columns:1fr">
   <div>
@@ -234,71 +464,71 @@
   <p class="legal">&copy; 2026 List &amp; Host. Full service in Fort Worth, DFW and the Buffalo River region. Co hosting or remote pricing anywhere else in the US. <a href="/privacy/">Privacy</a></p>
 </footer>
 <script>
-  try{var q=new URLSearchParams(location.search),s=q.get('src');
-  if(!sessionStorage.getItem('lh_entry'))sessionStorage.setItem('lh_entry',location.pathname);
-  if(s&&/^(letter|email|qr|agent|social|directory|ai|print)$/.test(s))sessionStorage.setItem('lh_src',s);
-  if(!sessionStorage.getItem('lh_ref')){var h='';try{h=new URL(document.referrer).hostname;}catch(e){}
-  sessionStorage.setItem('lh_ref',h?(/google\.|bing\.|duckduckgo|yahoo\.|ecosia|brave\.|perplexity|chatgpt|openai|copilot/.test(h)?'search':'link'):'direct');}}catch(e){}
-  const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
-  if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});}
-  function lhSend(form,sink,ok,failId){
-    var btn=form.querySelector('button[type=submit]'),txt=btn?btn.textContent:'',fail=document.getElementById(failId),done=false;
-    if(btn){btn.textContent='Sending your answers';btn.disabled=true;}
-    if(fail){fail.hidden=true;}
-    var fr=document.querySelector('iframe[name="'+sink+'"]');
-    if(fr){fr.addEventListener('load',function(){if(done){return;}done=true;ok();});}
-    setTimeout(function(){if(done){return;}done=true;if(btn){btn.textContent=txt;btn.disabled=false;}if(fail){fail.hidden=false;}},8000);
-  }
-  window.lhSend=lhSend;
-  const f=document.getElementById('estimate-form');
-  if(f){f.addEventListener('submit',e=>{
-    const mode=f.dataset.backend;
-    if(document.getElementById('hp').value){e.preventDefault();location.href='/thanks/';return;}
-    const nt=f.querySelector('textarea[data-label=Notes]');
-    if(nt&&nt.value.indexOf('[Source:')<0){
-      const ex=[...f.querySelectorAll('[data-extra]')].filter(x=>x.value).map(x=>x.dataset.extra+': '+x.value+'.');
-      nt.value=ex.concat(nt.value?[nt.value]:[]).concat(['[Source: '+location.pathname+']']).join(' ');
-    }
-    if(mode==='google'){
-      if(f.dataset.sending){e.preventDefault();return;}
-      f.dataset.sending='1';
-      lhSend(f,'lead-sink',()=>{location.href='/thanks/';},'form-fail');
-      setTimeout(()=>{delete f.dataset.sending;},8000);
-    }
-    if(mode==='mailto'){
-      e.preventDefault();
-      const lines=[...f.querySelectorAll('[data-label]')].map(i=>i.dataset.label+': '+i.value);
-      location.href=f.getAttribute('action')+'?subject='+encodeURIComponent('Free estimate request')+'&body='+encodeURIComponent(lines.join('\n'));
-      document.getElementById('form-note').hidden=false;
-    }
-  });}
-  const nf=document.getElementById('notes-form');
-  if(nf){nf.addEventListener('submit',e=>{
-    if(document.getElementById('nhp').value){e.preventDefault();location.href='/thanks/notes/';return;}
-    if(nf.dataset.sending){e.preventDefault();return;}
-    nf.dataset.sending='1';
-    const n=nf.querySelector('input[data-label=Notes]');
-    if(n&&n.value.indexOf('[Source:')<0){n.value=n.value+' [Source: '+location.pathname+']';}
-    lhSend(nf,'notes-sink',()=>{location.href='/thanks/notes/';},'notes-fail');
-    setTimeout(()=>{delete nf.dataset.sending;},8000);
-  });}
-  (function(){
-    var bar=document.getElementById('sticky-cta');
-    if(!bar){return;}
-    document.body.classList.add('has-sticky-cta');
-    var link=bar.querySelector('a'),h=link.getAttribute('href');
-    var target=h.charAt(0)==='#'?document.getElementById(h.slice(1)):null;
-    var els=[].slice.call(document.querySelectorAll('.hero .cta,[data-sticky-hide]'));
-    if(target){els.push(target);}
-    if(!els.length||!('IntersectionObserver' in window)){return;}
-    var seen=[];
-    if(document.querySelector('.hero .cta')){bar.classList.add('is-hidden');}
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){var i=seen.indexOf(e.target);if(e.isIntersecting&&i<0){seen.push(e.target);}if(!e.isIntersecting&&i>=0){seen.splice(i,1);}});
-      bar.classList.toggle('is-hidden',seen.length>0);
-    },{threshold:0.1});
-    els.forEach(function(el){io.observe(el);});
-  })();
+try{var q=new URLSearchParams(location.search),s=q.get('src');
+if(!sessionStorage.getItem('lh_entry'))sessionStorage.setItem('lh_entry',location.pathname);
+if(s&&/^(letter|email|qr|agent|social|directory|ai|print)$/.test(s))sessionStorage.setItem('lh_src',s);
+if(!sessionStorage.getItem('lh_ref')){var h='';try{h=new URL(document.referrer).hostname;}catch(e){}
+sessionStorage.setItem('lh_ref',h?(/google\.|bing\.|duckduckgo|yahoo\.|ecosia|brave\.|perplexity|chatgpt|openai|copilot/.test(h)?'search':'link'):'direct');}}catch(e){}
+const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
+if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});}
+function lhSend(form,sink,ok,failId){
+var btn=form.querySelector('button[type=submit]'),txt=btn?btn.textContent:'',fail=document.getElementById(failId),done=false;
+if(btn){btn.textContent='Sending your answers';btn.disabled=true;}
+if(fail){fail.hidden=true;}
+var fr=document.querySelector('iframe[name="'+sink+'"]');
+if(fr){fr.addEventListener('load',function(){if(done){return;}done=true;ok();});}
+setTimeout(function(){if(done){return;}done=true;if(btn){btn.textContent=txt;btn.disabled=false;}if(fail){fail.hidden=false;}},8000);
+}
+window.lhSend=lhSend;
+const f=document.getElementById('estimate-form');
+if(f){f.addEventListener('submit',e=>{
+const mode=f.dataset.backend;
+if(document.getElementById('hp').value){e.preventDefault();location.href='/thanks/';return;}
+const nt=f.querySelector('textarea[data-label=Notes]');
+if(nt&&nt.value.indexOf('[Source:')<0){
+const ex=[...f.querySelectorAll('[data-extra]')].filter(x=>x.value).map(x=>x.dataset.extra+': '+x.value+'.');
+nt.value=ex.concat(nt.value?[nt.value]:[]).concat(['[Source: '+location.pathname+']']).join(' ');
+}
+if(mode==='google'){
+if(f.dataset.sending){e.preventDefault();return;}
+f.dataset.sending='1';
+lhSend(f,'lead-sink',()=>{location.href='/thanks/';},'form-fail');
+setTimeout(()=>{delete f.dataset.sending;},8000);
+}
+if(mode==='mailto'){
+e.preventDefault();
+const lines=[...f.querySelectorAll('[data-label]')].map(i=>i.dataset.label+': '+i.value);
+location.href=f.getAttribute('action')+'?subject='+encodeURIComponent('Free estimate request')+'&body='+encodeURIComponent(lines.join('\n'));
+document.getElementById('form-note').hidden=false;
+}
+});}
+const nf=document.getElementById('notes-form');
+if(nf){nf.addEventListener('submit',e=>{
+if(document.getElementById('nhp').value){e.preventDefault();location.href='/thanks/notes/';return;}
+if(nf.dataset.sending){e.preventDefault();return;}
+nf.dataset.sending='1';
+const n=nf.querySelector('input[data-label=Notes]');
+if(n&&n.value.indexOf('[Source:')<0){n.value=n.value+' [Source: '+location.pathname+']';}
+lhSend(nf,'notes-sink',()=>{location.href='/thanks/notes/';},'notes-fail');
+setTimeout(()=>{delete nf.dataset.sending;},8000);
+});}
+(function(){
+var bar=document.getElementById('sticky-cta');
+if(!bar){return;}
+document.body.classList.add('has-sticky-cta');
+var link=bar.querySelector('a'),h=link.getAttribute('href');
+var target=h.charAt(0)==='#'?document.getElementById(h.slice(1)):null;
+var els=[].slice.call(document.querySelectorAll('.hero .cta,[data-sticky-hide]'));
+if(target){els.push(target);}
+if(!els.length||!('IntersectionObserver' in window)){return;}
+var seen=[];
+if(document.querySelector('.hero .cta')){bar.classList.add('is-hidden');}
+var io=new IntersectionObserver(function(es){
+es.forEach(function(e){var i=seen.indexOf(e.target);if(e.isIntersecting&&i<0){seen.push(e.target);}if(!e.isIntersecting&&i>=0){seen.splice(i,1);}});
+bar.classList.toggle('is-hidden',seen.length>0);
+},{threshold:0.1});
+els.forEach(function(el){io.observe(el);});
+})();
 </script>
 </body>
 </html>

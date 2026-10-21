@@ -25,8 +25,237 @@
 <link rel="apple-touch-icon" href="/logo-512.png">
 <link rel="alternate" type="application/rss+xml" title="List &amp; Host owner guides" href="/feed.xml">
 <link rel="preload" href="/fonts/sora-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css">
-<style>.est-hero{padding-block:56px 36px}
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Sora";font-style:normal;font-weight:100 800;font-display:swap;src:url("/fonts/sora-var.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url("/fonts/inter-var.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:113.57%;ascent-override:85.41%;descent-override:25.53%;line-gap-override:0%}
+@font-face{font-family:"Inter Fallback";src:local("Arial");size-adjust:106.02%;ascent-override:91.38%;descent-override:22.75%;line-gap-override:0%}
+:root{
+--ink:#16213A;--ink2:#3E4A63;--muted:#6B7488;--line:#E2E6EE;
+--ground:#FBFAF7;--panel:#FFFFFF;--soft:#F1F4F9;
+--accent:#B8862B;--accent-ink:#8A6112;--deep:#16213A;--on-deep:#F6F3EC;
+--radius:14px;
+--head:72px;
+--crumb:42px;
+--display:"Sora","Sora Fallback","Segoe UI",system-ui,sans-serif;
+--body:"Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:84px}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--ink)}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(34px,5.5vw,58px);font-weight:700}
+h2{font-size:clamp(26px,3.6vw,38px);font-weight:700}
+h3{font-size:20px;font-weight:600}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+.narrow{max-width:760px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.lead{font-size:clamp(18px,2vw,21px);color:var(--ink2);max-width:62ch}
+.muted{color:var(--muted)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;background:var(--deep);color:var(--on-deep);padding:8px 12px;border-radius:6px;z-index:50}
+.skip-link:focus{left:8px}
+.short-answer{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin-top:18px;max-width:62ch}
+.short-answer .eyebrow{display:block;margin-bottom:6px}
+.short-answer p{color:var(--ink2);font-size:16px;line-height:1.6}
+.fit{display:grid;gap:8px;max-width:62ch}
+.fit-row{display:flex;gap:10px;flex-wrap:wrap}
+.fit-row select{flex:1;min-width:220px}
+.hero-fit{margin-top:28px;gap:12px}
+.hero-fit .fit-row label{flex:1 1 220px}
+.hero-fit .fit-row label.hf-beds{flex:0 1 140px}
+.hero-fit .fit-row select{min-width:0}
+.hero-fit .cta{margin-top:4px}
+.form-error{color:#9A3412;font-size:14px;font-weight:600}
+.top{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink)}
+.logo svg{flex:none}
+.nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav a{text-decoration:none;font-size:15px;font-weight:600;color:var(--ink2)}
+.nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;padding:13px 22px;border-radius:999px;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:var(--on-deep);cursor:pointer;font-family:var(--body)}
+.btn:hover{background:#0E1628}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--soft)}
+.btn.gold{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.gold:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.nav .btn{padding:9px 16px;font-size:14px;color:var(--on-deep)}
+.menu-toggle{display:none}
+.hero{padding-block:72px 64px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--accent-ink)}
+.hero h1 .eyebrow{font-family:var(--body);line-height:1.6}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero .lead{margin-top:18px}
+.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.proof div{display:grid;gap:2px}
+.proof b{font-family:var(--display);font-size:24px}
+.proof span{font-size:14px;color:var(--muted)}
+.card-stack{background:var(--deep);color:var(--on-deep);border-radius:22px;padding:28px;display:grid;gap:16px;box-shadow:0 30px 60px -30px rgba(22,33,58,.45)}
+.card-stack h3,.card-stack h2{color:var(--on-deep)}
+h2.h3{font-size:20px;font-weight:600}
+.statement{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;display:grid;gap:8px;font-size:15px}
+.statement .row{display:flex;justify-content:space-between;gap:12px}
+.statement .row b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.statement .total{border-top:1px solid rgba(255,255,255,.18);padding-top:8px;font-weight:700}
+.pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(184,134,43,.2);color:#F3D59B;width:max-content}
+section{padding-block:72px}
+.section-head{display:grid;gap:12px;margin-bottom:36px;max-width:760px}
+.alt{background:var(--soft)}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:10px;align-content:start}
+.box p{color:var(--ink2);font-size:16px}
+.icon{width:40px;height:40px;border-radius:10px;background:var(--soft);display:grid;place-items:center;color:var(--accent-ink)}
+.alt .icon{background:var(--ground)}
+.steps{counter-reset:s}
+.steps .box{position:relative;padding-top:56px}
+.steps .box::before{counter-increment:s;content:counter(s);position:absolute;top:20px;left:24px;font-family:var(--display);font-weight:700;font-size:15px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--on-deep);display:grid;place-items:center}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.checks li{padding-left:30px;position:relative;color:var(--ink2)}
+.checks li::before{content:"";position:absolute;left:0;top:.35em;width:18px;height:18px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.price{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:center}
+.price-card{background:var(--panel);border:2px solid var(--ink);border-radius:20px;padding:32px;display:grid;gap:16px}
+.price-card .big{font-family:var(--display);font-size:64px;font-weight:700;line-height:1}
+.price-card .big small{font-size:18px;font-weight:400;color:var(--muted)}
+.mission{background:var(--deep);color:var(--on-deep)}
+.mission .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;align-items:center}
+.mission h2{color:var(--on-deep)}
+.mission p{color:#D7DCE6}
+.mission .eyebrow{color:#E9C27A}
+.mission .btn.ghost{border-color:#E9C27A;color:#F6F3EC}
+.mission .btn.ghost:hover{background:rgba(255,255,255,.06)}
+.quote{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);line-height:1.35;font-weight:600;color:#F6F3EC}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+details+details{margin-top:10px}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--accent-ink)}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--ink2)}
+.form-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:start}
+form.estimate{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;gap:14px}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--ink2)}
+input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #CDD3DE;border-radius:10px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:96px;resize:vertical}
+.full{grid-column:1/-1}
+.fine{font-size:13px;color:var(--muted)}
+.post-list{display:grid;gap:16px}
+.post-card{display:grid;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-decoration:none}
+.post-card:hover{border-color:var(--ink2)}
+.post-card p{color:var(--ink2)}
+article.post{padding-block:56px}
+article.post h1{font-size:clamp(30px,4.4vw,46px)}
+article.post h2{font-size:26px;margin-top:40px;margin-bottom:10px}
+article.post h3{margin-top:26px;margin-bottom:6px}
+article.post p,article.post li{color:#2B3549;font-size:18px;line-height:1.7}
+article.post p+p{margin-top:16px}
+article.post ul,article.post ol{padding-left:22px;display:grid;gap:8px}
+.market-detail h2{font-size:26px;margin:40px 0 10px}
+.market-detail h2:first-child{margin-top:0}
+.market-detail p,.market-detail li{color:#2B3549;font-size:18px;line-height:1.7}
+.market-detail p+p,.market-detail ul+p{margin-top:16px}
+.market-detail ul{padding-left:22px;display:grid;gap:8px;margin-top:12px}
+.post-meta{color:var(--muted);font-size:15px;margin-top:12px}
+.callout{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px;margin-top:28px}
+.table-wrap{overflow-x:auto;margin-top:18px}
+table{border-collapse:collapse;width:100%;font-size:16px}
+th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.sources{font-size:14px;color:var(--muted);margin-top:36px}
+.sources a{color:var(--muted)}
+footer{background:#0F1729;color:#C9CFDB;padding-block:48px 36px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px}
+footer a{color:#E6E9F0;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .logo{color:#F6F3EC}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer .foot-h{font-weight:700;font-family:var(--display);font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E9C27A;margin:0 0 12px}
+.notes-form{display:grid;gap:8px;max-width:38ch}
+.notes-form label{color:#C9CFDB}
+.notes-row{display:flex;gap:8px;flex-wrap:wrap}
+.notes-row input{flex:1;min-width:180px;border-color:#2C3650}
+.notes-row .btn{padding:11px 18px;font-size:15px}
+.notes-form .fine{color:#8F98AB}
+.notes-form .fine a{color:#C9CFDB;text-decoration:underline}
+.legal{max-width:1120px;margin:32px auto 0;padding-inline:20px;font-size:13px;color:#8F98AB}
+.post-crumbs{font-size:14px;color:var(--muted);margin-bottom:14px}
+.post-crumbs a{color:var(--muted)}
+.crumb-bar{padding-top:20px}
+.crumb-bar .post-crumbs{margin:0}
+.crumb-bar+section.hero,.crumb-bar+.cs-page>section.hero:first-child{padding-top:36px}
+.box .statement{background:var(--soft);border-color:var(--line)}
+.box .statement .total{border-top-color:var(--line)}
+.src-band{padding-block:8px 32px}
+.src-band .sources{margin-top:0}
+.related{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:18px 22px;margin-top:36px}
+article.post .related h2{font-size:20px;margin:0 0 10px}
+article.post .related li{font-size:16px;line-height:1.6}
+.compare{min-width:640px}
+.compare td{vertical-align:top}
+.compare td:first-child{font-weight:600;color:#16213A;width:22%}
+.compare th:nth-child(3),.compare td:nth-child(3){background:#FBF6EC}
+.compare tr.group td{background:#F1ECE1;color:#16213A;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.skip ul{margin:0;padding-left:20px;display:grid;gap:8px}
+.skip{border-left:4px solid #B8862B}
+.cmp-cta{text-align:center;display:grid;gap:18px;justify-items:center}
+.read-next{margin-top:40px}
+.read-next .grid{margin-top:14px}
+article.post .read-next h3{margin:0}
+.short-form .fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+.next-steps{margin:16px 0 0;padding-left:22px;display:grid;gap:8px;color:var(--ink2);font-size:18px}
+.post-card h3{font-size:19px}
+.gq{margin:0}
+.gq blockquote{margin:0;font-family:var(--display);font-size:18px;line-height:1.45;font-weight:600;color:var(--ink)}
+.gq figcaption{font-size:14px;color:var(--muted)}
+.gq-strip{margin-top:14px}
+.home-audit{margin-top:22px}
+.price-card .btn.ghost{justify-self:stretch}
+.sticky-cta{display:none}
+@media (min-width:900px){
+main.panels>section,main.panels>.cs-page>section{min-height:calc(100vh - var(--head));min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;scroll-margin-top:0;padding-block:48px}
+main.panels>section>.wrap,main.panels>.cs-page>section>.wrap{width:100%}
+main.panels .section-head{margin-bottom:28px}
+main.panels>.crumb-bar{scroll-snap-align:start}
+main.panels>.crumb-bar+section,main.panels>.crumb-bar+.cs-page>section:first-child{min-height:calc(100vh - var(--head) - var(--crumb));min-height:calc(100svh - var(--head) - var(--crumb));scroll-snap-align:none}
+main.panels section.src-band{min-height:0;scroll-snap-align:none;display:block;padding-block:8px 32px}
+main.panels .proof>div{flex:1 1 0;min-width:0}
+}
+@media (max-width:900px){
+.hero .wrap,.price,.mission .wrap,.form-wrap{grid-template-columns:minmax(0,1fr)}
+.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+footer .wrap>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+body{font-size:16px}
+.nav{display:none}
+.nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--ground);padding:16px 20px 20px;border-bottom:1px solid var(--line)}
+.menu-toggle{display:inline-flex;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;font-weight:600;color:var(--ink)}
+.g2,.g3,.g4,.fields{grid-template-columns:minmax(0,1fr)}
+.statement .row b{white-space:normal;text-align:right;overflow-wrap:anywhere}
+section{padding-block:52px}
+.hero{padding-block:44px}
+footer .wrap{grid-template-columns:minmax(0,1fr)}
+.price-card .big{font-size:52px}
+.short-form .fields{grid-template-columns:minmax(0,1fr)}
+.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,247,.96);border-top:1px solid #E2E6EE;backdrop-filter:blur(8px);transition:transform .2s ease}
+.sticky-cta .btn{flex:1;min-height:48px}
+.sticky-cta.is-hidden{transform:translateY(120%)}
+body.has-sticky-cta{padding-bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){.sticky-cta{transition:none}}
+@media (min-width:900px){html{scroll-snap-type:y proximity;scroll-padding-top:var(--head)}}
+.est-hero{padding-block:56px 36px}
 .est-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:start}
 .est-inputs{gap:16px}
 .est-inputs h2{font-size:24px}
@@ -65,7 +294,6 @@
 .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media (max-width:900px){.est-grid,.est-detail{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:640px){.est-out{padding:22px 18px}.est-range{grid-template-columns:minmax(0,1fr)}.est-range div{display:flex;justify-content:space-between;align-items:baseline;padding:10px 14px}.est-range b{font-size:22px}.est-more .box{padding:18px}.est-table{font-size:13px}.est-table th,.est-table td{padding:8px 5px}.est-table thead th{font-size:11px;letter-spacing:.04em}.est-table tbody th{font-size:13px}.est-range{gap:8px}.est-bars{height:96px}.est-bars em{font-size:10px}.est-out .btn{justify-self:stretch}}
-
 .est-how{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);padding:12px 16px}
 .est-how summary{font-size:15px;color:#F6F3EC}
 .est-how summary::after{color:#E9C27A}
@@ -96,7 +324,7 @@
     <a class="btn" href="/estimate/">Instant estimator</a>
   </nav>
 </div></header>
-<main id="main">
+<main id="main" class="panels">
 <div class="wrap crumb-bar"><nav class="post-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <span aria-current="page">Instant estimator</span></nav></div><section class="hero est-hero"><div class="wrap" style="grid-template-columns:1fr">
   <div>
     <h1 style="margin-top:0"><span class="eyebrow" style="display:block;margin-bottom:14px">Instant estimator: a free Airbnb income estimator and calculator</span>What could your home earn on Airbnb and Vrbo?</h1>
@@ -330,216 +558,214 @@
   <p class="legal">&copy; 2026 List &amp; Host. Full service in Fort Worth, DFW and the Buffalo River region. Co hosting or remote pricing anywhere else in the US. <a href="/privacy/">Privacy</a></p>
 </footer>
 <script>
-  try{var q=new URLSearchParams(location.search),s=q.get('src');
-  if(!sessionStorage.getItem('lh_entry'))sessionStorage.setItem('lh_entry',location.pathname);
-  if(s&&/^(letter|email|qr|agent|social|directory|ai|print)$/.test(s))sessionStorage.setItem('lh_src',s);
-  if(!sessionStorage.getItem('lh_ref')){var h='';try{h=new URL(document.referrer).hostname;}catch(e){}
-  sessionStorage.setItem('lh_ref',h?(/google\.|bing\.|duckduckgo|yahoo\.|ecosia|brave\.|perplexity|chatgpt|openai|copilot/.test(h)?'search':'link'):'direct');}}catch(e){}
-  const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
-  if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});}
-  function lhSend(form,sink,ok,failId){
-    var btn=form.querySelector('button[type=submit]'),txt=btn?btn.textContent:'',fail=document.getElementById(failId),done=false;
-    if(btn){btn.textContent='Sending your answers';btn.disabled=true;}
-    if(fail){fail.hidden=true;}
-    var fr=document.querySelector('iframe[name="'+sink+'"]');
-    if(fr){fr.addEventListener('load',function(){if(done){return;}done=true;ok();});}
-    setTimeout(function(){if(done){return;}done=true;if(btn){btn.textContent=txt;btn.disabled=false;}if(fail){fail.hidden=false;}},8000);
-  }
-  window.lhSend=lhSend;
-  const f=document.getElementById('estimate-form');
-  if(f){f.addEventListener('submit',e=>{
-    const mode=f.dataset.backend;
-    if(document.getElementById('hp').value){e.preventDefault();location.href='/thanks/';return;}
-    const nt=f.querySelector('textarea[data-label=Notes]');
-    if(nt&&nt.value.indexOf('[Source:')<0){
-      const ex=[...f.querySelectorAll('[data-extra]')].filter(x=>x.value).map(x=>x.dataset.extra+': '+x.value+'.');
-      nt.value=ex.concat(nt.value?[nt.value]:[]).concat(['[Source: '+location.pathname+']']).join(' ');
-    }
-    if(mode==='google'){
-      if(f.dataset.sending){e.preventDefault();return;}
-      f.dataset.sending='1';
-      lhSend(f,'lead-sink',()=>{location.href='/thanks/';},'form-fail');
-      setTimeout(()=>{delete f.dataset.sending;},8000);
-    }
-    if(mode==='mailto'){
-      e.preventDefault();
-      const lines=[...f.querySelectorAll('[data-label]')].map(i=>i.dataset.label+': '+i.value);
-      location.href=f.getAttribute('action')+'?subject='+encodeURIComponent('Free estimate request')+'&body='+encodeURIComponent(lines.join('\n'));
-      document.getElementById('form-note').hidden=false;
-    }
-  });}
-  const nf=document.getElementById('notes-form');
-  if(nf){nf.addEventListener('submit',e=>{
-    if(document.getElementById('nhp').value){e.preventDefault();location.href='/thanks/notes/';return;}
-    if(nf.dataset.sending){e.preventDefault();return;}
-    nf.dataset.sending='1';
-    const n=nf.querySelector('input[data-label=Notes]');
-    if(n&&n.value.indexOf('[Source:')<0){n.value=n.value+' [Source: '+location.pathname+']';}
-    lhSend(nf,'notes-sink',()=>{location.href='/thanks/notes/';},'notes-fail');
-    setTimeout(()=>{delete nf.dataset.sending;},8000);
-  });}
-  (function(){
-    var bar=document.getElementById('sticky-cta');
-    if(!bar){return;}
-    document.body.classList.add('has-sticky-cta');
-    var link=bar.querySelector('a'),h=link.getAttribute('href');
-    var target=h.charAt(0)==='#'?document.getElementById(h.slice(1)):null;
-    var els=[].slice.call(document.querySelectorAll('.hero .cta,[data-sticky-hide]'));
-    if(target){els.push(target);}
-    if(!els.length||!('IntersectionObserver' in window)){return;}
-    var seen=[];
-    if(document.querySelector('.hero .cta')){bar.classList.add('is-hidden');}
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){var i=seen.indexOf(e.target);if(e.isIntersecting&&i<0){seen.push(e.target);}if(!e.isIntersecting&&i>=0){seen.splice(i,1);}});
-      bar.classList.toggle('is-hidden',seen.length>0);
-    },{threshold:0.1});
-    els.forEach(function(el){io.observe(el);});
-  })();
+try{var q=new URLSearchParams(location.search),s=q.get('src');
+if(!sessionStorage.getItem('lh_entry'))sessionStorage.setItem('lh_entry',location.pathname);
+if(s&&/^(letter|email|qr|agent|social|directory|ai|print)$/.test(s))sessionStorage.setItem('lh_src',s);
+if(!sessionStorage.getItem('lh_ref')){var h='';try{h=new URL(document.referrer).hostname;}catch(e){}
+sessionStorage.setItem('lh_ref',h?(/google\.|bing\.|duckduckgo|yahoo\.|ecosia|brave\.|perplexity|chatgpt|openai|copilot/.test(h)?'search':'link'):'direct');}}catch(e){}
+const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
+if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});}
+function lhSend(form,sink,ok,failId){
+var btn=form.querySelector('button[type=submit]'),txt=btn?btn.textContent:'',fail=document.getElementById(failId),done=false;
+if(btn){btn.textContent='Sending your answers';btn.disabled=true;}
+if(fail){fail.hidden=true;}
+var fr=document.querySelector('iframe[name="'+sink+'"]');
+if(fr){fr.addEventListener('load',function(){if(done){return;}done=true;ok();});}
+setTimeout(function(){if(done){return;}done=true;if(btn){btn.textContent=txt;btn.disabled=false;}if(fail){fail.hidden=false;}},8000);
+}
+window.lhSend=lhSend;
+const f=document.getElementById('estimate-form');
+if(f){f.addEventListener('submit',e=>{
+const mode=f.dataset.backend;
+if(document.getElementById('hp').value){e.preventDefault();location.href='/thanks/';return;}
+const nt=f.querySelector('textarea[data-label=Notes]');
+if(nt&&nt.value.indexOf('[Source:')<0){
+const ex=[...f.querySelectorAll('[data-extra]')].filter(x=>x.value).map(x=>x.dataset.extra+': '+x.value+'.');
+nt.value=ex.concat(nt.value?[nt.value]:[]).concat(['[Source: '+location.pathname+']']).join(' ');
+}
+if(mode==='google'){
+if(f.dataset.sending){e.preventDefault();return;}
+f.dataset.sending='1';
+lhSend(f,'lead-sink',()=>{location.href='/thanks/';},'form-fail');
+setTimeout(()=>{delete f.dataset.sending;},8000);
+}
+if(mode==='mailto'){
+e.preventDefault();
+const lines=[...f.querySelectorAll('[data-label]')].map(i=>i.dataset.label+': '+i.value);
+location.href=f.getAttribute('action')+'?subject='+encodeURIComponent('Free estimate request')+'&body='+encodeURIComponent(lines.join('\n'));
+document.getElementById('form-note').hidden=false;
+}
+});}
+const nf=document.getElementById('notes-form');
+if(nf){nf.addEventListener('submit',e=>{
+if(document.getElementById('nhp').value){e.preventDefault();location.href='/thanks/notes/';return;}
+if(nf.dataset.sending){e.preventDefault();return;}
+nf.dataset.sending='1';
+const n=nf.querySelector('input[data-label=Notes]');
+if(n&&n.value.indexOf('[Source:')<0){n.value=n.value+' [Source: '+location.pathname+']';}
+lhSend(nf,'notes-sink',()=>{location.href='/thanks/notes/';},'notes-fail');
+setTimeout(()=>{delete nf.dataset.sending;},8000);
+});}
+(function(){
+var bar=document.getElementById('sticky-cta');
+if(!bar){return;}
+document.body.classList.add('has-sticky-cta');
+var link=bar.querySelector('a'),h=link.getAttribute('href');
+var target=h.charAt(0)==='#'?document.getElementById(h.slice(1)):null;
+var els=[].slice.call(document.querySelectorAll('.hero .cta,[data-sticky-hide]'));
+if(target){els.push(target);}
+if(!els.length||!('IntersectionObserver' in window)){return;}
+var seen=[];
+if(document.querySelector('.hero .cta')){bar.classList.add('is-hidden');}
+var io=new IntersectionObserver(function(es){
+es.forEach(function(e){var i=seen.indexOf(e.target);if(e.isIntersecting&&i<0){seen.push(e.target);}if(!e.isIntersecting&&i>=0){seen.splice(i,1);}});
+bar.classList.toggle('is-hidden',seen.length>0);
+},{threshold:0.1});
+els.forEach(function(el){io.observe(el);});
+})();
 </script>
 <script>
 (function(){
-  var root=document.getElementById('estimator');
-  if(!root)return;
-  var $=function(id){return document.getElementById(id);};
-  var MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
-  var money=function(x){return '$'+Math.round(x).toLocaleString('en-US');};
-  var r100=function(x){return Math.round(x/100)*100;};
-  var r5=function(x){return Math.round(x/5)*5;};
-  var pct=function(x){return Math.round(x*100)+' percent';};
-  var words=function(a){return a.length<3?a.join(' and '):a.slice(0,a.length-1).join(', ')+' and '+a[a.length-1];};
-  var escp=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
-  var D=null,touched=false,ownSleeps=false,ownBaths=false;
-  var BATHS={1:'1',2:'1',3:'2',4:'2.5',5:'3',6:'3.5'};
-  var CODE='',CODE_FALLBACK='23456789ABCDEFGHJKMNPQRSTUVWXYZ';
-  function codes(){return (D&&D.codes)||{};}
-  function cleanCode(s){return String(s||'').toUpperCase().replace(/[^0-9A-Z]/g,'');}
-  function codeOk(c){var k=codes(),a=k.alphabet||CODE_FALLBACK,n=k.length||5;if(c.length!==n)return false;for(var i=0;i<c.length;i+=1){if(a.indexOf(c.charAt(i))<0)return false;}return true;}
-  function msg(t){var m=$('est-code-msg');if(m)m.textContent=t;}
-  function showCode(){if(!CODE)return;var v=$('est-code-val'),s=$('est-code-show'),lc=$('lead-code'),ll=$('lead-code-line'),inp=$('est-code-in');if(v)v.textContent=CODE;if(s)s.hidden=false;if(lc)lc.textContent=CODE;if(ll)ll.hidden=false;if(inp)inp.value=CODE;}
-  function applyCode(raw,fillM,fillB){
-    var c=cleanCode(raw);
-    if(!codeOk(c))return null;
-    CODE=c;
-    var k=codes(),filled=[],mid=(k.market_chars||{})[c.charAt(0)],b=(k.bed_chars||{})[c.charAt(1)];
-    if(fillM&&mid&&D.markets.some(function(x){return x.id===mid;})){$('est-market').value=mid;filled.push('market');}
-    if(fillB&&b>=1&&b<=6){$('est-beds').value=String(b);follow();filled.push('size');}
-    showCode();
-    return filled;
-  }
-  function useTyped(){
-    if(!D){msg('The estimator is still loading its market data. Try again in a moment.');return;}
-    var c=cleanCode($('est-code-in').value);
-    if(!c){msg('Type the 5 character code from our letter.');return;}
-    var r=applyCode(c,true,true);
-    if(r===null){msg('That code does not look right. It has 5 letters or numbers and never uses O, I, L, 0 or 1. Check the letter and try again.');return;}
-    touched=true;run();
-    msg(r.length?'Code accepted. Your '+r.join(' and ')+(r.length>1?' are':' is')+' filled in from it; change anything you like.':'Code accepted. It goes with your request.');
-  }
-  function follow(){var b=parseInt($('est-beds').value,10);if(!ownSleeps)$('est-sleeps').value=String(Math.min(16,2*b+2));if(!ownBaths)$('est-baths').value=BATHS[b];}
-
-  function calc(m,beds,baths,sleeps,tub,pets){
-    var f=D.factors,row=m.beds[String(beds)],adrMod=1,why=[];
-    var typical=2*beds+2,diff=sleeps-typical;
-    if(diff>0){var up=Math.min(f.sleeps.max_up,diff*f.sleeps.per_extra_guest);adrMod*=1+up;
-      why.push('Sleeps '+sleeps+', more than the usual '+typical+' for this size: plus '+Math.round(up*100)+' percent on the nightly rate (our assumption).');}
-    else if(diff<0){var dn=Math.min(f.sleeps.max_down,-diff*f.sleeps.per_missing_guest);adrMod*=1-dn;
-      why.push('Sleeps '+sleeps+', fewer than the usual '+typical+' for this size: minus '+Math.round(dn*100)+' percent on the nightly rate (our assumption).');}
-    var minBaths=Math.max(1,Math.ceil(beds/2));
-    if(baths<minBaths){adrMod*=1+f.baths.short;
-      why.push(baths+' bath'+(baths===1?'':'s')+' for '+beds+' bedrooms is short for groups: minus '+Math.round(-f.baths.short*100)+' percent on the nightly rate (our assumption).');}
-    else if(beds>=2&&baths>=beds){adrMod*=1+f.baths.generous;
-      why.push('A bath for every bedroom: plus '+Math.round(f.baths.generous*100)+' percent on the nightly rate (our assumption).');}
-    if(tub){adrMod*=1+m.hot_tub_lift;
-      why.push('Hot tub: plus '+Math.round(m.hot_tub_lift*100)+' percent on the nightly rate'+(m.type==='city'?' (our assumption for a city market).':m.type==='mixed'?' (our assumption between city and getaway markets).':' (AirROI measured 7.9 to 10.8 percent in cabin markets).'));}
-    var occMod=pets?1+f.pets.occ_lift:1;
-    if(pets)why.push('Pets allowed: '+Math.round(f.pets.occ_lift*100)+' percent more nights booked (our assumption, kept small).');
-    var s=[0,1,2].map(function(i){var adr=row.adr[i]*adrMod,occ=Math.min(D.occ_cap,row.occ[i]*occMod);return {adr:adr,occ:occ,year:adr*occ*D.open_nights};});
-    return {s:s,why:why,row:row};
-  }
-  function split(year){
-    var o=D.offer,plat=year*o.platform_fee_pct,after=year-plat,fee=(o.fee_base==='gross'?year:after)*o.fee_pct;
-    return {gross:year,plat:plat,after:after,fee:fee,left:after-fee};
-  }
-  function basis(m){
-    var s=m.data.basis;
-    var links=m.sources.filter(function(x){return /^https:/.test(x[1]);}).map(function(x){return '<a href="'+escp(x[1])+'" rel="nofollow noopener" target="_blank">'+escp(x[0])+'</a>';});
-    return escp(s)+(links.length?' Sources: '+links.join(' &middot; ')+'.':'');
-  }
-  function offer(m){
-    var fee=Math.round(D.offer.fee_pct*100);
-    return m.service==='full'
-      ?'<b>How we would work with you.</b> We offer full service here: listing, daily pricing, guest messages, cleaning and upkeep, for <span data-fee>'+fee+'</span> percent of booking revenue after platform fees. Already listed and want to keep your listing? Ask about co hosting.'
-      :'<b>How we would work with you.</b> Outside our full service areas we work as your co host or run remote pricing and listing work from our engine, and your local cleaner stays on. Terms are set per home. The table shows the math at <span data-fee>'+fee+'</span> percent so you can compare.';
-  }
-  function run(){
-    var m=D.markets.filter(function(x){return x.id===$('est-market').value;})[0]||D.markets[0];
-    var beds=parseInt($('est-beds').value,10),baths=parseFloat($('est-baths').value),sleeps=parseInt($('est-sleeps').value,10);
-    var tub=$('est-tub').checked,pets=$('est-pets').checked;
-    var c=calc(m,beds,baths,sleeps,tub,pets),s=c.s,L=s[1];
-    var years=s.map(function(x){return r100(x.year);}),sp=years.map(split);
-    var bedLabel=beds>=6?'6 or more bedrooms':beds+' bedroom'+(beds===1?'':'s');
-    $('est-title').textContent=m.label+', '+bedLabel;
-    $('est-low').textContent=money(years[0]);$('est-mid').textContent=money(years[1]);$('est-high').textContent=money(years[2]);
-    $('est-sub').textContent='Yearly gross bookings: what guests pay for the nights, before platform fees and our fee. Likely: about '+money(r5(L.adr))+' a night with '+pct(L.occ)+' of nights booked. Range '+money(r5(s[0].adr))+' to '+money(r5(s[2].adr))+' a night, '+pct(s[0].occ)+' to '+pct(s[2].occ)+' booked.';
-    var box=$('est-season');
-    if(m.season){
-      var sh=m.season,mx=Math.max.apply(null,sh),order=sh.map(function(v,i){return i;});
-      var top=order.slice().sort(function(a,b){return sh[b]-sh[a];}).slice(0,3),slow=order.slice().sort(function(a,b){return sh[a]-sh[b];}).slice(0,2);
-      $('est-bars').innerHTML=sh.map(function(v,i){return '<li'+(top.indexOf(i)>=0?' class="hi"':'')+'><i style="height:'+Math.max(4,Math.round(100*v/mx))+'%"></i><em aria-hidden="true">'+MON[i][0]+'</em><span class="sr">'+MON[i]+': '+money(r100(years[1]*v))+'</span></li>';}).join('');
-      $('est-bars').hidden=false;
-      $('est-carry').textContent='Best months: '+words(top.map(function(i){return MON[i];}))+', '+Math.round(100*(sh[top[0]]+sh[top[1]]+sh[top[2]]))+' percent of the year. Slowest: '+words(slow.map(function(i){return MON[i];}))+'.';
-    }else{
-      $('est-bars').hidden=true;
-      $('est-carry').textContent='Seasons vary too much across the country for one curve. Send your address and we will map your busy and slow months.';
-    }
-    var fee=Math.round(D.offer.fee_pct*100),plat=Math.round(D.offer.platform_fee_pct*100);
-    $('est-split').innerHTML='<div class="row"><span>Likely gross bookings</span><b>'+money(sp[1].gross)+'</b></div>'
-      +'<div class="row"><span>Platform fees and discounts, about '+plat+' percent</span><b>&minus;'+money(sp[1].plat)+'</b></div>'
-      +'<div class="row"><span>Our fee, <span data-fee>'+fee+'</span> percent</span><b>&minus;'+money(sp[1].fee)+'</b></div>'
-      +'<div class="row total"><span>Left for you, before your own costs</span><b>'+money(sp[1].left)+'</b></div>';
-    var rows=[['Gross bookings for the nights','gross',''],['Platform fees and discounts, about '+plat+' percent','plat','&minus;'],['After platform fees and discounts','after',''],['Our fee, <span data-fee>'+fee+'</span> percent','fee','&minus;'],['Left for you, before your own costs','left','']];
-    $('est-tbody').innerHTML=rows.map(function(r){return '<tr'+(r[1]==='left'?' class="total"':'')+'><th scope="row">'+r[0]+'</th>'+sp.map(function(x){return '<td>'+r[2]+money(x[r[1]])+'</td>';}).join('')+'</tr>';}).join('');
-    var clean=m.cleaning[String(beds)];
-    $('est-clean').textContent='Guests also pay a cleaning fee, about '+money(clean)+' a stay here. It pays the cleaner and is not counted above.';
-    $('est-basis').innerHTML=basis(m);
-    var pb=$('est-plat-basis');if(pb)pb.textContent=D.offer.platform_fee_basis+' Your own costs (mortgage, utilities, insurance, supplies and repairs) are not included.';
-    $('est-offer').innerHTML=offer(m);
-    var start='<li>Start: a '+(beds>=6?'6 or more':beds)+' bedroom home in '+escp(m.name)+' runs about '+money(c.row.adr[1])+' a night with '+pct(c.row.occ[1])+' of nights booked in the likely case (AirROI, size adjusted).</li>';
-    $('est-why').innerHTML=start+(c.why.length?c.why.map(function(w){return '<li>'+escp(w)+'</li>';}).join(''):'<li>No changes for guests, baths or extras.</li>');
-    var own='';
-    if(m.own){own='<h3 class="est-own-h">Homes our team runs here</h3><ul class="checks">'+m.own.map(function(o){return '<li>'+escp(o.home)+': '+o.nights+' of '+o.of+' nights booked ('+pct(o.occ)+'), average '+money(o.adr)+' a night. '+escp(o.period)+'.</li>';}).join('')+'</ul><p class="fine">'+escp(m.own_note)+'</p>';}
-    $('est-own').innerHTML=own;
-    $('est-live').textContent='Estimate for '+m.label+', '+bedLabel+': likely '+money(years[1])+' a year, low '+money(years[0])+', high '+money(years[2])+'.';
-    var lb=$('lead-beds');if(lb)lb.value=beds>=5?'5+':String(beds);
-    var ln=$('lead-notes');
-    if(ln)ln.value=(CODE?'Code '+CODE+'. ':'')+'From /estimate/: '+m.label+'; '+bedLabel+'; '+baths+(baths===1?' bath':' baths')+'; sleeps '+sleeps+(sleeps>=16?' or more':'')+'; hot tub '+(tub?'yes':'no')+'; pets '+(pets?'yes':'no')+'. Estimate a year: low '+money(years[0])+', likely '+money(years[1])+', high '+money(years[2])+'.';
-    var cta=$('est-cta');
-    if(cta){var ap=new URLSearchParams();ap.set('m',m.id);ap.set('b',String(beds));ap.set('ba',String(baths));ap.set('s',String(sleeps));ap.set('ht',tub?'1':'0');ap.set('pt',pets?'1':'0');ap.set('p',[years[0],years[1],years[2]].join('/'));if(CODE)ap.set('c',CODE);cta.pathname='/apply/';cta.search=ap.toString();}
-    if(touched||CODE){try{var q=new URLSearchParams();if(CODE)q.set('c',CODE);q.set('m',m.id);q.set('b',String(beds));history.replaceState(null,'','?'+q.toString()+location.hash);}catch(e){}}
-  }
-  function start(data){
-    D=data;
-    var q=new URLSearchParams(location.search),mq=q.get('m'),bq=parseInt(q.get('b'),10),cq=q.get('c');
-    var hasM=!!(mq&&D.markets.some(function(x){return x.id===mq;})),hasB=bq>=1&&bq<=6;
-    if(hasM)$('est-market').value=mq;
-    if(hasB){$('est-beds').value=String(bq);follow();}
-    if(cq)applyCode(cq,!hasM,!hasB);
-    var go=$('est-code-go'),ci=$('est-code-in');
-    if(go)go.addEventListener('click',useTyped);
-    if(ci)ci.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();useTyped();}});
-    ['est-market','est-beds','est-baths','est-sleeps','est-tub','est-pets'].forEach(function(id){$(id).addEventListener('change',function(){touched=true;if(id==='est-sleeps')ownSleeps=true;if(id==='est-baths')ownBaths=true;if(id==='est-beds')follow();run();});});
-    $('est-inputs').addEventListener('submit',function(e){e.preventDefault();run();});
-    run();
-  }
-  function fail(){
-    $('est-sub').textContent='The estimator could not load its market data. Use the form below and we will email your estimate.';
-    try{var c=cleanCode(new URLSearchParams(location.search).get('c'));if(codeOk(c)){CODE=c;showCode();var ln=$('lead-notes');if(ln)ln.value='Code '+c+'. '+ln.value;}}catch(e){}
-  }
-  var el=$('lh-markets');
-  if(el){try{start(JSON.parse(el.textContent));return;}catch(e){}}
-  fetch('/data/markets.json').then(function(r){if(!r.ok)throw new Error('data');return r.json();}).then(start).catch(fail);
+var root=document.getElementById('estimator');
+if(!root)return;
+var $=function(id){return document.getElementById(id);};
+var MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+var money=function(x){return '$'+Math.round(x).toLocaleString('en-US');};
+var r100=function(x){return Math.round(x/100)*100;};
+var r5=function(x){return Math.round(x/5)*5;};
+var pct=function(x){return Math.round(x*100)+' percent';};
+var words=function(a){return a.length<3?a.join(' and '):a.slice(0,a.length-1).join(', ')+' and '+a[a.length-1];};
+var escp=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
+var D=null,touched=false,ownSleeps=false,ownBaths=false;
+var BATHS={1:'1',2:'1',3:'2',4:'2.5',5:'3',6:'3.5'};
+var CODE='',CODE_FALLBACK='23456789ABCDEFGHJKMNPQRSTUVWXYZ';
+function codes(){return (D&&D.codes)||{};}
+function cleanCode(s){return String(s||'').toUpperCase().replace(/[^0-9A-Z]/g,'');}
+function codeOk(c){var k=codes(),a=k.alphabet||CODE_FALLBACK,n=k.length||5;if(c.length!==n)return false;for(var i=0;i<c.length;i+=1){if(a.indexOf(c.charAt(i))<0)return false;}return true;}
+function msg(t){var m=$('est-code-msg');if(m)m.textContent=t;}
+function showCode(){if(!CODE)return;var v=$('est-code-val'),s=$('est-code-show'),lc=$('lead-code'),ll=$('lead-code-line'),inp=$('est-code-in');if(v)v.textContent=CODE;if(s)s.hidden=false;if(lc)lc.textContent=CODE;if(ll)ll.hidden=false;if(inp)inp.value=CODE;}
+function applyCode(raw,fillM,fillB){
+var c=cleanCode(raw);
+if(!codeOk(c))return null;
+CODE=c;
+var k=codes(),filled=[],mid=(k.market_chars||{})[c.charAt(0)],b=(k.bed_chars||{})[c.charAt(1)];
+if(fillM&&mid&&D.markets.some(function(x){return x.id===mid;})){$('est-market').value=mid;filled.push('market');}
+if(fillB&&b>=1&&b<=6){$('est-beds').value=String(b);follow();filled.push('size');}
+showCode();
+return filled;
+}
+function useTyped(){
+if(!D){msg('The estimator is still loading its market data. Try again in a moment.');return;}
+var c=cleanCode($('est-code-in').value);
+if(!c){msg('Type the 5 character code from our letter.');return;}
+var r=applyCode(c,true,true);
+if(r===null){msg('That code does not look right. It has 5 letters or numbers and never uses O, I, L, 0 or 1. Check the letter and try again.');return;}
+touched=true;run();
+msg(r.length?'Code accepted. Your '+r.join(' and ')+(r.length>1?' are':' is')+' filled in from it; change anything you like.':'Code accepted. It goes with your request.');
+}
+function follow(){var b=parseInt($('est-beds').value,10);if(!ownSleeps)$('est-sleeps').value=String(Math.min(16,2*b+2));if(!ownBaths)$('est-baths').value=BATHS[b];}
+function calc(m,beds,baths,sleeps,tub,pets){
+var f=D.factors,row=m.beds[String(beds)],adrMod=1,why=[];
+var typical=2*beds+2,diff=sleeps-typical;
+if(diff>0){var up=Math.min(f.sleeps.max_up,diff*f.sleeps.per_extra_guest);adrMod*=1+up;
+why.push('Sleeps '+sleeps+', more than the usual '+typical+' for this size: plus '+Math.round(up*100)+' percent on the nightly rate (our assumption).');}
+else if(diff<0){var dn=Math.min(f.sleeps.max_down,-diff*f.sleeps.per_missing_guest);adrMod*=1-dn;
+why.push('Sleeps '+sleeps+', fewer than the usual '+typical+' for this size: minus '+Math.round(dn*100)+' percent on the nightly rate (our assumption).');}
+var minBaths=Math.max(1,Math.ceil(beds/2));
+if(baths<minBaths){adrMod*=1+f.baths.short;
+why.push(baths+' bath'+(baths===1?'':'s')+' for '+beds+' bedrooms is short for groups: minus '+Math.round(-f.baths.short*100)+' percent on the nightly rate (our assumption).');}
+else if(beds>=2&&baths>=beds){adrMod*=1+f.baths.generous;
+why.push('A bath for every bedroom: plus '+Math.round(f.baths.generous*100)+' percent on the nightly rate (our assumption).');}
+if(tub){adrMod*=1+m.hot_tub_lift;
+why.push('Hot tub: plus '+Math.round(m.hot_tub_lift*100)+' percent on the nightly rate'+(m.type==='city'?' (our assumption for a city market).':m.type==='mixed'?' (our assumption between city and getaway markets).':' (AirROI measured 7.9 to 10.8 percent in cabin markets).'));}
+var occMod=pets?1+f.pets.occ_lift:1;
+if(pets)why.push('Pets allowed: '+Math.round(f.pets.occ_lift*100)+' percent more nights booked (our assumption, kept small).');
+var s=[0,1,2].map(function(i){var adr=row.adr[i]*adrMod,occ=Math.min(D.occ_cap,row.occ[i]*occMod);return {adr:adr,occ:occ,year:adr*occ*D.open_nights};});
+return {s:s,why:why,row:row};
+}
+function split(year){
+var o=D.offer,plat=year*o.platform_fee_pct,after=year-plat,fee=(o.fee_base==='gross'?year:after)*o.fee_pct;
+return {gross:year,plat:plat,after:after,fee:fee,left:after-fee};
+}
+function basis(m){
+var s=m.data.basis;
+var links=m.sources.filter(function(x){return /^https:/.test(x[1]);}).map(function(x){return '<a href="'+escp(x[1])+'" rel="nofollow noopener" target="_blank">'+escp(x[0])+'</a>';});
+return escp(s)+(links.length?' Sources: '+links.join(' &middot; ')+'.':'');
+}
+function offer(m){
+var fee=Math.round(D.offer.fee_pct*100);
+return m.service==='full'
+?'<b>How we would work with you.</b> We offer full service here: listing, daily pricing, guest messages, cleaning and upkeep, for <span data-fee>'+fee+'</span> percent of booking revenue after platform fees. Already listed and want to keep your listing? Ask about co hosting.'
+:'<b>How we would work with you.</b> Outside our full service areas we work as your co host or run remote pricing and listing work from our engine, and your local cleaner stays on. Terms are set per home. The table shows the math at <span data-fee>'+fee+'</span> percent so you can compare.';
+}
+function run(){
+var m=D.markets.filter(function(x){return x.id===$('est-market').value;})[0]||D.markets[0];
+var beds=parseInt($('est-beds').value,10),baths=parseFloat($('est-baths').value),sleeps=parseInt($('est-sleeps').value,10);
+var tub=$('est-tub').checked,pets=$('est-pets').checked;
+var c=calc(m,beds,baths,sleeps,tub,pets),s=c.s,L=s[1];
+var years=s.map(function(x){return r100(x.year);}),sp=years.map(split);
+var bedLabel=beds>=6?'6 or more bedrooms':beds+' bedroom'+(beds===1?'':'s');
+$('est-title').textContent=m.label+', '+bedLabel;
+$('est-low').textContent=money(years[0]);$('est-mid').textContent=money(years[1]);$('est-high').textContent=money(years[2]);
+$('est-sub').textContent='Yearly gross bookings: what guests pay for the nights, before platform fees and our fee. Likely: about '+money(r5(L.adr))+' a night with '+pct(L.occ)+' of nights booked. Range '+money(r5(s[0].adr))+' to '+money(r5(s[2].adr))+' a night, '+pct(s[0].occ)+' to '+pct(s[2].occ)+' booked.';
+var box=$('est-season');
+if(m.season){
+var sh=m.season,mx=Math.max.apply(null,sh),order=sh.map(function(v,i){return i;});
+var top=order.slice().sort(function(a,b){return sh[b]-sh[a];}).slice(0,3),slow=order.slice().sort(function(a,b){return sh[a]-sh[b];}).slice(0,2);
+$('est-bars').innerHTML=sh.map(function(v,i){return '<li'+(top.indexOf(i)>=0?' class="hi"':'')+'><i style="height:'+Math.max(4,Math.round(100*v/mx))+'%"></i><em aria-hidden="true">'+MON[i][0]+'</em><span class="sr">'+MON[i]+': '+money(r100(years[1]*v))+'</span></li>';}).join('');
+$('est-bars').hidden=false;
+$('est-carry').textContent='Best months: '+words(top.map(function(i){return MON[i];}))+', '+Math.round(100*(sh[top[0]]+sh[top[1]]+sh[top[2]]))+' percent of the year. Slowest: '+words(slow.map(function(i){return MON[i];}))+'.';
+}else{
+$('est-bars').hidden=true;
+$('est-carry').textContent='Seasons vary too much across the country for one curve. Send your address and we will map your busy and slow months.';
+}
+var fee=Math.round(D.offer.fee_pct*100),plat=Math.round(D.offer.platform_fee_pct*100);
+$('est-split').innerHTML='<div class="row"><span>Likely gross bookings</span><b>'+money(sp[1].gross)+'</b></div>'
++'<div class="row"><span>Platform fees and discounts, about '+plat+' percent</span><b>&minus;'+money(sp[1].plat)+'</b></div>'
++'<div class="row"><span>Our fee, <span data-fee>'+fee+'</span> percent</span><b>&minus;'+money(sp[1].fee)+'</b></div>'
++'<div class="row total"><span>Left for you, before your own costs</span><b>'+money(sp[1].left)+'</b></div>';
+var rows=[['Gross bookings for the nights','gross',''],['Platform fees and discounts, about '+plat+' percent','plat','&minus;'],['After platform fees and discounts','after',''],['Our fee, <span data-fee>'+fee+'</span> percent','fee','&minus;'],['Left for you, before your own costs','left','']];
+$('est-tbody').innerHTML=rows.map(function(r){return '<tr'+(r[1]==='left'?' class="total"':'')+'><th scope="row">'+r[0]+'</th>'+sp.map(function(x){return '<td>'+r[2]+money(x[r[1]])+'</td>';}).join('')+'</tr>';}).join('');
+var clean=m.cleaning[String(beds)];
+$('est-clean').textContent='Guests also pay a cleaning fee, about '+money(clean)+' a stay here. It pays the cleaner and is not counted above.';
+$('est-basis').innerHTML=basis(m);
+var pb=$('est-plat-basis');if(pb)pb.textContent=D.offer.platform_fee_basis+' Your own costs (mortgage, utilities, insurance, supplies and repairs) are not included.';
+$('est-offer').innerHTML=offer(m);
+var start='<li>Start: a '+(beds>=6?'6 or more':beds)+' bedroom home in '+escp(m.name)+' runs about '+money(c.row.adr[1])+' a night with '+pct(c.row.occ[1])+' of nights booked in the likely case (AirROI, size adjusted).</li>';
+$('est-why').innerHTML=start+(c.why.length?c.why.map(function(w){return '<li>'+escp(w)+'</li>';}).join(''):'<li>No changes for guests, baths or extras.</li>');
+var own='';
+if(m.own){own='<h3 class="est-own-h">Homes our team runs here</h3><ul class="checks">'+m.own.map(function(o){return '<li>'+escp(o.home)+': '+o.nights+' of '+o.of+' nights booked ('+pct(o.occ)+'), average '+money(o.adr)+' a night. '+escp(o.period)+'.</li>';}).join('')+'</ul><p class="fine">'+escp(m.own_note)+'</p>';}
+$('est-own').innerHTML=own;
+$('est-live').textContent='Estimate for '+m.label+', '+bedLabel+': likely '+money(years[1])+' a year, low '+money(years[0])+', high '+money(years[2])+'.';
+var lb=$('lead-beds');if(lb)lb.value=beds>=5?'5+':String(beds);
+var ln=$('lead-notes');
+if(ln)ln.value=(CODE?'Code '+CODE+'. ':'')+'From /estimate/: '+m.label+'; '+bedLabel+'; '+baths+(baths===1?' bath':' baths')+'; sleeps '+sleeps+(sleeps>=16?' or more':'')+'; hot tub '+(tub?'yes':'no')+'; pets '+(pets?'yes':'no')+'. Estimate a year: low '+money(years[0])+', likely '+money(years[1])+', high '+money(years[2])+'.';
+var cta=$('est-cta');
+if(cta){var ap=new URLSearchParams();ap.set('m',m.id);ap.set('b',String(beds));ap.set('ba',String(baths));ap.set('s',String(sleeps));ap.set('ht',tub?'1':'0');ap.set('pt',pets?'1':'0');ap.set('p',[years[0],years[1],years[2]].join('/'));if(CODE)ap.set('c',CODE);cta.pathname='/apply/';cta.search=ap.toString();}
+if(touched||CODE){try{var q=new URLSearchParams();if(CODE)q.set('c',CODE);q.set('m',m.id);q.set('b',String(beds));history.replaceState(null,'','?'+q.toString()+location.hash);}catch(e){}}
+}
+function start(data){
+D=data;
+var q=new URLSearchParams(location.search),mq=q.get('m'),bq=parseInt(q.get('b'),10),cq=q.get('c');
+var hasM=!!(mq&&D.markets.some(function(x){return x.id===mq;})),hasB=bq>=1&&bq<=6;
+if(hasM)$('est-market').value=mq;
+if(hasB){$('est-beds').value=String(bq);follow();}
+if(cq)applyCode(cq,!hasM,!hasB);
+var go=$('est-code-go'),ci=$('est-code-in');
+if(go)go.addEventListener('click',useTyped);
+if(ci)ci.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();useTyped();}});
+['est-market','est-beds','est-baths','est-sleeps','est-tub','est-pets'].forEach(function(id){$(id).addEventListener('change',function(){touched=true;if(id==='est-sleeps')ownSleeps=true;if(id==='est-baths')ownBaths=true;if(id==='est-beds')follow();run();});});
+$('est-inputs').addEventListener('submit',function(e){e.preventDefault();run();});
+run();
+}
+function fail(){
+$('est-sub').textContent='The estimator could not load its market data. Use the form below and we will email your estimate.';
+try{var c=cleanCode(new URLSearchParams(location.search).get('c'));if(codeOk(c)){CODE=c;showCode();var ln=$('lead-notes');if(ln)ln.value='Code '+c+'. '+ln.value;}}catch(e){}
+}
+var el=$('lh-markets');
+if(el){try{start(JSON.parse(el.textContent));return;}catch(e){}}
+fetch('/data/markets.json').then(function(r){if(!r.ok)throw new Error('data');return r.json();}).then(start).catch(fail);
 })();
-
 </script>
 </body>
 </html>
