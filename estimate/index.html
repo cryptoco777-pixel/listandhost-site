@@ -32,162 +32,215 @@
 @font-face{font-family:"Sora Fallback";src:local("Arial");size-adjust:113.57%;ascent-override:85.41%;descent-override:25.53%;line-gap-override:0%}
 @font-face{font-family:"Inter Fallback";src:local("Arial");size-adjust:106.02%;ascent-override:91.38%;descent-override:22.75%;line-gap-override:0%}
 :root{
---ink:#16213A;--ink2:#3E4A63;--muted:#6B7488;--line:#E2E6EE;
+--ink:#16213A;--ink2:#3E4A63;--muted:#5B6578;--line:#E2E6EE;
 --ground:#FBFAF7;--panel:#FFFFFF;--soft:#F1F4F9;
---accent:#B8862B;--accent-ink:#8A6112;--deep:#16213A;--on-deep:#F6F3EC;
---radius:14px;
+--accent:#B8862B;--accent-ink:#8A6112;--gold-soft:#F3D59B;--gold-pale:#FBF6EC;
+--deep:#16213A;--deep-2:#0F1729;--on-deep:#F6F3EC;--on-deep-2:#C9CFDB;--on-deep-3:#A3ACBE;
+--radius:20px;--radius-s:12px;
+--shadow:0 1px 2px rgba(22,33,58,.05),0 12px 32px -20px rgba(22,33,58,.18);
+--shadow-2:0 2px 4px rgba(22,33,58,.06),0 28px 56px -28px rgba(22,33,58,.32);
+--shadow-deep:0 40px 80px -36px rgba(15,23,41,.6);
+--s1:8px;--s2:16px;--s3:24px;--s4:32px;--s5:48px;--s6:64px;--s7:96px;
+--fs-1:clamp(38px,5vw,62px);--fs-2:clamp(28px,3.4vw,42px);--fs-3:21px;--fs-lead:clamp(18px,1.7vw,20px);
 --head:72px;
 --crumb:42px;
 --display:"Sora","Sora Fallback","Segoe UI",system-ui,sans-serif;
 --body:"Inter","Inter Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;
+--ease:cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 [id]{scroll-margin-top:84px}
-body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:var(--ink)}
-h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
-h1{font-size:clamp(34px,5.5vw,58px);font-weight:700}
-h2{font-size:clamp(26px,3.6vw,38px);font-weight:700}
-h3{font-size:20px;font-weight:600}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block;height:auto}
+a{color:var(--ink);text-underline-offset:.14em;text-decoration-thickness:1px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.015em}
+h1{font-size:var(--fs-1);font-weight:700;line-height:1.06}
+h2{font-size:var(--fs-2);font-weight:700;line-height:1.14}
+h3{font-size:var(--fs-3);font-weight:600;line-height:1.3;letter-spacing:-.01em}
 p{margin:0}
-.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:24px}
 .narrow{max-width:760px}
-.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
-.lead{font-size:clamp(18px,2vw,21px);color:var(--ink2);max-width:62ch}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+.eyebrow::before{content:"";flex:none;width:22px;height:2px;border-radius:2px;background:var(--accent)}
+.gold-rule{width:56px;height:3px;border-radius:3px;background:var(--accent);border:0;margin:0}
+.lead{font-size:var(--fs-lead);line-height:1.6;color:var(--ink2);max-width:62ch}
 .muted{color:var(--muted)}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
 .skip-link{position:absolute;left:-999px;top:8px;background:var(--deep);color:var(--on-deep);padding:8px 12px;border-radius:6px;z-index:50}
 .skip-link:focus{left:8px}
-.short-answer{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 20px;margin-top:18px;max-width:62ch}
-.short-answer .eyebrow{display:block;margin-bottom:6px}
+.short-answer{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius-s);padding:var(--s2) 20px;margin-top:var(--s3);max-width:62ch;box-shadow:var(--shadow)}
+.short-answer .eyebrow{display:inline-flex;margin-bottom:6px}
 .short-answer p{color:var(--ink2);font-size:16px;line-height:1.6}
-.fit{display:grid;gap:8px;max-width:62ch}
+.fit{display:grid;gap:var(--s1);max-width:62ch}
 .fit-row{display:flex;gap:10px;flex-wrap:wrap}
 .fit-row select{flex:1;min-width:220px}
-.hero-fit{margin-top:28px;gap:12px}
+.hero-fit{margin-top:var(--s4);gap:12px}
 .hero-fit .fit-row label{flex:1 1 220px}
 .hero-fit .fit-row label.hf-beds{flex:0 1 140px}
 .hero-fit .fit-row select{min-width:0}
 .hero-fit .cta{margin-top:4px}
-.form-error{color:#9A3412;font-size:14px;font-weight:600}
-.top{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.92);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink)}
+.hf-out{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius-s);padding:var(--s2) 20px;display:grid;gap:6px;box-shadow:var(--shadow);max-width:62ch}
+.hf-out .hf-big{font-family:var(--display);font-weight:700;font-size:clamp(28px,3vw,36px);line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--ink)}
+.hf-out .hf-big small{font-family:var(--body);font-size:15px;font-weight:500;color:var(--muted);letter-spacing:0;margin-left:6px}
+.hf-out .hf-line{font-size:15px;color:var(--ink2)}
+.hf-out .hf-line b{color:var(--ink);font-variant-numeric:tabular-nums}
+.hf-out .hf-links{font-size:14px;color:var(--muted);margin-top:2px}
+.form-error{color:#9A3412;font-size:15px;font-weight:600}
+.top{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.9);backdrop-filter:saturate(1.3) blur(10px);-webkit-backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s2);min-height:var(--head)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink);letter-spacing:-.01em}
 .logo svg{flex:none}
-.nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
-.nav a{text-decoration:none;font-size:15px;font-weight:600;color:var(--ink2)}
+.nav{display:flex;gap:var(--s3);align-items:center;flex-wrap:wrap}
+.nav a{text-decoration:none;font-size:15px;font-weight:600;color:var(--ink2);transition:color .2s var(--ease)}
 .nav a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;padding:13px 22px;border-radius:999px;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:var(--on-deep);cursor:pointer;font-family:var(--body)}
-.btn:hover{background:#0E1628}
-.btn.ghost{background:transparent;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;line-height:1.2;padding:14px 24px;min-height:48px;border-radius:999px;text-decoration:none;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font-family:var(--body);transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease)}
+.btn:hover{background:var(--soft)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
 .btn.ghost:hover{background:var(--soft)}
-.btn.gold{background:var(--accent);border-color:var(--accent);color:#fff}
-.btn.gold:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
-.nav .btn{padding:9px 16px;font-size:14px;color:var(--on-deep)}
+.btn.gold{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 10px 24px -14px rgba(184,134,43,.9)}
+.btn.gold:hover{background:var(--accent-ink);border-color:var(--accent-ink);transform:translateY(-1px);box-shadow:0 14px 28px -14px rgba(138,97,18,.9)}
+.btn:active{transform:translateY(0)}
+.nav .btn{padding:10px 18px;min-height:40px;font-size:14px}
 .menu-toggle{display:none}
-.hero{padding-block:72px 64px}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
+.hero{padding-block:var(--s6) var(--s6)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:var(--s6);align-items:center}
 .hero h1 em{font-style:normal;color:var(--accent-ink)}
-.hero h1 .eyebrow{font-family:var(--body);line-height:1.6}
-.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.hero .lead{margin-top:18px}
-.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.hero h1 .eyebrow{font-family:var(--body);line-height:1.6;letter-spacing:.14em}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--s4)}
+.hero .lead{margin-top:var(--s3)}
+.proof{display:flex;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--line)}
 .proof div{display:grid;gap:2px}
-.proof b{font-family:var(--display);font-size:24px}
-.proof span{font-size:14px;color:var(--muted)}
-.card-stack{background:var(--deep);color:var(--on-deep);border-radius:22px;padding:28px;display:grid;gap:16px;box-shadow:0 30px 60px -30px rgba(22,33,58,.45)}
+.proof b{font-family:var(--display);font-size:26px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.proof span{font-size:14px;color:var(--muted);line-height:1.45}
+.deep,.card-stack,.mission,footer,.stmt-card{position:relative;isolation:isolate;background:linear-gradient(160deg,#1C2847 0%,#16213A 48%,#111A30 100%);color:var(--on-deep)}
+.deep::before,.card-stack::before,.mission::before,footer::before,.stmt-card::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.07;mix-blend-mode:overlay;border-radius:inherit;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.card-stack{border-radius:var(--radius);padding:28px;display:grid;gap:var(--s2);box-shadow:var(--shadow-deep)}
 .card-stack h3,.card-stack h2{color:var(--on-deep)}
-h2.h3{font-size:20px;font-weight:600}
-.statement{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px;display:grid;gap:8px;font-size:15px}
+h2.h3{font-size:var(--fs-3);font-weight:600}
+.statement{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-s);padding:var(--s2) 18px;display:grid;gap:var(--s1);font-size:15px}
 .statement .row{display:flex;justify-content:space-between;gap:12px}
 .statement .row b{font-variant-numeric:tabular-nums;white-space:nowrap}
-.statement .total{border-top:1px solid rgba(255,255,255,.18);padding-top:8px;font-weight:700}
-.pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(184,134,43,.2);color:#F3D59B;width:max-content}
-section{padding-block:72px}
-.section-head{display:grid;gap:12px;margin-bottom:36px;max-width:760px}
+.statement .total{border-top:1px solid rgba(255,255,255,.18);padding-top:var(--s1);font-weight:700}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:999px;background:rgba(184,134,43,.22);color:var(--gold-soft);width:max-content}
+.hero-visual{position:relative;display:grid;gap:var(--s2)}
+.hero-visual .pic{margin:0}
+.hero-visual .card-stack{margin-top:calc(-1 * var(--s6));margin-inline:var(--s3) 0;position:relative;z-index:2}
+.hero-badge{position:absolute;top:var(--s2);left:var(--s2);z-index:3;display:inline-flex;align-items:center;gap:8px;background:rgba(251,250,247,.94);color:var(--ink);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;box-shadow:var(--shadow);backdrop-filter:blur(6px)}
+.hero-badge .icon-s{color:var(--accent-ink)}
+.pic{margin:0;overflow:hidden;border-radius:var(--radius);background:var(--soft) center/cover no-repeat;aspect-ratio:4/3;box-shadow:var(--shadow)}
+.pic img{width:100%;height:100%;object-fit:cover;display:block}
+.pic.wide{aspect-ratio:16/9}
+.pic.band{aspect-ratio:21/9;margin-top:var(--s4)}
+.pic-card .pic{aspect-ratio:3/2;border-radius:calc(var(--radius) - 8px);box-shadow:none;margin-bottom:6px}
+.hero-pic{align-self:center}
+.hero-split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:var(--s6);align-items:center}
+section{padding-block:var(--s7)}
+.section-head{display:grid;gap:14px;margin-bottom:var(--s5);max-width:760px}
+.section-head .eyebrow{margin-bottom:2px}
 .alt{background:var(--soft)}
-.grid{display:grid;gap:18px}
+.grid{display:grid;gap:var(--s3)}
 .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:10px;align-content:start}
-.box p{color:var(--ink2);font-size:16px}
-.icon{width:40px;height:40px;border-radius:10px;background:var(--soft);display:grid;place-items:center;color:var(--accent-ink)}
-.alt .icon{background:var(--ground)}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4);display:grid;gap:12px;align-content:start;box-shadow:var(--shadow);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.box p{color:var(--ink2);font-size:16px;line-height:1.6}
+.icon{width:44px;height:44px;border-radius:12px;background:var(--gold-pale);display:grid;place-items:center;color:var(--accent-ink);margin-bottom:4px}
+.alt .icon{background:var(--gold-pale)}
+.icon-s{display:inline-grid;place-items:center;width:18px;height:18px;vertical-align:-3px}
 .steps{counter-reset:s}
-.steps .box{position:relative;padding-top:56px}
-.steps .box::before{counter-increment:s;content:counter(s);position:absolute;top:20px;left:24px;font-family:var(--display);font-weight:700;font-size:15px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--on-deep);display:grid;place-items:center}
+.steps .box{position:relative}
+.steps .box .icon{margin-bottom:8px}
+.steps .box::before{counter-increment:s;content:"0" counter(s);position:absolute;top:var(--s3);right:var(--s3);font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.08em;color:var(--muted)}
 .checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .checks li{padding-left:30px;position:relative;color:var(--ink2)}
 .checks li::before{content:"";position:absolute;left:0;top:.35em;width:18px;height:18px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
-.price{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:center}
-.price-card{background:var(--panel);border:2px solid var(--ink);border-radius:20px;padding:32px;display:grid;gap:16px}
-.price-card .big{font-family:var(--display);font-size:64px;font-weight:700;line-height:1}
-.price-card .big small{font-size:18px;font-weight:400;color:var(--muted)}
-.mission{background:var(--deep);color:var(--on-deep)}
-.mission .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;align-items:center}
+.promise{display:flex;gap:14px;align-items:flex-start;background:var(--gold-pale);border:1px solid #EBDCB8;border-radius:var(--radius-s);padding:var(--s2) 20px;margin-top:var(--s3);font-size:16px;color:var(--ink);max-width:62ch}
+.promise .icon-s{flex:none;margin-top:3px;color:var(--accent-ink);width:20px;height:20px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--s3)}
+.badges span{display:inline-flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;color:var(--ink);box-shadow:var(--shadow)}
+.badges .icon-s{color:var(--accent-ink)}
+.alt .badges span{background:var(--panel)}
+.stmt-card{border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-deep);display:grid;gap:var(--s2);align-content:start}
+.stmt-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:12px}
+.stmt-head b{font-family:var(--display);font-size:18px;color:var(--on-deep)}
+.stmt-head span{font-size:13px;color:var(--on-deep-2);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.stmt-card .statement{font-size:16px}
+.stmt-card .fine{color:var(--on-deep-3)}
+.stmt-card .fine a{color:var(--on-deep-2)}
+.stmt-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:var(--s5);align-items:center}
+.price{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s5);align-items:center}
+.price-card{background:var(--panel);border:2px solid var(--ink);border-radius:var(--radius);padding:var(--s4);display:grid;gap:var(--s2);box-shadow:var(--shadow-2)}
+.price-card .big{font-family:var(--display);font-size:64px;font-weight:700;line-height:1;letter-spacing:-.03em}
+.price-card .big small{font-size:18px;font-weight:400;color:var(--muted);letter-spacing:0}
+.mission .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s5);align-items:center}
 .mission h2{color:var(--on-deep)}
 .mission p{color:#D7DCE6}
 .mission .eyebrow{color:#E9C27A}
+.mission .eyebrow::before{background:#E9C27A}
 .mission .btn.ghost{border-color:#E9C27A;color:#F6F3EC}
-.mission .btn.ghost:hover{background:rgba(255,255,255,.06)}
+.mission .btn.ghost:hover{background:rgba(255,255,255,.08)}
 .quote{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);line-height:1.35;font-weight:600;color:#F6F3EC}
-details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-s);padding:18px 22px;box-shadow:var(--shadow)}
 details+details{margin-top:10px}
-summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:22px;line-height:1;color:var(--accent-ink)}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--accent-ink);flex:none}
 details[open] summary::after{content:"−"}
 details p{margin-top:10px;color:var(--ink2)}
-.form-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:start}
-form.estimate{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;gap:14px}
+.form-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:var(--s5);align-items:start}
+form.estimate{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:grid;gap:14px;box-shadow:var(--shadow-2)}
 .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--ink2)}
-input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #CDD3DE;border-radius:10px;background:#fff;color:var(--ink);width:100%}
+input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;min-height:48px;border:1px solid #CDD3DE;border-radius:var(--radius-s);background:#fff;color:var(--ink);width:100%;transition:border-color .2s var(--ease),box-shadow .2s var(--ease)}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(184,134,43,.15);outline:none}
 textarea{min-height:96px;resize:vertical}
 .full{grid-column:1/-1}
-.fine{font-size:13px;color:var(--muted)}
-.post-list{display:grid;gap:16px}
-.post-card{display:grid;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-decoration:none}
-.post-card:hover{border-color:var(--ink2)}
+.fine{font-size:14px;line-height:1.55;color:var(--muted)}
+.post-list{display:grid;gap:var(--s2)}
+.post-card{display:grid;gap:var(--s1);background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s4);text-decoration:none;box-shadow:var(--shadow);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s var(--ease);align-content:start}
+.post-card:hover,.box:hover{transform:translateY(-3px);box-shadow:var(--shadow-2)}
+.post-card:hover{border-color:#CBD2DF}
 .post-card p{color:var(--ink2)}
-article.post{padding-block:56px}
-article.post h1{font-size:clamp(30px,4.4vw,46px)}
-article.post h2{font-size:26px;margin-top:40px;margin-bottom:10px}
-article.post h3{margin-top:26px;margin-bottom:6px}
+.post-card h3{font-size:19px}
+article.post{padding-block:var(--s6)}
+article.post h1{font-size:clamp(32px,4.4vw,48px)}
+article.post h2{font-size:27px;margin-top:var(--s5);margin-bottom:12px}
+article.post h3{margin-top:28px;margin-bottom:6px}
 article.post p,article.post li{color:#2B3549;font-size:18px;line-height:1.7}
-article.post p+p{margin-top:16px}
+article.post p+p{margin-top:var(--s2)}
 article.post ul,article.post ol{padding-left:22px;display:grid;gap:8px}
-.market-detail h2{font-size:26px;margin:40px 0 10px}
+.market-detail h2{font-size:27px;margin:var(--s5) 0 12px}
 .market-detail h2:first-child{margin-top:0}
 .market-detail p,.market-detail li{color:#2B3549;font-size:18px;line-height:1.7}
-.market-detail p+p,.market-detail ul+p{margin-top:16px}
+.market-detail p+p,.market-detail ul+p{margin-top:var(--s2)}
 .market-detail ul{padding-left:22px;display:grid;gap:8px;margin-top:12px}
 .post-meta{color:var(--muted);font-size:15px;margin-top:12px}
-.callout{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px;margin-top:28px}
-.table-wrap{overflow-x:auto;margin-top:18px}
+.callout{background:var(--gold-pale);border-left:4px solid var(--accent);border-radius:var(--radius-s);padding:18px 20px;margin-top:28px}
+.table-wrap{overflow-x:auto;margin-top:18px;border-radius:var(--radius-s)}
 table{border-collapse:collapse;width:100%;font-size:16px}
-th,td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left}
+th,td{border-bottom:1px solid var(--line);padding:12px;text-align:left}
 th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 .sources{font-size:14px;color:var(--muted);margin-top:36px}
 .sources a{color:var(--muted)}
-footer{background:#0F1729;color:#C9CFDB;padding-block:48px 36px;font-size:15px}
-footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px}
+footer{color:var(--on-deep-2);padding-block:var(--s6) var(--s4);font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:var(--s4)}
 footer a{color:#E6E9F0;text-decoration:none}
 footer a:hover{text-decoration:underline}
+footer p a{text-decoration:underline}
 footer .logo{color:#F6F3EC}
-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
-footer .foot-h{font-weight:700;font-family:var(--display);font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E9C27A;margin:0 0 12px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+footer .foot-h{font-weight:700;font-family:var(--display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#E9C27A;margin:0 0 14px}
+footer .gold-rule{margin:var(--s2) 0}
 .notes-form{display:grid;gap:8px;max-width:38ch}
-.notes-form label{color:#C9CFDB}
+.notes-form label{color:var(--on-deep-2)}
 .notes-row{display:flex;gap:8px;flex-wrap:wrap}
 .notes-row input{flex:1;min-width:180px;border-color:#2C3650}
-.notes-row .btn{padding:11px 18px;font-size:15px}
-.notes-form .fine{color:#8F98AB}
-.notes-form .fine a{color:#C9CFDB;text-decoration:underline}
-.legal{max-width:1120px;margin:32px auto 0;padding-inline:20px;font-size:13px;color:#8F98AB}
+.notes-row .btn{padding:11px 18px;min-height:44px;font-size:15px}
+.notes-form .fine{color:var(--on-deep-3)}
+.notes-form .fine a{color:var(--on-deep-2);text-decoration:underline}
+.legal{max-width:1160px;margin:var(--s4) auto 0;padding:var(--s3) 24px 0;font-size:14px;color:var(--on-deep-3);border-top:1px solid rgba(255,255,255,.1)}
+.legal a{color:var(--on-deep-2);text-decoration:underline}
 .post-crumbs{font-size:14px;color:var(--muted);margin-bottom:14px}
 .post-crumbs a{color:var(--muted)}
 .crumb-bar{padding-top:20px}
@@ -197,7 +250,7 @@ footer .foot-h{font-weight:700;font-family:var(--display);font-size:14px;letter-
 .box .statement .total{border-top-color:var(--line)}
 .src-band{padding-block:8px 32px}
 .src-band .sources{margin-top:0}
-.related{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:18px 22px;margin-top:36px}
+.related{background:var(--soft);border-left:4px solid var(--accent);border-radius:var(--radius-s);padding:18px 22px;margin-top:36px}
 article.post .related h2{font-size:20px;margin:0 0 10px}
 article.post .related li{font-size:16px;line-height:1.6}
 .compare{min-width:640px}
@@ -213,49 +266,89 @@ article.post .related li{font-size:16px;line-height:1.6}
 article.post .read-next h3{margin:0}
 .short-form .fields{grid-template-columns:repeat(2,minmax(0,1fr))}
 .next-steps{margin:16px 0 0;padding-left:22px;display:grid;gap:8px;color:var(--ink2);font-size:18px}
-.post-card h3{font-size:19px}
-.gq{margin:0}
+.gq{margin:0;position:relative;padding-top:var(--s4)}
+.gq::before{content:"\201C";position:absolute;top:10px;left:var(--s4);font-family:var(--display);font-size:56px;line-height:1;color:var(--gold-soft);font-weight:700}
 .gq blockquote{margin:0;font-family:var(--display);font-size:18px;line-height:1.45;font-weight:600;color:var(--ink)}
-.gq figcaption{font-size:14px;color:var(--muted)}
-.gq-strip{margin-top:14px}
-.home-audit{margin-top:22px}
+.gq figcaption{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.gq figcaption::before{content:"";width:16px;height:2px;background:var(--accent);border-radius:2px}
+.gq-strip{margin-top:var(--s2)}
+.home-audit{margin-top:var(--s3)}
 .price-card .btn.ghost{justify-self:stretch}
+.nf-code{font-family:var(--display);font-size:13px;letter-spacing:.3em;color:var(--gold-soft);font-weight:700}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.rv.in{opacity:1;transform:none}
 .sticky-cta{display:none}
 @media (min-width:900px){
-main.panels>section,main.panels>.cs-page>section{min-height:calc(100vh - var(--head));min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;scroll-margin-top:0;padding-block:48px}
+main.panels>section,main.panels>.cs-page>section{min-height:calc(100vh - var(--head));min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;scroll-margin-top:0;padding-block:var(--s5)}
 main.panels>section>.wrap,main.panels>.cs-page>section>.wrap{width:100%}
-main.panels .section-head{margin-bottom:28px}
+main.panels .section-head{margin-bottom:var(--s4)}
 main.panels>.crumb-bar{scroll-snap-align:start}
 main.panels>.crumb-bar+section,main.panels>.crumb-bar+.cs-page>section:first-child{min-height:calc(100vh - var(--head) - var(--crumb));min-height:calc(100svh - var(--head) - var(--crumb));scroll-snap-align:none}
 main.panels section.src-band{min-height:0;scroll-snap-align:none;display:block;padding-block:8px 32px}
 main.panels .proof>div{flex:1 1 0;min-width:0}
 }
+@media (min-width:900px) and (max-height:820px){
+:root{
+--fs-1:clamp(34px,4.2vw,48px);
+--fs-lead:18px;
+}
+.hero .lead{margin-top:var(--s2)}
+.hero-fit{margin-top:var(--s3)}
+.hero .proof{margin-top:var(--s3);padding-top:var(--s2)}
+.proof b{font-size:22px}
+main.panels>section{padding-block:var(--s4)}
+.card-stack{padding:22px;gap:12px}
+.hero-visual .card-stack{margin-top:calc(-1 * var(--s5))}
+}
 @media (max-width:900px){
-.hero .wrap,.price,.mission .wrap,.form-wrap{grid-template-columns:minmax(0,1fr)}
+.hero .wrap,.price,.mission .wrap,.form-wrap,.hero-split,.stmt-grid{grid-template-columns:minmax(0,1fr)}
 .g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
 footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
 footer .wrap>div:first-child{grid-column:1/-1}
+section{padding-block:var(--s6)}
+.hero-visual .card-stack{margin-top:calc(-1 * var(--s4));margin-inline:var(--s2)}
 }
 @media (max-width:640px){
+:root{
+--fs-1:clamp(34px,9vw,44px);
+--fs-2:clamp(27px,7vw,32px);
+--radius:18px;
+}
 body{font-size:16px}
+.wrap{padding-inline:20px}
 .nav{display:none}
-.nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--ground);padding:16px 20px 20px;border-bottom:1px solid var(--line)}
-.menu-toggle{display:inline-flex;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;font-weight:600;color:var(--ink)}
+.nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--ground);padding:12px 20px 20px;border-bottom:1px solid var(--line);gap:4px;box-shadow:var(--shadow-2)}
+.nav.open a{padding:12px 4px;font-size:17px;border-bottom:1px solid var(--line)}
+.nav.open .btn{margin-top:12px;border-bottom:0;justify-content:center}
+.menu-toggle{display:inline-flex;align-items:center;min-height:44px;background:none;border:1px solid var(--line);border-radius:12px;padding:8px 14px;font:inherit;font-weight:600;color:var(--ink)}
 .g2,.g3,.g4,.fields{grid-template-columns:minmax(0,1fr)}
-.statement .row b{white-space:normal;text-align:right;overflow-wrap:anywhere}
-section{padding-block:52px}
-.hero{padding-block:44px}
+.statement .row{flex-wrap:wrap}
+.statement .row b{white-space:nowrap;text-align:right;margin-left:auto}
+section{padding-block:var(--s6) var(--s6)}
+.hero{padding-block:var(--s5) var(--s5)}
+.hero .wrap{gap:var(--s4)}
+.section-head{margin-bottom:var(--s4)}
 footer .wrap{grid-template-columns:minmax(0,1fr)}
 .price-card .big{font-size:52px}
 .short-form .fields{grid-template-columns:minmax(0,1fr)}
-.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,247,.96);border-top:1px solid #E2E6EE;backdrop-filter:blur(8px);transition:transform .2s ease}
-.sticky-cta .btn{flex:1;min-height:48px}
+.box,.post-card{padding:var(--s3)}
+.card-stack,.stmt-card{padding:22px}
+.hero-visual .card-stack{margin-top:calc(-1 * var(--s3));margin-inline:12px}
+.btn{width:100%}
+.nav .btn,.notes-row .btn,.fit-row .btn,.est-code-row .btn{width:auto}
+.hero .cta .btn,.cta .btn{width:100%}
+.sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,247,.96);border-top:1px solid #E2E6EE;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:transform .25s var(--ease)}
+.sticky-cta .btn{flex:1;min-height:50px;width:100%}
 .sticky-cta.is-hidden{transform:translateY(120%)}
-body.has-sticky-cta{padding-bottom:76px}
+body.has-sticky-cta{padding-bottom:78px}
 }
-@media (prefers-reduced-motion:reduce){.sticky-cta{transition:none}}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.sticky-cta,.btn,.box,.post-card,.nav a,input,select,textarea{transition:none}
+.rv{opacity:1;transform:none;transition:none}
+.box:hover,.post-card:hover,.btn.gold:hover{transform:none}
+}
 @media (min-width:900px){html{scroll-snap-type:y proximity;scroll-padding-top:var(--head)}}
-.est-hero{padding-block:56px 36px}
 .est-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:start}
 .est-inputs{gap:16px}
 .est-inputs h2{font-size:24px}
@@ -265,11 +358,18 @@ body.has-sticky-cta{padding-bottom:76px}
 .est-check input{width:22px;height:22px;padding:0;margin:0;accent-color:#B8862B;flex:none}
 .est-offer{background:#F1F4F9;border-left:4px solid #B8862B;border-radius:10px;padding:14px 16px;font-size:15px;color:#3E4A63}
 .est-out h3{font-size:22px}
-.est-range{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.est-range{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:10px}
+.est-lohi{display:grid;gap:10px}
 .est-range div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px;display:grid;gap:2px;min-width:0}
 .est-range .mid{background:rgba(184,134,43,.24);border-color:rgba(233,194,122,.55)}
 .est-range span{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C9CFDB}
-.est-range b{font-family:"Sora",system-ui,sans-serif;font-size:clamp(19px,2.4vw,28px);font-variant-numeric:tabular-nums;color:#F6F3EC;white-space:nowrap}
+.est-range b{font-family:"Sora",system-ui,sans-serif;font-size:clamp(19px,2.2vw,26px);font-variant-numeric:tabular-nums;color:#F6F3EC;white-space:nowrap}
+.est-range .mid{display:grid;align-content:center;padding:16px 18px}
+.est-range .mid b{font-size:clamp(36px,4.2vw,54px);line-height:1;letter-spacing:-.03em;white-space:normal}
+.est-head{max-width:820px;margin-bottom:24px}
+.est-head .lead{margin-top:12px}
+.est-head h1{font-size:clamp(30px,3.6vw,44px)}
+.est-quick{display:none}
 .est-sub{font-size:15px;color:#D7DCE6}
 .est-basis{font-size:13px;color:#AEB6C6}
 .est-basis a{color:#E6E9F0}
@@ -293,12 +393,12 @@ body.has-sticky-cta{padding-bottom:76px}
 .est-table tr.total th,.est-table tr.total td{font-weight:700;border-top:2px solid #16213A}
 .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media (max-width:900px){.est-grid,.est-detail{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:640px){.est-out{padding:22px 18px}.est-range{grid-template-columns:minmax(0,1fr)}.est-range div{display:flex;justify-content:space-between;align-items:baseline;padding:10px 14px}.est-range b{font-size:22px}.est-more .box{padding:18px}.est-table{font-size:13px}.est-table th,.est-table td{padding:8px 5px}.est-table thead th{font-size:11px;letter-spacing:.04em}.est-table tbody th{font-size:13px}.est-range{gap:8px}.est-bars{height:96px}.est-bars em{font-size:10px}.est-out .btn{justify-self:stretch}}
+@media (max-width:640px){.est-out{padding:22px 18px}.est-lohi div{padding:10px 12px}.est-lohi b{font-size:22px}.est-more .box{padding:18px}.est-table{font-size:13px}.est-table th,.est-table td{padding:8px 5px}.est-table thead th{font-size:11px;letter-spacing:.04em}.est-table tbody th{font-size:13px}.est-range{gap:8px}.est-bars{height:96px}.est-bars em{font-size:10px}.est-out .btn{justify-self:stretch}}
 .est-how{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);padding:12px 16px}
 .est-how summary{font-size:15px;color:#F6F3EC}
 .est-how summary::after{color:#E9C27A}
 .est-how .est-basis{color:#C9CFDB;margin-top:10px}
-@media (max-width:640px){.est-hero{padding-block:24px 20px}.est-hero .lead{font-size:16px;margin-top:10px}.est-offer{font-size:14px;padding:10px 12px}.est-inputs{padding:18px}.est-inputs .fields{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.est-inputs .fields select{padding:10px 8px}.est-inputs>.fine{font-size:12px}}
+@media (max-width:640px){.est-head{margin-bottom:16px}.est-head h1{font-size:28px}.est-head .lead{font-size:16px;margin-top:10px}.est-quick{display:block;font-weight:600;color:#16213A;background:#FBF6EC;border-left:4px solid #B8862B;border-radius:10px;padding:10px 12px;font-size:15px}.est-range{grid-template-columns:minmax(0,1fr)}.est-lohi{grid-template-columns:repeat(2,minmax(0,1fr))}.est-range .mid b{font-size:40px}.est-offer{font-size:14px;padding:10px 12px}.est-inputs{padding:18px}.est-inputs .fields{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.est-inputs .fields select{padding:10px 8px}.est-inputs>.fine{font-size:12px}}
 .est-addr{margin-top:12px;font-size:16px;color:#3E4A63}
 .est-code{display:grid;gap:8px;border-top:1px solid #E2E6EE;padding-top:14px}
 .est-code-row{display:flex;gap:10px;align-items:end;flex-wrap:wrap}
@@ -321,20 +421,17 @@ body.has-sticky-cta{padding-bottom:76px}
     <a href="/pricing/">Pricing</a>
     <a href="/blog/">Guides</a>
     <a href="/giving/">Our mission</a>
-    <a class="btn" href="/estimate/">Instant estimator</a>
+    <a class="btn gold" href="/estimate/">Instant estimator</a>
   </nav>
 </div></header>
 <main id="main" class="panels">
-<div class="wrap crumb-bar"><nav class="post-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <span aria-current="page">Instant estimator</span></nav></div><section class="hero est-hero"><div class="wrap" style="grid-template-columns:1fr">
-  <div>
-    <h1 style="margin-top:0"><span class="eyebrow" style="display:block;margin-bottom:14px">Instant estimator: a free Airbnb income estimator and calculator</span>What could your home earn on Airbnb and Vrbo?</h1>
-    <p class="lead">Pick your market and size for an instant range. Add your address for a <a href="#estimate">checked estimate</a>.</p>
-    <p class="est-addr">The range is a low, likely and high yearly estimate of gross bookings, with the months that carry the year and what is left after platform fees and our fee. Every number shows where it comes from.</p>
-  </div>
-</div></section>
-
-<section class="alt est" id="estimator" aria-labelledby="est-h">
-  <div class="wrap est-grid">
+<div class="wrap crumb-bar"><nav class="post-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <span aria-current="page">Instant estimator</span></nav></div><section class="alt est" id="estimator" aria-labelledby="est-h1">
+  <div class="wrap">
+    <div class="est-head">
+      <h1 id="est-h1" style="margin-top:0"><span class="eyebrow" style="display:flex;margin-bottom:10px">Instant estimator: a free Airbnb income estimator and calculator</span>What could your home earn on Airbnb and Vrbo?</h1>
+      <p class="lead">Pick your market and size for an instant range. Add your address for a <a href="#estimate">checked estimate</a>.</p>
+    </div>
+    <div class="est-grid">
     <form class="box est-inputs" id="est-inputs" novalidate>
       <h2 id="est-h">Your home</h2>
       <div class="fields">
@@ -348,6 +445,7 @@ body.has-sticky-cta{padding-bottom:76px}
           <label class="est-check" for="est-pets"><input type="checkbox" id="est-pets"> Pets allowed</label>
         </fieldset>
       </div>
+      <p class="est-quick" id="est-quick" aria-live="polite"></p>
       <p class="fine">The estimate updates as you change anything. Sleeps and baths follow the bedroom count until you change them. It assumes the home is open to book all year.</p>
       <div class="est-code" id="est-code">
         <div class="est-code-row">
@@ -364,9 +462,8 @@ body.has-sticky-cta{padding-bottom:76px}
       <h3 id="est-title">Fort Worth, TX, 3 bedrooms</h3>
       <p class="est-sub est-code-show" id="est-code-show" hidden>Your code: <b id="est-code-val"></b>. It goes with your request below, so we can find your estimate faster.</p>
       <div class="est-range">
-        <div><span>Low</span><b id="est-low">$31,100</b></div>
-        <div class="mid"><span>Likely</span><b id="est-mid">$38,700</b></div>
-        <div><span>High</span><b id="est-high">$50,400</b></div>
+        <div class="mid"><span>Likely a year</span><b id="est-mid">$38,700</b></div>
+        <div class="est-lohi"><div><span>Low</span><b id="est-low">$31,100</b></div><div><span>High</span><b id="est-high">$50,400</b></div></div>
       </div>
       <p class="est-sub" id="est-sub">Yearly gross bookings: what guests pay for the nights, before platform fees and our fee. Likely: about $250 a night with 42 percent of nights booked. Range $225 to $275 a night, 38 percent to 50 percent booked.</p>
       <div class="statement" id="est-split">
@@ -387,6 +484,8 @@ body.has-sticky-cta{padding-bottom:76px}
       </details>
       <p class="sr" id="est-live" aria-live="polite"></p>
     </div>
+    </div>
+    <p class="est-addr">The range is a low, likely and high yearly estimate of gross bookings, with the months that carry the year and what is left after platform fees and our fee. Every number shows where it comes from.</p>
   </div>
 </section>
 
@@ -398,7 +497,7 @@ body.has-sticky-cta{padding-bottom:76px}
         <thead><tr><th scope="col">Per year</th><th scope="col">Low</th><th scope="col">Likely</th><th scope="col">High</th></tr></thead>
         <tbody id="est-tbody"><tr><th scope="row">Gross bookings for the nights</th><td>$31,100</td><td>$38,700</td><td>$50,400</td></tr><tr><th scope="row">Platform fees and discounts, about 19 percent</th><td>&minus;$5,816</td><td>&minus;$7,237</td><td>&minus;$9,425</td></tr><tr><th scope="row">After platform fees and discounts</th><td>$25,284</td><td>$31,463</td><td>$40,975</td></tr><tr><th scope="row">Our fee, <span data-fee>20</span> percent</th><td>&minus;$5,057</td><td>&minus;$6,293</td><td>&minus;$8,195</td></tr><tr class="total"><th scope="row">Left for you, before your own costs</th><td>$20,227</td><td>$25,170</td><td>$32,780</td></tr></tbody>
       </table></div>
-      <p class="fine" id="est-plat-basis">Platform fees and discounts, measured on our own bookings: 75 accepted stays at the three homes our team runs, check in dates from July 2026 to June 2027, as booked on October 16, 2026. For each stay we compared the platform payout, before tax, with what guests were charged at list price for the nights, cleaning and pet fees. The gap is the platform's host fee plus any discount or refund. Airbnb kept 19.9 percent (64 stays), Vrbo 8.0 percent (9 stays), or 11.2 percent after the 3.5 percent payment cut we see on Vrbo deposits, and Booking.com 15.0 percent (2 stays, a small sample). Weighted by what guests were charged, that is 18.7 percent, the figure this estimate takes off before our fee. Your own costs (mortgage, utilities, insurance, supplies and repairs) are not included.</p>
+      <p class="fine" id="est-plat-basis">Platform fees and discounts, measured on our own bookings: 75 accepted stays at the homes our team runs, check in dates from July 2026 to June 2027, as booked on October 16, 2026. For each stay we compared the platform payout, before tax, with what guests were charged at list price for the nights, cleaning and pet fees. The gap is the platform's host fee plus any discount or refund. Airbnb kept 19.9 percent (64 stays), Vrbo 8.0 percent (9 stays), or 11.2 percent after the 3.5 percent payment cut we see on Vrbo deposits, and Booking.com 15.0 percent (2 stays, a small sample). Weighted by what guests were charged, that is 18.7 percent, the figure this estimate takes off before our fee. Your own costs (mortgage, utilities, insurance, supplies and repairs) are not included.</p>
     </div>
     <div class="box">
       <h3>What moved your number</h3>
@@ -445,7 +544,7 @@ body.has-sticky-cta{padding-bottom:76px}
     <div class="section-head">
       <span class="eyebrow">Proof, not promises</span>
       <h2>How the homes our team runs did this fall</h2>
-      <p class="lead">Our team runs three homes with the same system we would use on yours: daily pricing, guest messages and cleaner scheduling. These are their real numbers from their booking records.</p>
+      <p class="lead">Our team runs its homes with the same system we would use on yours: daily pricing, guest messages and cleaner scheduling. These are their real numbers from their booking records.</p>
     </div>
     <div class="grid g3"><div class="box"><span class="eyebrow">Texas, Fort Worth</span><h3>3 bedroom home near the Stockyards and Dickies Arena, sleeps 8</h3><div class="statement"><div class="row"><span>Nights booked</span><b>56 of 92</b></div><div class="row"><span>Share of nights</span><b>61%</b></div><div class="row"><span>Average nightly rate</span><b>$179</b></div><div class="row"><span>Period, October as booked</span><b>Aug 1 to Oct 31, 2026</b></div></div></div><div class="box"><span class="eyebrow">Arkansas, Buffalo River region</span><h3>Glass house, 3 bedrooms plus a loft, sleeps 10, hot tub</h3><div class="statement"><div class="row"><span>Nights booked</span><b>68 of 92</b></div><div class="row"><span>Share of nights</span><b>74%</b></div><div class="row"><span>Average nightly rate</span><b>$419</b></div><div class="row"><span>Period, October as booked</span><b>Aug 1 to Oct 31, 2026</b></div><div class="row"><span>Booked before our pricing engine took over, Sep 21</span><b>53 of 68 nights</b></div></div></div><div class="box"><span class="eyebrow">Arkansas, Buffalo River region</span><h3>Cabin loft next to it, 1 bedroom, sleeps 4</h3><div class="statement"><div class="row"><span>Nights booked</span><b>16 of 31</b></div><div class="row"><span>Share of nights</span><b>52%</b></div><div class="row"><span>Average nightly rate</span><b>$97</b></div><div class="row"><span>Period, its first full month, as booked</span><b>October 2026</b></div></div></div></div>
     <p class="fine" style="margin-top:16px">As of Oct 16, 2026. October is not over: its nights are booked, not yet stayed. Average nightly rate is what guests paid per night after discounts, before cleaning fees. Our pricing engine took over the glass house's prices on September 21, 2026, so the 53 nights booked there before that date are not its work. Three months is a short record and fall is a strong season, so treat these as a record of homes our team runs, not as your number.</p>
@@ -486,14 +585,15 @@ body.has-sticky-cta{padding-bottom:76px}
     <p style="margin-top:12px">Market detail: <a href="/blog/how-much-can-an-airbnb-make-in-fort-worth/">Fort Worth Airbnb income</a> and <a href="/blog/buffalo-river-cabin-income-by-season/">Buffalo River cabin income by season</a>.</p>
   </div>
 </section>
-<script type="application/json" id="lh-markets">{"updated":"2026-10-16","about":"Market inputs for the List & Host revenue estimator at /estimate/. Every number is an estimate with its basis. Built from AirROI public market pages (trailing 12 months, Aug 2025 to Jul 2026, read Oct 16, 2026), AirROI's April 2026 bedroom and hot tub data, and the booking records of the three homes our team runs.","codes":{"added":"2026-10-18","about":"Owner letter codes, live on the estimator since 2026-10-18. A code is 5 characters from the alphabet below: the first character is the market, the second the bedroom count, the last three are random. This map holds only market ids and bedroom counts. The list that ties a code to a person is private and never published. The estimator reads ?c=CODE, shows the code, fills market and bedrooms from it when m and b are absent, and sends Code CODE in the notes of the estimate request. Links and QR codes carry only c, m and b.","alphabet":"23456789ABCDEFGHJKMNPQRSTUVWXYZ","length":5,"market_chars":{"F":"fort-worth","A":"arlington","D":"dallas","B":"buffalo-river","H":"hot-springs","E":"eureka-springs","R":"branson","K":"broken-bow","G":"glen-rose","N":"granbury","W":"wimberley","U":"fredericksburg"},"bed_chars":{"2":2,"3":3,"4":4,"5":5,"6":6},"bed_chars_note":"6 means 6 or more bedrooms, the estimator's top size. Homes with 1 bedroom are not letter targets, so no character is set for 1. The market other has no character: it is never used for a letter."},"offer":{"fee_pct":0.2,"fee_base":"after_platform_fees","platform_fee_pct":0.187,"platform_fee_label":"Platform fees and discounts","platform_fee_basis":"Platform fees and discounts, measured on our own bookings: 75 accepted stays at the three homes our team runs, check in dates from July 2026 to June 2027, as booked on October 16, 2026. For each stay we compared the platform payout, before tax, with what guests were charged at list price for the nights, cleaning and pet fees. The gap is the platform's host fee plus any discount or refund. Airbnb kept 19.9 percent (64 stays), Vrbo 8.0 percent (9 stays), or 11.2 percent after the 3.5 percent payment cut we see on Vrbo deposits, and Booking.com 15.0 percent (2 stays, a small sample). Weighted by what guests were charged, that is 18.7 percent, the figure this estimate takes off before our fee.","platform_fees":{"as_of":"2026-10-16","source":"Booking records of the three homes our team runs, accepted stays, with the Vrbo payment cut seen on deposits","bookings":75,"first_checkin":"2026-07-23","last_checkin":"2027-06-24","airbnb":{"n":64,"pct":0.199},"vrbo":{"n":9,"pct":0.08,"pct_after_payment_cut":0.112},"booking":{"n":2,"pct":0.15},"vrbo_payment_cut":0.035,"blend":0.187}},"open_nights":365,"occ_cap":0.85,"factors":{"scenarios":{"low":"Nightly rate 10 percent under the size adjusted market average, and the revenue per open night of the middle listing in the market (AirROI 50th percentile).","likely":"The size adjusted market average nightly rate, and the market average revenue per open night.","high":"Nightly rate 10 percent over the market average, and the revenue per open night of the top quarter (AirROI 75th percentile)."},"adr_by_bedrooms":{"1":0.75,"2":1.0,"3":1.35,"4":1.8,"5":2.4,"6":3.3},"adr_by_bedrooms_basis":"Nightly rate relative to a 2 bedroom home. Checked against AirROI April 2026 (Broken Bow: 2 bedrooms $323, 4 bedrooms $575, 6 or more $1,118; Gatlinburg: $276, $507, $1,016) and Red Awning Fort Worth ($153, $197, $285, $405 for 1 to 4 bedrooms). Each market's average is spread across sizes using that market's own bedroom mix from AirROI.","size_mix_weights":{"1 bedroom":0.75,"2 bedrooms":1.0,"3 bedrooms":1.35,"4 bedrooms":1.8,"5+ bedrooms":2.8,"other":0.6},"occ_by_bedrooms":{"1":1.03,"2":1.0,"3":1.0,"4":0.98,"5":0.96,"6":0.94},"occ_by_bedrooms_basis":"AirROI April 2026 shows occupancy nearly flat by size in Broken Bow (38, 37, 38 percent) and slightly lower for big homes in Gatlinburg (48, 46, 43 percent).","cleaning_by_bedrooms":{"1":0.65,"2":1.0,"3":1.36,"4":2.0,"5":2.4,"6":2.9},"cleaning_basis":"Market median cleaning fee from AirROI, scaled by size using BNBCalc's Fort Worth cleaning fees by bedroom count ($73, $113, $154, $225 for 1, 2, 3 and 4 or more bedrooms).","sleeps":{"typical":"2 per bedroom plus 2","per_extra_guest":0.02,"max_up":0.08,"per_missing_guest":0.03,"max_down":0.12,"basis":"Our assumption. Groups search by guest count, so room for more guests lifts the nightly rate a little."},"baths":{"short":-0.06,"generous":0.03,"basis":"Our assumption. Short means fewer baths than half the bedrooms (rounded up). Generous means at least one bath per bedroom, for 2 or more bedrooms."},"pets":{"occ_lift":0.04,"basis":"Our assumption, kept small. Guesty reports pet friendly rentals earned 24 percent more per available night than others, but that gap also reflects that pet friendly homes tend to be bigger."},"hot_tub":{"leisure":0.08,"city":0.04,"mixed":0.06,"basis":"AirROI April 2026 measured a hot tub lift of 7.9 percent in Broken Bow, 8.3 percent in Blue Ridge and 10.8 percent in Gatlinburg. We use 8 percent in getaway markets and 4 percent (our assumption) in the city markets."}},"factor_sources":[["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"],["Red Awning, Fort Worth nightly rate by bedroom count","https://www.redawning.com/pm/airbnb-management-cities/fort-worth-texas"],["BNBCalc, Fort Worth market page, cleaning fee by bedroom count","https://www.bnbcalc.com/markets/us/fort-worth-tx"],["Guesty, pet friendly rental data","https://www.guesty.com/blog/pet-friendly-vacation-rental-guide-for-hosts/"]],"markets":[{"id":"fort-worth","label":"Fort Worth, TX","name":"Fort Worth","service":"full","type":"city","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":1607,"avg_adr":225,"avg_occ":0.41,"avg_year":24276,"median_cleaning":126,"revpar":{"p50":70.6,"avg":87.7,"p75":114.2},"revpar_raw":{"p50":73.3,"avg":91.1,"p75":118.6},"adr_for_size_math":207.1,"size_mix_index":1.116,"adjust":"June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 4 percent.","basis":"Basis: AirROI public market data for Fort Worth, TX, Aug 2025 to Jul 2026, 1,607 active listings, spread across sizes with that market's own bedroom mix. June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 4 percent. The average listing there, all sizes, earned $24,276 a year; many listings are not open every night. Cross checks: Airbtics shows a $184 average nightly rate and 61 percent booked for Sep 2025 to Aug 2026. Red Awning shows $285 a night for a 3 bedroom home."},"beds":{"1":{"adr":[125,140,155],"occ":[0.391,0.434,0.51]},"2":{"adr":[165,185,205],"occ":[0.383,0.425,0.499]},"3":{"adr":[225,250,275],"occ":[0.379,0.424,0.502]},"4":{"adr":[300,335,365],"occ":[0.372,0.414,0.495]},"5":{"adr":[400,445,490],"occ":[0.364,0.407,0.481]},"6":{"adr":[550,610,675],"occ":[0.357,0.4,0.47]}},"season":[0.0739,0.07,0.0916,0.0874,0.09910000000000001,0.0842,0.087,0.0751,0.0717,0.0862,0.0852,0.0886],"cleaning":{"1":80,"2":125,"3":170,"4":250,"5":300,"6":365},"hot_tub_lift":0.04,"note":"Cross checks: Airbtics shows a $184 average nightly rate and 61 percent booked for Sep 2025 to Aug 2026. Red Awning shows $285 a night for a 3 bedroom home.","sources":[["AirROI, Fort Worth, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/fort-worth"],["Red Awning, Fort Worth nightly rate by bedroom count","https://www.redawning.com/pm/airbnb-management-cities/fort-worth-texas"],["BNBCalc, Fort Worth market page, cleaning fee by bedroom count","https://www.bnbcalc.com/markets/us/fort-worth-tx"],["Airbtics, Fort Worth, Sep 2025 to Aug 2026","https://airbtics.com/annual-airbnb-revenue-in-fort-worth-texas-usa"],["FOX 4, the nine World Cup matches at the Arlington stadium, June 14 to July 14, 2026","https://www.fox4news.com/news/2026-fifa-world-cup-att-stadium-schedule"],["Homes our team runs, booking records as of Oct 16, 2026","/results/"]],"own":[{"home":"The 3 bedroom Fort Worth home our team runs near the Stockyards and Dickies Arena, sleeps 8","period":"Aug 1 to Oct 31, 2026, October as booked on Oct 16","nights":56,"of":92,"occ":0.609,"adr":179}],"own_note":"October is not over: its nights are booked, not yet stayed. Average nightly rate is what guests paid per night after discounts, before cleaning fees. Three months is a short record and fall is a strong season, so treat these as a record of homes our team runs, not as your number."},{"id":"arlington","label":"Arlington, TX","name":"Arlington","service":"full","type":"city","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":896,"avg_adr":278,"avg_occ":0.348,"avg_year":25379,"median_cleaning":130,"revpar":{"p50":59.3,"avg":80.2,"p75":102.4},"revpar_raw":{"p50":68.6,"avg":92.7,"p75":118.3},"adr_for_size_math":227.3,"size_mix_index":1.158,"adjust":"June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 13 percent.","basis":"Basis: AirROI public market data for Arlington, TX, Aug 2025 to Jul 2026, 896 active listings, spread across sizes with that market's own bedroom mix. June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 13 percent. The average listing there, all sizes, earned $25,379 a year; many listings are not open every night."},"beds":{"1":{"adr":[130,145,160],"occ":[0.304,0.369,0.427]},"2":{"adr":[175,195,215],"occ":[0.293,0.355,0.411]},"3":{"adr":[240,265,290],"occ":[0.288,0.353,0.412]},"4":{"adr":[320,355,390],"occ":[0.282,0.344,0.4]},"5":{"adr":[425,470,520],"occ":[0.278,0.339,0.392]},"6":{"adr":[585,650,710],"occ":[0.272,0.33,0.386]}},"season":[0.0564,0.0604,0.0949,0.0741,0.0879,0.0829,0.0857,0.0834,0.082,0.0834,0.1058,0.1031],"cleaning":{"1":85,"2":130,"3":175,"4":260,"5":310,"6":375},"hot_tub_lift":0.04,"note":"","sources":[["AirROI, Arlington, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/arlington"],["FOX 4, the nine World Cup matches at the Arlington stadium, June 14 to July 14, 2026","https://www.fox4news.com/news/2026-fifa-world-cup-att-stadium-schedule"]]},{"id":"dallas","label":"Dallas, TX","name":"Dallas","service":"full","type":"city","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":4675,"avg_adr":256,"avg_occ":0.384,"avg_year":24382,"median_cleaning":115,"revpar":{"p50":67.0,"avg":86.8,"p75":110.7},"revpar_raw":{"p50":73.0,"avg":94.5,"p75":120.6},"adr_for_size_math":227.5,"size_mix_index":1.065,"adjust":"June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 8 percent.","basis":"Basis: AirROI public market data for Dallas, TX, Aug 2025 to Jul 2026, 4,675 active listings, spread across sizes with that market's own bedroom mix. June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 8 percent. The average listing there, all sizes, earned $24,382 a year; many listings are not open every night."},"beds":{"1":{"adr":[145,160,175],"occ":[0.335,0.393,0.459]},"2":{"adr":[190,215,235],"occ":[0.331,0.379,0.442]},"3":{"adr":[260,290,315],"occ":[0.327,0.379,0.445]},"4":{"adr":[345,385,425],"occ":[0.322,0.373,0.431]},"5":{"adr":[460,515,565],"occ":[0.315,0.364,0.424]},"6":{"adr":[635,705,775],"occ":[0.307,0.358,0.416]}},"season":[0.0702,0.0596,0.0964,0.0803,0.0886,0.0824,0.0851,0.0816,0.0795,0.0915,0.0913,0.0935],"cleaning":{"1":75,"2":115,"3":155,"4":230,"5":275,"6":335},"hot_tub_lift":0.04,"note":"","sources":[["AirROI, Dallas, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/dallas"],["FOX 4, the nine World Cup matches at the Arlington stadium, June 14 to July 14, 2026","https://www.fox4news.com/news/2026-fifa-world-cup-att-stadium-schedule"]]},{"id":"buffalo-river","label":"Buffalo River region, AR","name":"the Buffalo River region","service":"full","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":180,"avg_adr":232,"avg_occ":0.373,"avg_year":26695,"median_cleaning":95,"revpar":{"p50":67.6,"avg":88.3,"p75":116.3},"revpar_raw":{"p50":67.6,"avg":88.3,"p75":116.3},"adr_for_size_math":232.0,"size_mix_index":1.155,"basis":"Basis: AirROI public market data for Buffalo River region, AR, Aug 2025 to Jul 2026, 180 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $26,695 a year; many listings are not open every night. Based on Jasper, the center of the region. Nearby checks: Ponca averages $364 a night and 28.5 percent booked (37 listings); Harrison averages $151 and 37.5 percent (97 listings)."},"beds":{"1":{"adr":[135,150,165],"occ":[0.335,0.394,0.472]},"2":{"adr":[180,200,220],"occ":[0.325,0.383,0.458]},"3":{"adr":[245,270,300],"occ":[0.323,0.383,0.453]},"4":{"adr":[325,360,400],"occ":[0.318,0.375,0.444]},"5":{"adr":[435,480,530],"occ":[0.31,0.367,0.438]},"6":{"adr":[595,665,730],"occ":[0.305,0.357,0.428]}},"season":[0.0498,0.0457,0.0967,0.0787,0.1027,0.1142,0.0834,0.0796,0.0637,0.1127,0.0934,0.0794],"cleaning":{"1":60,"2":95,"3":130,"4":190,"5":230,"6":275},"hot_tub_lift":0.08,"note":"Based on Jasper, the center of the region. Nearby checks: Ponca averages $364 a night and 28.5 percent booked (37 listings); Harrison averages $151 and 37.5 percent (97 listings).","sources":[["AirROI, Buffalo River region, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/jasper"],["AirROI, Ponca, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/ponca"],["AirROI, Harrison, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/harrison"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"],["Homes our team runs, booking records as of Oct 16, 2026","/results/"]],"own":[{"home":"The glass house our team runs, 3 bedrooms plus a loft, sleeps 10, hot tub","period":"Aug 1 to Oct 31, 2026, October as booked on Oct 16","nights":68,"of":92,"occ":0.739,"adr":419},{"home":"The cabin loft next to it, 1 bedroom, sleeps 4","period":"October 2026, its first full month, as booked on Oct 16","nights":16,"of":31,"occ":0.516,"adr":97}],"own_note":"October is not over: its nights are booked, not yet stayed. Average nightly rate is what guests paid per night after discounts, before cleaning fees. Three months is a short record and fall is a strong season, so treat these as a record of homes our team runs, not as your number. Our pricing engine took over the glass house's prices on September 21, 2026; 53 of its 68 nights here were booked before that date."},{"id":"hot-springs","label":"Hot Springs, AR","name":"Hot Springs","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":1428,"avg_adr":265,"avg_occ":0.338,"avg_year":27407,"median_cleaning":120,"revpar":{"p50":65.1,"avg":93.0,"p75":111.0},"revpar_raw":{"p50":65.1,"avg":93.0,"p75":111.0},"adr_for_size_math":265.0,"size_mix_index":1.237,"basis":"Basis: AirROI public market data for Hot Springs, AR, Aug 2025 to Jul 2026, 1,428 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $27,407 a year; many listings are not open every night."},"beds":{"1":{"adr":[145,160,175],"occ":[0.281,0.363,0.396]},"2":{"adr":[195,215,235],"occ":[0.27,0.35,0.382]},"3":{"adr":[260,290,320],"occ":[0.273,0.35,0.379]},"4":{"adr":[345,385,425],"occ":[0.269,0.344,0.373]},"5":{"adr":[465,515,565],"occ":[0.261,0.336,0.366]},"6":{"adr":[635,705,780],"occ":[0.257,0.331,0.357]}},"season":[0.048,0.0541,0.1124,0.0866,0.0956,0.1153,0.0951,0.0935,0.0699,0.085,0.0741,0.0704],"cleaning":{"1":80,"2":120,"3":165,"4":240,"5":290,"6":350},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Hot Springs, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/hot-springs"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"eureka-springs","label":"Eureka Springs, AR","name":"Eureka Springs","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":835,"avg_adr":215,"avg_occ":0.336,"avg_year":23139,"median_cleaning":65,"revpar":{"p50":59.0,"avg":76.4,"p75":98.5},"revpar_raw":{"p50":59.0,"avg":76.4,"p75":98.5},"adr_for_size_math":215.0,"size_mix_index":0.937,"basis":"Basis: AirROI public market data for Eureka Springs, AR, Aug 2025 to Jul 2026, 835 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $23,139 a year; many listings are not open every night."},"beds":{"1":{"adr":[155,170,190],"occ":[0.314,0.37,0.427]},"2":{"adr":[205,230,250],"occ":[0.307,0.354,0.42]},"3":{"adr":[280,310,340],"occ":[0.303,0.355,0.417]},"4":{"adr":[370,415,455],"occ":[0.3,0.346,0.407]},"5":{"adr":[495,550,605],"occ":[0.293,0.341,0.4]},"6":{"adr":[680,755,835],"occ":[0.287,0.335,0.39]}},"season":[0.0553,0.0504,0.0919,0.0789,0.0953,0.0974,0.0823,0.0891,0.0802,0.1189,0.0852,0.0751],"cleaning":{"1":40,"2":65,"3":90,"4":130,"5":155,"6":190},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Eureka Springs, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/eureka-springs"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"branson","label":"Branson, MO","name":"Branson","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":3085,"avg_adr":251,"avg_occ":0.339,"avg_year":25747,"median_cleaning":121,"revpar":{"p50":64.9,"avg":91.1,"p75":104.6},"revpar_raw":{"p50":64.9,"avg":91.1,"p75":104.6},"adr_for_size_math":251.0,"size_mix_index":1.241,"basis":"Basis: AirROI public market data for Branson, MO, Aug 2025 to Jul 2026, 3,085 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $25,747 a year; many listings are not open every night."},"beds":{"1":{"adr":[135,150,165],"occ":[0.299,0.378,0.394]},"2":{"adr":[180,200,220],"occ":[0.29,0.367,0.383]},"3":{"adr":[245,275,300],"occ":[0.288,0.36,0.379]},"4":{"adr":[330,365,400],"occ":[0.279,0.355,0.372]},"5":{"adr":[435,485,535],"occ":[0.277,0.349,0.363]},"6":{"adr":[600,665,735],"occ":[0.27,0.342,0.356]}},"season":[0.0371,0.039,0.082,0.0609,0.0794,0.1278,0.0991,0.102,0.0703,0.0975,0.0988,0.1061],"cleaning":{"1":80,"2":120,"3":165,"4":240,"5":290,"6":350},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Branson, MO, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/missouri/branson"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"broken-bow","label":"Broken Bow, OK","name":"Broken Bow","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":3170,"avg_adr":458,"avg_occ":0.354,"avg_year":51710,"median_cleaning":218,"revpar":{"p50":135.3,"avg":170.2,"p75":212.1},"revpar_raw":{"p50":135.3,"avg":170.2,"p75":212.1},"adr_for_size_math":458.0,"size_mix_index":1.425,"basis":"Basis: AirROI public market data for Broken Bow, OK, Aug 2025 to Jul 2026, 3,170 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $51,710 a year; many listings are not open every night. Cross check: AirROI's April 2026 bedroom data for Broken Bow shows $323 a night for 2 bedrooms, $575 for 4 and $1,118 for 6 or more, close to the size scale used here."},"beds":{"1":{"adr":[215,240,265],"occ":[0.341,0.384,0.434]},"2":{"adr":[290,320,355],"occ":[0.327,0.373,0.419]},"3":{"adr":[390,435,475],"occ":[0.329,0.371,0.423]},"4":{"adr":[520,580,635],"occ":[0.322,0.363,0.413]},"5":{"adr":[695,770,850],"occ":[0.315,0.357,0.403]},"6":{"adr":[955,1060,1165],"occ":[0.308,0.349,0.396]}},"season":[0.0591,0.0542,0.1131,0.0631,0.0801,0.1095,0.0837,0.0763,0.0555,0.0927,0.1021,0.1106],"cleaning":{"1":140,"2":220,"3":295,"4":435,"5":525,"6":630},"hot_tub_lift":0.08,"note":"Cross check: AirROI's April 2026 bedroom data for Broken Bow shows $323 a night for 2 bedrooms, $575 for 4 and $1,118 for 6 or more, close to the size scale used here.","sources":[["AirROI, Broken Bow, OK, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/oklahoma/broken-bow"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"glen-rose","label":"Glen Rose, TX","name":"Glen Rose","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":98,"avg_adr":234,"avg_occ":0.341,"avg_year":29437,"median_cleaning":63,"revpar":{"p50":53.1,"avg":92.1,"p75":120.5},"revpar_raw":{"p50":53.1,"avg":92.1,"p75":120.5},"adr_for_size_math":234.0,"size_mix_index":1.088,"basis":"Basis: AirROI public market data for Glen Rose, TX, Aug 2025 to Jul 2026, 98 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $29,437 a year; many listings are not open every night. A small market (98 listings), so the range is wide."},"beds":{"1":{"adr":[145,160,175],"occ":[0.26,0.409,0.489]},"2":{"adr":[195,215,235],"occ":[0.25,0.394,0.471]},"3":{"adr":[260,290,320],"occ":[0.253,0.394,0.467]},"4":{"adr":[350,385,425],"occ":[0.246,0.388,0.46]},"5":{"adr":[465,515,570],"occ":[0.242,0.379,0.448]},"6":{"adr":[640,710,780],"occ":[0.236,0.37,0.44]}},"season":[0.0681,0.051,0.1081,0.0835,0.104,0.0898,0.0809,0.0751,0.0605,0.1001,0.0916,0.0873],"cleaning":{"1":40,"2":65,"3":85,"4":125,"5":150,"6":185},"hot_tub_lift":0.08,"note":"A small market (98 listings), so the range is wide.","sources":[["AirROI, Glen Rose, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/glen-rose"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"granbury","label":"Granbury, TX","name":"Granbury","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":425,"avg_adr":298,"avg_occ":0.341,"avg_year":28733,"median_cleaning":150,"revpar":{"p50":83.1,"avg":102.6,"p75":128.7},"revpar_raw":{"p50":83.1,"avg":102.6,"p75":128.7},"adr_for_size_math":298.0,"size_mix_index":1.339,"basis":"Basis: AirROI public market data for Granbury, TX, Aug 2025 to Jul 2026, 425 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $28,733 a year; many listings are not open every night."},"beds":{"1":{"adr":[150,165,185],"occ":[0.32,0.359,0.401]},"2":{"adr":[200,225,245],"occ":[0.31,0.341,0.392]},"3":{"adr":[270,300,330],"occ":[0.31,0.345,0.393]},"4":{"adr":[360,400,440],"occ":[0.304,0.338,0.385]},"5":{"adr":[480,535,590],"occ":[0.298,0.33,0.375]},"6":{"adr":[660,735,810],"occ":[0.292,0.323,0.368]}},"season":[0.0587,0.0585,0.0891,0.0774,0.1075,0.1036,0.087,0.0894,0.0776,0.0897,0.0847,0.0768],"cleaning":{"1":100,"2":150,"3":205,"4":300,"5":360,"6":435},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Granbury, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/granbury"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"wimberley","label":"Wimberley, TX","name":"Wimberley","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":638,"avg_adr":335,"avg_occ":0.338,"avg_year":36211,"median_cleaning":100,"revpar":{"p50":82.1,"avg":117.4,"p75":144.1},"revpar_raw":{"p50":82.1,"avg":117.4,"p75":144.1},"adr_for_size_math":335.0,"size_mix_index":1.173,"basis":"Basis: AirROI public market data for Wimberley, TX, Aug 2025 to Jul 2026, 638 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $36,211 a year; many listings are not open every night."},"beds":{"1":{"adr":[195,215,235],"occ":[0.277,0.36,0.404]},"2":{"adr":[255,285,315],"occ":[0.274,0.351,0.39]},"3":{"adr":[345,385,425],"occ":[0.274,0.351,0.39]},"4":{"adr":[465,515,565],"occ":[0.265,0.343,0.384]},"5":{"adr":[615,685,755],"occ":[0.262,0.337,0.375]},"6":{"adr":[850,940,1035],"occ":[0.255,0.33,0.368]}},"season":[0.0597,0.059,0.1002,0.0872,0.0946,0.0985,0.0854,0.0901,0.0661,0.0834,0.0887,0.0871],"cleaning":{"1":65,"2":100,"3":135,"4":200,"5":240,"6":290},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Wimberley, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/wimberley"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"fredericksburg","label":"Fredericksburg, TX","name":"Fredericksburg","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":2213,"avg_adr":338,"avg_occ":0.326,"avg_year":37095,"median_cleaning":139,"revpar":{"p50":89.3,"avg":118.1,"p75":149.3},"revpar_raw":{"p50":89.3,"avg":118.1,"p75":149.3},"adr_for_size_math":338.0,"size_mix_index":1.111,"basis":"Basis: AirROI public market data for Fredericksburg, TX, Aug 2025 to Jul 2026, 2,213 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $37,095 a year; many listings are not open every night."},"beds":{"1":{"adr":[205,230,250],"occ":[0.303,0.357,0.415]},"2":{"adr":[275,305,335],"occ":[0.292,0.349,0.401]},"3":{"adr":[370,410,450],"occ":[0.293,0.35,0.403]},"4":{"adr":[495,550,605],"occ":[0.286,0.341,0.392]},"5":{"adr":[655,730,805],"occ":[0.283,0.336,0.385]},"6":{"adr":[905,1005,1105],"occ":[0.276,0.328,0.377]}},"season":[0.0644,0.0665,0.1061,0.0901,0.0881,0.0793,0.0666,0.0729,0.0644,0.0974,0.1016,0.1026],"cleaning":{"1":90,"2":140,"3":190,"4":280,"5":335,"6":405},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Fredericksburg, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/fredericksburg"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"other","label":"Somewhere else in the US","name":"your area","service":"remote","type":"mixed","data":{"source":"AirROI public market data, middle of the 12 markets on this page","period":"Aug 2025 to Jul 2026","listings":19250,"avg_adr":260,"avg_occ":0.341,"avg_year":27051,"median_cleaning":120,"revpar":{"p50":67.3,"avg":91.6,"p75":115.3},"adr_for_size_math":242.5,"size_mix_index":1.156,"us_top100":{"markets":100,"median_adr":301.5,"median_occ":0.403,"listing_weighted_adr":317,"listing_weighted_occ":0.399},"basis":"Basis: the middle of the 12 markets on this page (AirROI public market data, Aug 2025 to Jul 2026, 19,250 active listings), spread across sizes. A starting point only. It uses the middle of the 12 markets on this page. AirROI's 100 largest US markets run higher, about $302 a night and 40 percent booked at the middle, and small towns often run lower. Seasons vary too much to show one curve."},"beds":{"1":{"adr":[140,155,175],"occ":[0.321,0.395,0.44]},"2":{"adr":[190,210,230],"occ":[0.306,0.377,0.433]},"3":{"adr":[255,285,310],"occ":[0.308,0.375,0.434]},"4":{"adr":[340,375,415],"occ":[0.302,0.373,0.424]},"5":{"adr":[455,505,555],"occ":[0.295,0.361,0.414]},"6":{"adr":[625,690,760],"occ":[0.289,0.356,0.407]}},"season":null,"cleaning":{"1":80,"2":120,"3":165,"4":240,"5":290,"6":350},"hot_tub_lift":0.06,"note":"A starting point only. It uses the middle of the 12 markets on this page. AirROI's 100 largest US markets run higher, about $302 a night and 40 percent booked at the middle, and small towns often run lower. Seasons vary too much to show one curve.","sources":[["AirROI, the 100 largest US markets, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states"]]}]}</script>
+<script type="application/json" id="lh-markets">{"updated":"2026-10-16","about":"Market inputs for the List & Host revenue estimator at /estimate/. Every number is an estimate with its basis. Built from AirROI public market pages (trailing 12 months, Aug 2025 to Jul 2026, read Oct 16, 2026), AirROI's April 2026 bedroom and hot tub data, and the booking records of the homes our team runs.","codes":{"added":"2026-10-18","about":"Owner letter codes, live on the estimator since 2026-10-18. A code is 5 characters from the alphabet below: the first character is the market, the second the bedroom count, the last three are random. This map holds only market ids and bedroom counts. The list that ties a code to a person is private and never published. The estimator reads ?c=CODE, shows the code, fills market and bedrooms from it when m and b are absent, and sends Code CODE in the notes of the estimate request. Links and QR codes carry only c, m and b.","alphabet":"23456789ABCDEFGHJKMNPQRSTUVWXYZ","length":5,"market_chars":{"F":"fort-worth","A":"arlington","D":"dallas","B":"buffalo-river","H":"hot-springs","E":"eureka-springs","R":"branson","K":"broken-bow","G":"glen-rose","N":"granbury","W":"wimberley","U":"fredericksburg"},"bed_chars":{"2":2,"3":3,"4":4,"5":5,"6":6},"bed_chars_note":"6 means 6 or more bedrooms, the estimator's top size. Homes with 1 bedroom are not letter targets, so no character is set for 1. The market other has no character: it is never used for a letter."},"offer":{"fee_pct":0.2,"fee_base":"after_platform_fees","platform_fee_pct":0.187,"platform_fee_label":"Platform fees and discounts","platform_fee_basis":"Platform fees and discounts, measured on our own bookings: 75 accepted stays at the homes our team runs, check in dates from July 2026 to June 2027, as booked on October 16, 2026. For each stay we compared the platform payout, before tax, with what guests were charged at list price for the nights, cleaning and pet fees. The gap is the platform's host fee plus any discount or refund. Airbnb kept 19.9 percent (64 stays), Vrbo 8.0 percent (9 stays), or 11.2 percent after the 3.5 percent payment cut we see on Vrbo deposits, and Booking.com 15.0 percent (2 stays, a small sample). Weighted by what guests were charged, that is 18.7 percent, the figure this estimate takes off before our fee.","platform_fees":{"as_of":"2026-10-16","source":"Booking records of the homes our team runs, accepted stays, with the Vrbo payment cut seen on deposits","bookings":75,"first_checkin":"2026-07-23","last_checkin":"2027-06-24","airbnb":{"n":64,"pct":0.199},"vrbo":{"n":9,"pct":0.08,"pct_after_payment_cut":0.112},"booking":{"n":2,"pct":0.15},"vrbo_payment_cut":0.035,"blend":0.187}},"open_nights":365,"occ_cap":0.85,"factors":{"scenarios":{"low":"Nightly rate 10 percent under the size adjusted market average, and the revenue per open night of the middle listing in the market (AirROI 50th percentile).","likely":"The size adjusted market average nightly rate, and the market average revenue per open night.","high":"Nightly rate 10 percent over the market average, and the revenue per open night of the top quarter (AirROI 75th percentile)."},"adr_by_bedrooms":{"1":0.75,"2":1.0,"3":1.35,"4":1.8,"5":2.4,"6":3.3},"adr_by_bedrooms_basis":"Nightly rate relative to a 2 bedroom home. Checked against AirROI April 2026 (Broken Bow: 2 bedrooms $323, 4 bedrooms $575, 6 or more $1,118; Gatlinburg: $276, $507, $1,016) and Red Awning Fort Worth ($153, $197, $285, $405 for 1 to 4 bedrooms). Each market's average is spread across sizes using that market's own bedroom mix from AirROI.","size_mix_weights":{"1 bedroom":0.75,"2 bedrooms":1.0,"3 bedrooms":1.35,"4 bedrooms":1.8,"5+ bedrooms":2.8,"other":0.6},"occ_by_bedrooms":{"1":1.03,"2":1.0,"3":1.0,"4":0.98,"5":0.96,"6":0.94},"occ_by_bedrooms_basis":"AirROI April 2026 shows occupancy nearly flat by size in Broken Bow (38, 37, 38 percent) and slightly lower for big homes in Gatlinburg (48, 46, 43 percent).","cleaning_by_bedrooms":{"1":0.65,"2":1.0,"3":1.36,"4":2.0,"5":2.4,"6":2.9},"cleaning_basis":"Market median cleaning fee from AirROI, scaled by size using BNBCalc's Fort Worth cleaning fees by bedroom count ($73, $113, $154, $225 for 1, 2, 3 and 4 or more bedrooms).","sleeps":{"typical":"2 per bedroom plus 2","per_extra_guest":0.02,"max_up":0.08,"per_missing_guest":0.03,"max_down":0.12,"basis":"Our assumption. Groups search by guest count, so room for more guests lifts the nightly rate a little."},"baths":{"short":-0.06,"generous":0.03,"basis":"Our assumption. Short means fewer baths than half the bedrooms (rounded up). Generous means at least one bath per bedroom, for 2 or more bedrooms."},"pets":{"occ_lift":0.04,"basis":"Our assumption, kept small. Guesty reports pet friendly rentals earned 24 percent more per available night than others, but that gap also reflects that pet friendly homes tend to be bigger."},"hot_tub":{"leisure":0.08,"city":0.04,"mixed":0.06,"basis":"AirROI April 2026 measured a hot tub lift of 7.9 percent in Broken Bow, 8.3 percent in Blue Ridge and 10.8 percent in Gatlinburg. We use 8 percent in getaway markets and 4 percent (our assumption) in the city markets."}},"factor_sources":[["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"],["Red Awning, Fort Worth nightly rate by bedroom count","https://www.redawning.com/pm/airbnb-management-cities/fort-worth-texas"],["BNBCalc, Fort Worth market page, cleaning fee by bedroom count","https://www.bnbcalc.com/markets/us/fort-worth-tx"],["Guesty, pet friendly rental data","https://www.guesty.com/blog/pet-friendly-vacation-rental-guide-for-hosts/"]],"markets":[{"id":"fort-worth","label":"Fort Worth, TX","name":"Fort Worth","service":"full","type":"city","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":1607,"avg_adr":225,"avg_occ":0.41,"avg_year":24276,"median_cleaning":126,"revpar":{"p50":70.6,"avg":87.7,"p75":114.2},"revpar_raw":{"p50":73.3,"avg":91.1,"p75":118.6},"adr_for_size_math":207.1,"size_mix_index":1.116,"adjust":"June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 4 percent.","basis":"Basis: AirROI public market data for Fort Worth, TX, Aug 2025 to Jul 2026, 1,607 active listings, spread across sizes with that market's own bedroom mix. June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 4 percent. The average listing there, all sizes, earned $24,276 a year; many listings are not open every night. Cross checks: Airbtics shows a $184 average nightly rate and 61 percent booked for Sep 2025 to Aug 2026. Red Awning shows $285 a night for a 3 bedroom home."},"beds":{"1":{"adr":[125,140,155],"occ":[0.391,0.434,0.51]},"2":{"adr":[165,185,205],"occ":[0.383,0.425,0.499]},"3":{"adr":[225,250,275],"occ":[0.379,0.424,0.502]},"4":{"adr":[300,335,365],"occ":[0.372,0.414,0.495]},"5":{"adr":[400,445,490],"occ":[0.364,0.407,0.481]},"6":{"adr":[550,610,675],"occ":[0.357,0.4,0.47]}},"season":[0.0739,0.07,0.0916,0.0874,0.09910000000000001,0.0842,0.087,0.0751,0.0717,0.0862,0.0852,0.0886],"cleaning":{"1":80,"2":125,"3":170,"4":250,"5":300,"6":365},"hot_tub_lift":0.04,"note":"Cross checks: Airbtics shows a $184 average nightly rate and 61 percent booked for Sep 2025 to Aug 2026. Red Awning shows $285 a night for a 3 bedroom home.","sources":[["AirROI, Fort Worth, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/fort-worth"],["Red Awning, Fort Worth nightly rate by bedroom count","https://www.redawning.com/pm/airbnb-management-cities/fort-worth-texas"],["BNBCalc, Fort Worth market page, cleaning fee by bedroom count","https://www.bnbcalc.com/markets/us/fort-worth-tx"],["Airbtics, Fort Worth, Sep 2025 to Aug 2026","https://airbtics.com/annual-airbnb-revenue-in-fort-worth-texas-usa"],["FOX 4, the nine World Cup matches at the Arlington stadium, June 14 to July 14, 2026","https://www.fox4news.com/news/2026-fifa-world-cup-att-stadium-schedule"],["Homes our team runs, booking records as of Oct 16, 2026","/results/"]],"own":[{"home":"The 3 bedroom Fort Worth home our team runs near the Stockyards and Dickies Arena, sleeps 8","period":"Aug 1 to Oct 31, 2026, October as booked on Oct 16","nights":56,"of":92,"occ":0.609,"adr":179}],"own_note":"October is not over: its nights are booked, not yet stayed. Average nightly rate is what guests paid per night after discounts, before cleaning fees. Three months is a short record and fall is a strong season, so treat these as a record of homes our team runs, not as your number."},{"id":"arlington","label":"Arlington, TX","name":"Arlington","service":"full","type":"city","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":896,"avg_adr":278,"avg_occ":0.348,"avg_year":25379,"median_cleaning":130,"revpar":{"p50":59.3,"avg":80.2,"p75":102.4},"revpar_raw":{"p50":68.6,"avg":92.7,"p75":118.3},"adr_for_size_math":227.3,"size_mix_index":1.158,"adjust":"June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 13 percent.","basis":"Basis: AirROI public market data for Arlington, TX, Aug 2025 to Jul 2026, 896 active listings, spread across sizes with that market's own bedroom mix. June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 13 percent. The average listing there, all sizes, earned $25,379 a year; many listings are not open every night."},"beds":{"1":{"adr":[130,145,160],"occ":[0.304,0.369,0.427]},"2":{"adr":[175,195,215],"occ":[0.293,0.355,0.411]},"3":{"adr":[240,265,290],"occ":[0.288,0.353,0.412]},"4":{"adr":[320,355,390],"occ":[0.282,0.344,0.4]},"5":{"adr":[425,470,520],"occ":[0.278,0.339,0.392]},"6":{"adr":[585,650,710],"occ":[0.272,0.33,0.386]}},"season":[0.0564,0.0604,0.0949,0.0741,0.0879,0.0829,0.0857,0.0834,0.082,0.0834,0.1058,0.1031],"cleaning":{"1":85,"2":130,"3":175,"4":260,"5":310,"6":375},"hot_tub_lift":0.04,"note":"","sources":[["AirROI, Arlington, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/arlington"],["FOX 4, the nine World Cup matches at the Arlington stadium, June 14 to July 14, 2026","https://www.fox4news.com/news/2026-fifa-world-cup-att-stadium-schedule"]]},{"id":"dallas","label":"Dallas, TX","name":"Dallas","service":"full","type":"city","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":4675,"avg_adr":256,"avg_occ":0.384,"avg_year":24382,"median_cleaning":115,"revpar":{"p50":67.0,"avg":86.8,"p75":110.7},"revpar_raw":{"p50":73.0,"avg":94.5,"p75":120.6},"adr_for_size_math":227.5,"size_mix_index":1.065,"adjust":"June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 8 percent.","basis":"Basis: AirROI public market data for Dallas, TX, Aug 2025 to Jul 2026, 4,675 active listings, spread across sizes with that market's own bedroom mix. June and July 2026 were replaced with the average of May and August, because the nine World Cup matches at the Arlington stadium (June 14 to July 14, 2026) pushed those months far above a normal year. This lowers the yearly figures by 8 percent. The average listing there, all sizes, earned $24,382 a year; many listings are not open every night."},"beds":{"1":{"adr":[145,160,175],"occ":[0.335,0.393,0.459]},"2":{"adr":[190,215,235],"occ":[0.331,0.379,0.442]},"3":{"adr":[260,290,315],"occ":[0.327,0.379,0.445]},"4":{"adr":[345,385,425],"occ":[0.322,0.373,0.431]},"5":{"adr":[460,515,565],"occ":[0.315,0.364,0.424]},"6":{"adr":[635,705,775],"occ":[0.307,0.358,0.416]}},"season":[0.0702,0.0596,0.0964,0.0803,0.0886,0.0824,0.0851,0.0816,0.0795,0.0915,0.0913,0.0935],"cleaning":{"1":75,"2":115,"3":155,"4":230,"5":275,"6":335},"hot_tub_lift":0.04,"note":"","sources":[["AirROI, Dallas, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/dallas"],["FOX 4, the nine World Cup matches at the Arlington stadium, June 14 to July 14, 2026","https://www.fox4news.com/news/2026-fifa-world-cup-att-stadium-schedule"]]},{"id":"buffalo-river","label":"Buffalo River region, AR","name":"the Buffalo River region","service":"full","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":180,"avg_adr":232,"avg_occ":0.373,"avg_year":26695,"median_cleaning":95,"revpar":{"p50":67.6,"avg":88.3,"p75":116.3},"revpar_raw":{"p50":67.6,"avg":88.3,"p75":116.3},"adr_for_size_math":232.0,"size_mix_index":1.155,"basis":"Basis: AirROI public market data for Buffalo River region, AR, Aug 2025 to Jul 2026, 180 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $26,695 a year; many listings are not open every night. Based on Jasper, the center of the region. Nearby checks: Ponca averages $364 a night and 28.5 percent booked (37 listings); Harrison averages $151 and 37.5 percent (97 listings)."},"beds":{"1":{"adr":[135,150,165],"occ":[0.335,0.394,0.472]},"2":{"adr":[180,200,220],"occ":[0.325,0.383,0.458]},"3":{"adr":[245,270,300],"occ":[0.323,0.383,0.453]},"4":{"adr":[325,360,400],"occ":[0.318,0.375,0.444]},"5":{"adr":[435,480,530],"occ":[0.31,0.367,0.438]},"6":{"adr":[595,665,730],"occ":[0.305,0.357,0.428]}},"season":[0.0498,0.0457,0.0967,0.0787,0.1027,0.1142,0.0834,0.0796,0.0637,0.1127,0.0934,0.0794],"cleaning":{"1":60,"2":95,"3":130,"4":190,"5":230,"6":275},"hot_tub_lift":0.08,"note":"Based on Jasper, the center of the region. Nearby checks: Ponca averages $364 a night and 28.5 percent booked (37 listings); Harrison averages $151 and 37.5 percent (97 listings).","sources":[["AirROI, Buffalo River region, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/jasper"],["AirROI, Ponca, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/ponca"],["AirROI, Harrison, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/harrison"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"],["Homes our team runs, booking records as of Oct 16, 2026","/results/"]],"own":[{"home":"The glass house our team runs, 3 bedrooms plus a loft, sleeps 10, hot tub","period":"Aug 1 to Oct 31, 2026, October as booked on Oct 16","nights":68,"of":92,"occ":0.739,"adr":419},{"home":"The cabin loft next to it, 1 bedroom, sleeps 4","period":"October 2026, its first full month, as booked on Oct 16","nights":16,"of":31,"occ":0.516,"adr":97}],"own_note":"October is not over: its nights are booked, not yet stayed. Average nightly rate is what guests paid per night after discounts, before cleaning fees. Three months is a short record and fall is a strong season, so treat these as a record of homes our team runs, not as your number. Our pricing engine took over the glass house's prices on September 21, 2026; 53 of its 68 nights here were booked before that date."},{"id":"hot-springs","label":"Hot Springs, AR","name":"Hot Springs","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":1428,"avg_adr":265,"avg_occ":0.338,"avg_year":27407,"median_cleaning":120,"revpar":{"p50":65.1,"avg":93.0,"p75":111.0},"revpar_raw":{"p50":65.1,"avg":93.0,"p75":111.0},"adr_for_size_math":265.0,"size_mix_index":1.237,"basis":"Basis: AirROI public market data for Hot Springs, AR, Aug 2025 to Jul 2026, 1,428 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $27,407 a year; many listings are not open every night."},"beds":{"1":{"adr":[145,160,175],"occ":[0.281,0.363,0.396]},"2":{"adr":[195,215,235],"occ":[0.27,0.35,0.382]},"3":{"adr":[260,290,320],"occ":[0.273,0.35,0.379]},"4":{"adr":[345,385,425],"occ":[0.269,0.344,0.373]},"5":{"adr":[465,515,565],"occ":[0.261,0.336,0.366]},"6":{"adr":[635,705,780],"occ":[0.257,0.331,0.357]}},"season":[0.048,0.0541,0.1124,0.0866,0.0956,0.1153,0.0951,0.0935,0.0699,0.085,0.0741,0.0704],"cleaning":{"1":80,"2":120,"3":165,"4":240,"5":290,"6":350},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Hot Springs, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/hot-springs"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"eureka-springs","label":"Eureka Springs, AR","name":"Eureka Springs","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":835,"avg_adr":215,"avg_occ":0.336,"avg_year":23139,"median_cleaning":65,"revpar":{"p50":59.0,"avg":76.4,"p75":98.5},"revpar_raw":{"p50":59.0,"avg":76.4,"p75":98.5},"adr_for_size_math":215.0,"size_mix_index":0.937,"basis":"Basis: AirROI public market data for Eureka Springs, AR, Aug 2025 to Jul 2026, 835 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $23,139 a year; many listings are not open every night."},"beds":{"1":{"adr":[155,170,190],"occ":[0.314,0.37,0.427]},"2":{"adr":[205,230,250],"occ":[0.307,0.354,0.42]},"3":{"adr":[280,310,340],"occ":[0.303,0.355,0.417]},"4":{"adr":[370,415,455],"occ":[0.3,0.346,0.407]},"5":{"adr":[495,550,605],"occ":[0.293,0.341,0.4]},"6":{"adr":[680,755,835],"occ":[0.287,0.335,0.39]}},"season":[0.0553,0.0504,0.0919,0.0789,0.0953,0.0974,0.0823,0.0891,0.0802,0.1189,0.0852,0.0751],"cleaning":{"1":40,"2":65,"3":90,"4":130,"5":155,"6":190},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Eureka Springs, AR, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/arkansas/eureka-springs"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"branson","label":"Branson, MO","name":"Branson","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":3085,"avg_adr":251,"avg_occ":0.339,"avg_year":25747,"median_cleaning":121,"revpar":{"p50":64.9,"avg":91.1,"p75":104.6},"revpar_raw":{"p50":64.9,"avg":91.1,"p75":104.6},"adr_for_size_math":251.0,"size_mix_index":1.241,"basis":"Basis: AirROI public market data for Branson, MO, Aug 2025 to Jul 2026, 3,085 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $25,747 a year; many listings are not open every night."},"beds":{"1":{"adr":[135,150,165],"occ":[0.299,0.378,0.394]},"2":{"adr":[180,200,220],"occ":[0.29,0.367,0.383]},"3":{"adr":[245,275,300],"occ":[0.288,0.36,0.379]},"4":{"adr":[330,365,400],"occ":[0.279,0.355,0.372]},"5":{"adr":[435,485,535],"occ":[0.277,0.349,0.363]},"6":{"adr":[600,665,735],"occ":[0.27,0.342,0.356]}},"season":[0.0371,0.039,0.082,0.0609,0.0794,0.1278,0.0991,0.102,0.0703,0.0975,0.0988,0.1061],"cleaning":{"1":80,"2":120,"3":165,"4":240,"5":290,"6":350},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Branson, MO, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/missouri/branson"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"broken-bow","label":"Broken Bow, OK","name":"Broken Bow","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":3170,"avg_adr":458,"avg_occ":0.354,"avg_year":51710,"median_cleaning":218,"revpar":{"p50":135.3,"avg":170.2,"p75":212.1},"revpar_raw":{"p50":135.3,"avg":170.2,"p75":212.1},"adr_for_size_math":458.0,"size_mix_index":1.425,"basis":"Basis: AirROI public market data for Broken Bow, OK, Aug 2025 to Jul 2026, 3,170 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $51,710 a year; many listings are not open every night. Cross check: AirROI's April 2026 bedroom data for Broken Bow shows $323 a night for 2 bedrooms, $575 for 4 and $1,118 for 6 or more, close to the size scale used here."},"beds":{"1":{"adr":[215,240,265],"occ":[0.341,0.384,0.434]},"2":{"adr":[290,320,355],"occ":[0.327,0.373,0.419]},"3":{"adr":[390,435,475],"occ":[0.329,0.371,0.423]},"4":{"adr":[520,580,635],"occ":[0.322,0.363,0.413]},"5":{"adr":[695,770,850],"occ":[0.315,0.357,0.403]},"6":{"adr":[955,1060,1165],"occ":[0.308,0.349,0.396]}},"season":[0.0591,0.0542,0.1131,0.0631,0.0801,0.1095,0.0837,0.0763,0.0555,0.0927,0.1021,0.1106],"cleaning":{"1":140,"2":220,"3":295,"4":435,"5":525,"6":630},"hot_tub_lift":0.08,"note":"Cross check: AirROI's April 2026 bedroom data for Broken Bow shows $323 a night for 2 bedrooms, $575 for 4 and $1,118 for 6 or more, close to the size scale used here.","sources":[["AirROI, Broken Bow, OK, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/oklahoma/broken-bow"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"glen-rose","label":"Glen Rose, TX","name":"Glen Rose","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":98,"avg_adr":234,"avg_occ":0.341,"avg_year":29437,"median_cleaning":63,"revpar":{"p50":53.1,"avg":92.1,"p75":120.5},"revpar_raw":{"p50":53.1,"avg":92.1,"p75":120.5},"adr_for_size_math":234.0,"size_mix_index":1.088,"basis":"Basis: AirROI public market data for Glen Rose, TX, Aug 2025 to Jul 2026, 98 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $29,437 a year; many listings are not open every night. A small market (98 listings), so the range is wide."},"beds":{"1":{"adr":[145,160,175],"occ":[0.26,0.409,0.489]},"2":{"adr":[195,215,235],"occ":[0.25,0.394,0.471]},"3":{"adr":[260,290,320],"occ":[0.253,0.394,0.467]},"4":{"adr":[350,385,425],"occ":[0.246,0.388,0.46]},"5":{"adr":[465,515,570],"occ":[0.242,0.379,0.448]},"6":{"adr":[640,710,780],"occ":[0.236,0.37,0.44]}},"season":[0.0681,0.051,0.1081,0.0835,0.104,0.0898,0.0809,0.0751,0.0605,0.1001,0.0916,0.0873],"cleaning":{"1":40,"2":65,"3":85,"4":125,"5":150,"6":185},"hot_tub_lift":0.08,"note":"A small market (98 listings), so the range is wide.","sources":[["AirROI, Glen Rose, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/glen-rose"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"granbury","label":"Granbury, TX","name":"Granbury","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":425,"avg_adr":298,"avg_occ":0.341,"avg_year":28733,"median_cleaning":150,"revpar":{"p50":83.1,"avg":102.6,"p75":128.7},"revpar_raw":{"p50":83.1,"avg":102.6,"p75":128.7},"adr_for_size_math":298.0,"size_mix_index":1.339,"basis":"Basis: AirROI public market data for Granbury, TX, Aug 2025 to Jul 2026, 425 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $28,733 a year; many listings are not open every night."},"beds":{"1":{"adr":[150,165,185],"occ":[0.32,0.359,0.401]},"2":{"adr":[200,225,245],"occ":[0.31,0.341,0.392]},"3":{"adr":[270,300,330],"occ":[0.31,0.345,0.393]},"4":{"adr":[360,400,440],"occ":[0.304,0.338,0.385]},"5":{"adr":[480,535,590],"occ":[0.298,0.33,0.375]},"6":{"adr":[660,735,810],"occ":[0.292,0.323,0.368]}},"season":[0.0587,0.0585,0.0891,0.0774,0.1075,0.1036,0.087,0.0894,0.0776,0.0897,0.0847,0.0768],"cleaning":{"1":100,"2":150,"3":205,"4":300,"5":360,"6":435},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Granbury, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/granbury"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"wimberley","label":"Wimberley, TX","name":"Wimberley","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":638,"avg_adr":335,"avg_occ":0.338,"avg_year":36211,"median_cleaning":100,"revpar":{"p50":82.1,"avg":117.4,"p75":144.1},"revpar_raw":{"p50":82.1,"avg":117.4,"p75":144.1},"adr_for_size_math":335.0,"size_mix_index":1.173,"basis":"Basis: AirROI public market data for Wimberley, TX, Aug 2025 to Jul 2026, 638 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $36,211 a year; many listings are not open every night."},"beds":{"1":{"adr":[195,215,235],"occ":[0.277,0.36,0.404]},"2":{"adr":[255,285,315],"occ":[0.274,0.351,0.39]},"3":{"adr":[345,385,425],"occ":[0.274,0.351,0.39]},"4":{"adr":[465,515,565],"occ":[0.265,0.343,0.384]},"5":{"adr":[615,685,755],"occ":[0.262,0.337,0.375]},"6":{"adr":[850,940,1035],"occ":[0.255,0.33,0.368]}},"season":[0.0597,0.059,0.1002,0.0872,0.0946,0.0985,0.0854,0.0901,0.0661,0.0834,0.0887,0.0871],"cleaning":{"1":65,"2":100,"3":135,"4":200,"5":240,"6":290},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Wimberley, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/wimberley"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"fredericksburg","label":"Fredericksburg, TX","name":"Fredericksburg","service":"remote","type":"leisure","data":{"source":"AirROI public market data","period":"Aug 2025 to Jul 2026","listings":2213,"avg_adr":338,"avg_occ":0.326,"avg_year":37095,"median_cleaning":139,"revpar":{"p50":89.3,"avg":118.1,"p75":149.3},"revpar_raw":{"p50":89.3,"avg":118.1,"p75":149.3},"adr_for_size_math":338.0,"size_mix_index":1.111,"basis":"Basis: AirROI public market data for Fredericksburg, TX, Aug 2025 to Jul 2026, 2,213 active listings, spread across sizes with that market's own bedroom mix. The average listing there, all sizes, earned $37,095 a year; many listings are not open every night."},"beds":{"1":{"adr":[205,230,250],"occ":[0.303,0.357,0.415]},"2":{"adr":[275,305,335],"occ":[0.292,0.349,0.401]},"3":{"adr":[370,410,450],"occ":[0.293,0.35,0.403]},"4":{"adr":[495,550,605],"occ":[0.286,0.341,0.392]},"5":{"adr":[655,730,805],"occ":[0.283,0.336,0.385]},"6":{"adr":[905,1005,1105],"occ":[0.276,0.328,0.377]}},"season":[0.0644,0.0665,0.1061,0.0901,0.0881,0.0793,0.0666,0.0729,0.0644,0.0974,0.1016,0.1026],"cleaning":{"1":90,"2":140,"3":190,"4":280,"5":335,"6":405},"hot_tub_lift":0.08,"note":"","sources":[["AirROI, Fredericksburg, TX, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states/texas/fredericksburg"],["AirROI, cabin markets by bedroom count and hot tub lift, April 2026","https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026"]]},{"id":"other","label":"Somewhere else in the US","name":"your area","service":"remote","type":"mixed","data":{"source":"AirROI public market data, middle of the 12 markets on this page","period":"Aug 2025 to Jul 2026","listings":19250,"avg_adr":260,"avg_occ":0.341,"avg_year":27051,"median_cleaning":120,"revpar":{"p50":67.3,"avg":91.6,"p75":115.3},"adr_for_size_math":242.5,"size_mix_index":1.156,"us_top100":{"markets":100,"median_adr":301.5,"median_occ":0.403,"listing_weighted_adr":317,"listing_weighted_occ":0.399},"basis":"Basis: the middle of the 12 markets on this page (AirROI public market data, Aug 2025 to Jul 2026, 19,250 active listings), spread across sizes. A starting point only. It uses the middle of the 12 markets on this page. AirROI's 100 largest US markets run higher, about $302 a night and 40 percent booked at the middle, and small towns often run lower. Seasons vary too much to show one curve."},"beds":{"1":{"adr":[140,155,175],"occ":[0.321,0.395,0.44]},"2":{"adr":[190,210,230],"occ":[0.306,0.377,0.433]},"3":{"adr":[255,285,310],"occ":[0.308,0.375,0.434]},"4":{"adr":[340,375,415],"occ":[0.302,0.373,0.424]},"5":{"adr":[455,505,555],"occ":[0.295,0.361,0.414]},"6":{"adr":[625,690,760],"occ":[0.289,0.356,0.407]}},"season":null,"cleaning":{"1":80,"2":120,"3":165,"4":240,"5":290,"6":350},"hot_tub_lift":0.06,"note":"A starting point only. It uses the middle of the 12 markets on this page. AirROI's 100 largest US markets run higher, about $302 a night and 40 percent booked at the middle, and small towns often run lower. Seasons vary too much to show one curve.","sources":[["AirROI, the 100 largest US markets, Aug 2025 to Jul 2026","https://www.airroi.com/airbnb-data/united-states"]]}]}</script>
 <section class="src-band"><div class="wrap"><div class="sources"><b>Sources:</b> <a href="https://www.airroi.com/airbnb-data/united-states/texas/fort-worth" rel="nofollow noopener" target="_blank">AirROI, Fort Worth, TX, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.redawning.com/pm/airbnb-management-cities/fort-worth-texas" rel="nofollow noopener" target="_blank">Red Awning, Fort Worth nightly rate by bedroom count</a> &middot; <a href="https://www.bnbcalc.com/markets/us/fort-worth-tx" rel="nofollow noopener" target="_blank">BNBCalc, Fort Worth market page, cleaning fee by bedroom count</a> &middot; <a href="https://airbtics.com/annual-airbnb-revenue-in-fort-worth-texas-usa" rel="nofollow noopener" target="_blank">Airbtics, Fort Worth, Sep 2025 to Aug 2026</a> &middot; <a href="https://www.fox4news.com/news/2026-fifa-world-cup-att-stadium-schedule" rel="nofollow noopener" target="_blank">FOX 4, the nine World Cup matches at the Arlington stadium, June 14 to July 14, 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/texas/arlington" rel="nofollow noopener" target="_blank">AirROI, Arlington, TX, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/texas/dallas" rel="nofollow noopener" target="_blank">AirROI, Dallas, TX, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/arkansas/jasper" rel="nofollow noopener" target="_blank">AirROI, Buffalo River region, AR, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/arkansas/ponca" rel="nofollow noopener" target="_blank">AirROI, Ponca, AR, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/arkansas/harrison" rel="nofollow noopener" target="_blank">AirROI, Harrison, AR, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/blog/cabin-airbnb-revenue-mountain-markets-2026" rel="nofollow noopener" target="_blank">AirROI, cabin markets by bedroom count and hot tub lift, April 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/arkansas/hot-springs" rel="nofollow noopener" target="_blank">AirROI, Hot Springs, AR, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/arkansas/eureka-springs" rel="nofollow noopener" target="_blank">AirROI, Eureka Springs, AR, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/missouri/branson" rel="nofollow noopener" target="_blank">AirROI, Branson, MO, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/oklahoma/broken-bow" rel="nofollow noopener" target="_blank">AirROI, Broken Bow, OK, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/texas/glen-rose" rel="nofollow noopener" target="_blank">AirROI, Glen Rose, TX, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/texas/granbury" rel="nofollow noopener" target="_blank">AirROI, Granbury, TX, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/texas/wimberley" rel="nofollow noopener" target="_blank">AirROI, Wimberley, TX, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states/texas/fredericksburg" rel="nofollow noopener" target="_blank">AirROI, Fredericksburg, TX, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.airroi.com/airbnb-data/united-states" rel="nofollow noopener" target="_blank">AirROI, the 100 largest US markets, Aug 2025 to Jul 2026</a> &middot; <a href="https://www.guesty.com/blog/pet-friendly-vacation-rental-guide-for-hosts/" rel="nofollow noopener" target="_blank">Guesty, pet friendly rental data</a></div></div></section></main>
 <div class="sticky-cta" id="sticky-cta"><a class="btn gold" href="#estimate">Get my checked estimate</a></div>
 <footer>
   <div class="wrap">
     <div>
       <a class="logo" href="/"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#16213A"/><path d="M16 6 L25 13.5 V25 H7 V13.5 Z" fill="none" stroke="#F6F3EC" stroke-width="2" stroke-linejoin="round"/><path d="M16 11.5 V21 M12.2 15 H19.8" stroke="#E9C27A" stroke-width="2.2" stroke-linecap="round"/></svg><span>List &amp; Host</span></a>
-      <p style="margin-top:14px;max-width:38ch">Short term rental management, A to Z. We run your home like our own and have pledged 10% of each month's profit, starting with September 2026, to feed children facing starvation.</p>
+      <hr class="gold-rule">
+      <p style="max-width:38ch">Short term rental management, A to Z. We run your home like our own and have pledged 10% of each month's profit, starting with September 2026, to feed children facing starvation.</p>
       <form class="notes-form" id="notes-form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSe1cO6cmNEYzSiI0JjCcDVR4_pbwM04Zo6WAxsceJ_hosNluw/formResponse" target="notes-sink">
         <p class="foot-h" style="margin-top:24px">Owner notes</p>
         <p>One email a month: what the homes our team runs booked, what moved their prices and one thing to check on your own listing. Stop any time.</p>
@@ -507,19 +607,6 @@ body.has-sticky-cta{padding-bottom:76px}
       <iframe name="notes-sink" title="Owner notes delivery" hidden></iframe>
     </div>
     <div>
-      <p class="foot-h">Company</p>
-      <ul>
-        <li><a href="/about/">About us</a></li>
-        <li><a href="/how-it-works/">How it works</a></li>
-        <li><a href="/results/">Results</a></li>
-        <li><a href="/pricing/">Pricing</a></li>
-        <li><a href="/owner-dashboard/">Owner dashboard example</a></li>
-        <li><a href="/faq/">Owner questions</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/giving/">Our mission</a></li>
-      </ul>
-    </div>
-    <div>
       <p class="foot-h">Services</p>
       <ul>
         <li><a href="/services/">All four services</a></li>
@@ -527,7 +614,10 @@ body.has-sticky-cta{padding-bottom:76px}
         <li><a href="/services/co-hosting/">Co hosting</a></li>
         <li><a href="/services/setup-and-launch/">Setup and launch</a></li>
         <li><a href="/services/remote-pricing/">Remote pricing</a></li>
+        <li><a href="/estimate/">Instant earnings estimator</a></li>
+        <li><a href="/free-listing-audit/">Free listing audit</a></li>
         <li><a href="/apply/">Apply for a checked estimate</a></li>
+        <li><a href="/book-a-call/">Request a 15 minute call</a></li>
       </ul>
     </div>
     <div>
@@ -542,20 +632,34 @@ body.has-sticky-cta{padding-bottom:76px}
       </ul>
     </div>
     <div>
-      <p class="foot-h">Owners</p>
+      <p class="foot-h">Guides</p>
       <ul>
-        <li><a href="/estimate/">Instant earnings estimator</a></li>
-        <li><a href="/free-listing-audit/">Free listing audit</a></li>
-        <li><a href="/book-a-call/">Request a 15 minute call</a></li>
+        <li><a href="/blog/why-is-my-airbnb-not-getting-booked/">Why Is My Airbnb Not Getting Booked? A Page One Check</a></li>
+        <li><a href="/blog/what-is-a-good-occupancy-rate-for-airbnb/">What Is a Good Occupancy Rate for an Airbnb in 2026?</a></li>
+        <li><a href="/blog/vacasa-evolve-or-a-local-manager/">Vacasa, Evolve or a Local Manager? Fees and Facts, 2026</a></li>
+        <li><a href="/blog/dallas-arlington-short-term-rental-management/">Short Term Rental Management in Dallas and Arlington, 2026</a></li>
+        <li><a href="/blog/">All owner guides</a></li>
         <li><a href="/compare/">Compare your options</a></li>
+        <li><a href="/faq/">Owner questions</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot-h">Company</p>
+      <ul>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/how-it-works/">How it works</a></li>
+        <li><a href="/results/">Results</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/owner-dashboard/">Owner dashboard example</a></li>
+        <li><a href="/giving/">Our mission</a></li>
         <li><a href="/refer/">Refer an owner</a></li>
-        <li><a href="/blog/">Owner guides</a></li>
+        <li><a href="/contact/">Contact</a></li>
         <li><a href="mailto:team@listandhost.com">team@listandhost.com</a></li>
         <li><a href="mailto:help@listandhost.com">help@listandhost.com</a></li>
       </ul>
     </div>
   </div>
-  <p class="legal">&copy; 2026 List &amp; Host. Full service in Fort Worth, DFW and the Buffalo River region. Co hosting or remote pricing anywhere else in the US. <a href="/privacy/">Privacy</a></p>
+  <p class="legal">&copy; 2026 List &amp; Host. Full service in Fort Worth, DFW and the Buffalo River region. Co hosting or remote pricing anywhere else in the US. <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms of use</a></p>
 </footer>
 <script>
 try{var q=new URLSearchParams(location.search),s=q.get('src');
@@ -622,6 +726,39 @@ es.forEach(function(e){var i=seen.indexOf(e.target);if(e.isIntersecting&&i<0){se
 bar.classList.toggle('is-hidden',seen.length>0);
 },{threshold:0.1});
 els.forEach(function(el){io.observe(el);});
+})();
+(function(){
+var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(rm||!('IntersectionObserver' in window)){return;}
+var els=[].slice.call(document.querySelectorAll('main .grid>*,main .section-head,main .card-stack,main .price-card,main .stmt-card,main .pic,main .badges,main .hf-out,main details'));
+var vh=window.innerHeight||800,pending=[];
+els.forEach(function(el){
+var r=el.getBoundingClientRect();
+if(r.top<vh&&r.bottom>0){return;}
+var p=el.parentNode,k=0,c=p?p.children:[];for(var j=0;j<c.length;j+=1){if(c[j]===el){k=j;break;}}
+el.style.transitionDelay=(Math.min(k,5)*60)+'ms';
+el.classList.add('rv');pending.push(el);
+});
+var tick=false;
+function reveal(){tick=false;var h=window.innerHeight||800,left=[];
+pending.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<h*0.94){el.classList.add('in');}else{left.push(el);}});
+pending=left;if(!pending.length){window.removeEventListener('scroll',onS);window.removeEventListener('resize',onS);}}
+function onS(){if(!tick){tick=true;requestAnimationFrame(reveal);}}
+window.addEventListener('scroll',onS,{passive:true});window.addEventListener('resize',onS);
+reveal();
+var nums=[].slice.call(document.querySelectorAll('[data-count]'));
+if(!nums.length||!('IntersectionObserver' in window)){return;}
+var fmt=function(n){return Math.round(n).toLocaleString('en-US');};
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+if(!e.isIntersecting){return;}cio.unobserve(e.target);
+var el=e.target,txt=el.textContent,m=/^(\$?)([\d,]+)(?![.\d])(.*)$/.exec(txt);
+if(!m||document.hidden){return;}
+var end=parseInt(m[2].replace(/,/g,''),10),t0=null,done=false;
+var fin=function(){if(!done){done=true;el.textContent=txt;}};
+var step=function(ts){if(done){return;}if(t0===null){t0=ts;}var p=Math.min(1,(ts-t0)/900);el.textContent=m[1]+fmt(end*(1-Math.pow(1-p,3)))+m[3];if(p<1){requestAnimationFrame(step);}else{fin();}};
+requestAnimationFrame(step);setTimeout(fin,1400);
+});},{threshold:0.6});
+nums.forEach(function(el){cio.observe(el);});
 })();
 </script>
 <script>
@@ -737,6 +874,7 @@ var own='';
 if(m.own){own='<h3 class="est-own-h">Homes our team runs here</h3><ul class="checks">'+m.own.map(function(o){return '<li>'+escp(o.home)+': '+o.nights+' of '+o.of+' nights booked ('+pct(o.occ)+'), average '+money(o.adr)+' a night. '+escp(o.period)+'.</li>';}).join('')+'</ul><p class="fine">'+escp(m.own_note)+'</p>';}
 $('est-own').innerHTML=own;
 $('est-live').textContent='Estimate for '+m.label+', '+bedLabel+': likely '+money(years[1])+' a year, low '+money(years[0])+', high '+money(years[2])+'.';
+var qk=$('est-quick');if(qk)qk.textContent='Likely '+money(years[1])+' a year, '+money(years[0])+' to '+money(years[2])+'. The full card is just below.';
 var lb=$('lead-beds');if(lb)lb.value=beds>=5?'5+':String(beds);
 var ln=$('lead-notes');
 if(ln)ln.value=(CODE?'Code '+CODE+'. ':'')+'From /estimate/: '+m.label+'; '+bedLabel+'; '+baths+(baths===1?' bath':' baths')+'; sleeps '+sleeps+(sleeps>=16?' or more':'')+'; hot tub '+(tub?'yes':'no')+'; pets '+(pets?'yes':'no')+'. Estimate a year: low '+money(years[0])+', likely '+money(years[1])+', high '+money(years[2])+'.';
